@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3后台管理系统-项目构建🔥 | 龙二不2的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="不要因为别人都在交卷自己就乱写答案">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.e5d12e82.css" as="style"><link rel="preload" href="/blogs/assets/js/app.18ea5a3b.js" as="script"><link rel="preload" href="/blogs/assets/js/3.7d50d3e1.js" as="script"><link rel="preload" href="/blogs/assets/js/1.6ae6daff.js" as="script"><link rel="preload" href="/blogs/assets/js/74.a95fc72d.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.0c3919ea.js"><link rel="prefetch" href="/blogs/assets/js/11.69672944.js"><link rel="prefetch" href="/blogs/assets/js/12.282b391e.js"><link rel="prefetch" href="/blogs/assets/js/13.c8f09181.js"><link rel="prefetch" href="/blogs/assets/js/14.2b6f40c8.js"><link rel="prefetch" href="/blogs/assets/js/15.c3daa56f.js"><link rel="prefetch" href="/blogs/assets/js/16.bee8f531.js"><link rel="prefetch" href="/blogs/assets/js/17.0b7b9d39.js"><link rel="prefetch" href="/blogs/assets/js/18.527b463f.js"><link rel="prefetch" href="/blogs/assets/js/19.3508c473.js"><link rel="prefetch" href="/blogs/assets/js/20.a237ecd5.js"><link rel="prefetch" href="/blogs/assets/js/21.677b4b42.js"><link rel="prefetch" href="/blogs/assets/js/22.d09c4fb0.js"><link rel="prefetch" href="/blogs/assets/js/23.a0354e98.js"><link rel="prefetch" href="/blogs/assets/js/24.7fe498f7.js"><link rel="prefetch" href="/blogs/assets/js/25.736624c0.js"><link rel="prefetch" href="/blogs/assets/js/26.8ca64f53.js"><link rel="prefetch" href="/blogs/assets/js/27.cbfb5a89.js"><link rel="prefetch" href="/blogs/assets/js/28.55e3eeb6.js"><link rel="prefetch" href="/blogs/assets/js/29.cf694242.js"><link rel="prefetch" href="/blogs/assets/js/30.db96836a.js"><link rel="prefetch" href="/blogs/assets/js/31.b10a5c2e.js"><link rel="prefetch" href="/blogs/assets/js/32.adc65a78.js"><link rel="prefetch" href="/blogs/assets/js/33.eead35d2.js"><link rel="prefetch" href="/blogs/assets/js/34.58544962.js"><link rel="prefetch" href="/blogs/assets/js/35.99f45e43.js"><link rel="prefetch" href="/blogs/assets/js/36.0e4a76fd.js"><link rel="prefetch" href="/blogs/assets/js/37.c5d24eed.js"><link rel="prefetch" href="/blogs/assets/js/38.4cafbdd8.js"><link rel="prefetch" href="/blogs/assets/js/39.7bf5261c.js"><link rel="prefetch" href="/blogs/assets/js/4.76e26aa1.js"><link rel="prefetch" href="/blogs/assets/js/40.59c785e3.js"><link rel="prefetch" href="/blogs/assets/js/41.0e6560d2.js"><link rel="prefetch" href="/blogs/assets/js/42.ac0f867e.js"><link rel="prefetch" href="/blogs/assets/js/43.a4fe4c0f.js"><link rel="prefetch" href="/blogs/assets/js/44.c4dd0147.js"><link rel="prefetch" href="/blogs/assets/js/45.985876f4.js"><link rel="prefetch" href="/blogs/assets/js/46.9ce22631.js"><link rel="prefetch" href="/blogs/assets/js/47.f7bf4421.js"><link rel="prefetch" href="/blogs/assets/js/48.cde6da56.js"><link rel="prefetch" href="/blogs/assets/js/49.97b3b470.js"><link rel="prefetch" href="/blogs/assets/js/5.7576fc30.js"><link rel="prefetch" href="/blogs/assets/js/50.0cc7fad2.js"><link rel="prefetch" href="/blogs/assets/js/51.0b47ddd4.js"><link rel="prefetch" href="/blogs/assets/js/52.bd74072e.js"><link rel="prefetch" href="/blogs/assets/js/53.77a00e1c.js"><link rel="prefetch" href="/blogs/assets/js/54.cb61450d.js"><link rel="prefetch" href="/blogs/assets/js/55.167712fc.js"><link rel="prefetch" href="/blogs/assets/js/56.d15eafc6.js"><link rel="prefetch" href="/blogs/assets/js/57.3132179b.js"><link rel="prefetch" href="/blogs/assets/js/58.87a301ff.js"><link rel="prefetch" href="/blogs/assets/js/59.1fb35315.js"><link rel="prefetch" href="/blogs/assets/js/6.32f1aaf4.js"><link rel="prefetch" href="/blogs/assets/js/60.7ebb4f4e.js"><link rel="prefetch" href="/blogs/assets/js/61.fd9249b1.js"><link rel="prefetch" href="/blogs/assets/js/62.dd2cf210.js"><link rel="prefetch" href="/blogs/assets/js/63.1c2e83da.js"><link rel="prefetch" href="/blogs/assets/js/64.2efb6c79.js"><link rel="prefetch" href="/blogs/assets/js/65.8b8fce18.js"><link rel="prefetch" href="/blogs/assets/js/66.4ec75c2a.js"><link rel="prefetch" href="/blogs/assets/js/67.310e09c3.js"><link rel="prefetch" href="/blogs/assets/js/68.6edb369e.js"><link rel="prefetch" href="/blogs/assets/js/69.1529f340.js"><link rel="prefetch" href="/blogs/assets/js/7.385ed0df.js"><link rel="prefetch" href="/blogs/assets/js/70.9cdc0728.js"><link rel="prefetch" href="/blogs/assets/js/71.f282ac02.js"><link rel="prefetch" href="/blogs/assets/js/72.0a5ab34c.js"><link rel="prefetch" href="/blogs/assets/js/73.818436b6.js"><link rel="prefetch" href="/blogs/assets/js/75.9f6d2b75.js"><link rel="prefetch" href="/blogs/assets/js/8.f0575d67.js"><link rel="prefetch" href="/blogs/assets/js/9.0f833a90.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.e5d12e82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>龙二不2的博客</h3> <p class="description" data-v-59e6cb88>不要因为别人都在交卷自己就乱写答案</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="/blogs/龙二.jpg" alt="龙二不2的博客" class="logo"> <span class="site-name">龙二不2的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <h3 class="name" data-v-1fad0c41>
+    龙二不2
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>65</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>8</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>vue3后台管理系统-项目构建🔥</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">vue3后台管理系统-项目构建🔥</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>龙二不2</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/1/1</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>vue3</span><span class="tag-item" data-v-8a445198>ts</span><span class="tag-item" data-v-8a445198>node.js</span><span class="tag-item" data-v-8a445198>vue3后台管理系统</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>本系列将通过前端 vue + ts 加后端 nodeJS 的技术框架从零实现一个后台管理系统，作者主业是 web 前端开发小白，刚刚学完 vue3 与 nodeJS 技术不久，因此本系统算是一个练手项目，参考了一些项目的写法，可能有一些做的不够好的地方，欢迎讨论！</p> <h2 id="技术栈"><a href="#技术栈" class="header-anchor">#</a> 技术栈</h2> <h3 id="前端"><a href="#前端" class="header-anchor">#</a> 前端</h3> <ul><li><p>语言：<code>typeScript</code></p></li> <li><p>前端框架：<code>vue 3</code></p></li> <li><p>脚手架：<code>vite</code></p></li> <li><p>路由：<code>vue-router 4</code></p></li> <li><p>状态管理：<code>vuex 4</code></p></li> <li><p>CSS 预编译处理：<code>sass</code></p></li> <li><p>网络请求工具：<code>axios</code></p></li> <li><p>前端 UI 框架：<code>element-plus 2</code></p></li></ul> <h3 id="后端"><a href="#后端" class="header-anchor">#</a> 后端</h3> <ul><li>语言：<code>javaScript</code></li> <li>运行环境：<code>node.js 14</code></li> <li>后端开发框架：<code>express 4</code></li> <li>数据库：<code>mysql</code></li> <li>缓存数据库：<code>redis</code></li> <li>数据库映射模块（ORM）：<code>sequelize 5</code></li></ul> <h2 id="前端项目构建"><a href="#前端项目构建" class="header-anchor">#</a> 前端项目构建</h2> <p>先附上本人的 node 及 npm 版本</p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab7efbf1c757440b8bce05a6099b4c17~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <h3 id="前端项目"><a href="#前端项目" class="header-anchor">#</a> 前端项目</h3> <p>安装，选择 vue、typeScript</p> <div class="language- extra-class"><pre class="language-text"><code>npm create vite@latest
+cd vue_ts-app
+npm install
+npm run dev
+</code></pre></div><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/35d92c54d2144e5f97d9640e4de25b17~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>运行项目</p> <div class="language- extra-class"><pre class="language-text"><code>npm run dev
+</code></pre></div><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/12a843725a81487aadb1e113bca0de1d~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>输入网址出现这个页面说明创建成功</p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e7f424c2464540c797ec4bc6a3a2d630~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>用<code>vscode</code>打开查看目录结构</p> <p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/94f9602b02254535a5a2ad530e543404~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>项目就创建完成了，在 vscode 打开并在终端运行命令<code>npm run dev</code></p> <blockquote><p>此时不会自动在浏览器打开，若需要得在<code>package.json</code>文件 script 字段的 dev 属性值后添加--open</p></blockquote> <h4 id="安装系统所需依赖"><a href="#安装系统所需依赖" class="header-anchor">#</a> 安装系统所需依赖</h4> <p><strong>1.将@作为<code>src</code>文件夹的别名</strong></p> <p>安装所需 ts 类型</p> <div class="language- extra-class"><pre class="language-text"><code>npm install @types/node --save-dev
+</code></pre></div><p>在<code>vite.config.ts</code>下添加如下配置</p> <div class="language- extra-class"><pre class="language-text"><code>import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import { resolve } from 'path';
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [vue()],
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src') // 路径别名
+    },
+    extensions: ['.js', '.json', '.ts', '.vue'] // 使用路径别名时想要省略的后缀名，可以自己 增减
+  }
+});
+</code></pre></div><p>在<code>tsconfig.json</code>的<code>compilerOptions</code>配置项下添加如下配置属性</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;baseUrl&quot;: &quot;.&quot;,
+// 用于设置解析非相对模块名称的基本目录，相对模块不会受到baseUrl的影响
+&quot;paths&quot;: {
+  // 用于设置模块名到基于baseUrl的路径映射
+  &quot;@/*&quot;: [&quot;src/*&quot;]
+}
+</code></pre></div><p><strong>2.安装所需依赖</strong></p> <ul><li><p>一. vuex</p></li> <li><p>1.安装</p> <div class="language- extra-class"><pre class="language-text"><code>npm install vuex@4.0.2
+</code></pre></div><p>2.创建 store 文件夹及配置文件<code>index.ts</code>，并导入以下配置</p> <div class="language- extra-class"><pre class="language-text"><code>import { createStore } from 'vuex';
+export default createStore({
+  state: {
+    count: 0
+  },
+  mutations: {
+    SET_COUNT: (state, count) =&gt; {
+      count += 1;
+      state.count = count;
+    }
+  },
+  actions: {},
+  getters: {}
+});
+</code></pre></div><p>3.在 main.ts 中引入</p> <div class="language- extra-class"><pre class="language-text"><code>import { createApp } from 'vue';
+import './style.css';
+import store from '@/store/index';
+import App from '@/App.vue';
+
+const app = createApp(App);
+app.use(store).mount('#app');
+</code></pre></div><p>4.创建测试页面并测试（test.vue）</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    count:{{ count }}
+    &lt;button @click=&quot;addCount&quot;&gt;count++&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup lang=&quot;ts&quot;&gt;
+import { ref } from 'vue';
+import { useStore } from 'vuex';
+// 导入store
+const store = useStore()
+// 将count赋值
+const count = ref(store.state.count)
+// count增加方法
+function addCount() {
+  count.value++
+  store.commit('SET_COUNT', count.value)
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre></div><p>App.vue</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;Test /&gt;
+&lt;/template&gt;
+&lt;script setup lang=&quot;ts&quot;&gt;
+import Test from './components/test.vue';
+
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre></div><p>可以看到功能没问题</p></li></ul> <p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e80bf6e1122f4891928c2384cd033077~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <ul><li><p>二. vue-router</p></li> <li><p>1.安装</p> <div class="language- extra-class"><pre class="language-text"><code>npm install vue-router@4
+</code></pre></div><p>2.创建 router 文件夹添加配置文件</p> <div class="language- extra-class"><pre class="language-text"><code>import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
+
+const routes: RouteRecordRaw[] = [
+  {
+    path: '/',
+    name: 'Test',
+    component: () =&gt; import('@/components/test.vue') // 注意这里要带上 文件后缀.vue
+  }
+];
+
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes
+});
+
+export default router;
+</code></pre></div><p>3.在 main.ts 文件中导入</p> <div class="language- extra-class"><pre class="language-text"><code>import router from '@/router/index'
+// 在app后添加
+app.use(router)
+</code></pre></div><p>4.将 App.vue 修改为路由视图</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;router-view&gt;&lt;/router-view&gt;
+&lt;/template&gt;
+&lt;script setup lang=&quot;ts&quot;&gt;
+
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+
+</code></pre></div><p>5.测试发现 url 改变</p></li></ul> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/79629bb610974de4902306be485aed87~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <ul><li><p>三. element-plus</p></li> <li><p>1.安装</p> <div class="language- extra-class"><pre class="language-text"><code>npm install element-plus@2 --save
+npm install -D unplugin-vue-components unplugin-auto-import
+</code></pre></div><p>2.在 vite.config.ts 添加如下配置</p> <div class="language- extra-class"><pre class="language-text"><code>// vite.config.ts
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue';
+import { resolve } from 'path';
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+
+export default defineConfig({
+  // ...
+  plugins: [
+    // ...
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+    }),
+    Components({
+      resolvers: [ElementPlusResolver()],
+    }),
+  ],
+  // ...
+})
+</code></pre></div><p>3.volor 支持</p> <p>如果你使用 volar，可在<code>tsconfig.json</code> 中通过 <code>compilerOptions.type</code> 指定全局组件类型</p> <div class="language- extra-class"><pre class="language-text"><code>// tsconfig.json
+{
+  &quot;compilerOptions&quot;: {
+    // ...
+    &quot;types&quot;: [&quot;element-plus/global&quot;]
+  }
+}
+</code></pre></div><p>4.测试</p> <p>将 test.vue 的 button 修改</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;ElButton @click=&quot;addCount&quot;&gt;count++&lt;/ElButton&gt;
+</code></pre></div></li></ul> <p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c4fd93e7b74a41d68dda323c4a30ca09~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <ul><li><p>四.axios 封装</p></li> <li><p>1.安装</p> <div class="language- extra-class"><pre class="language-text"><code>npm install axios
+</code></pre></div><p>2.添加 utils 文件夹并添加 http.ts 配置文件</p> <div class="language- extra-class"><pre class="language-text"><code>import Axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
+
+const BASE_URL = ''; //请求接口url 如果不配置 则默认访问链接地址
+const TIME_OUT = 20000; // 接口超时时间
+
+const instance = Axios.create({
+  baseURL: BASE_URL,
+  timeout: TIME_OUT
+});
+
+// 添加请求拦截器
+instance.interceptors.request.use(
+  (config: AxiosRequestConfig) =&gt; {
+    return config;
+  },
+  (error) =&gt; {
+    return Promise.reject(error);
+  }
+);
+
+// 添加响应拦截器
+instance.interceptors.response.use(
+  (response: AxiosResponse) =&gt; {
+    console.log(response);
+    return response.data;
+  },
+  (error: AxiosError) =&gt; {
+    return Promise.reject(error);
+  }
+);
+
+export default instance;
+</code></pre></div><p>3.在 utils 文件夹下创建 api 文件夹备用</p></li></ul> <p>前端项目的初始化到这里就结束了</p> <h3 id="后端项目"><a href="#后端项目" class="header-anchor">#</a> 后端项目</h3> <h4 id="初始化"><a href="#初始化" class="header-anchor">#</a> 初始化</h4> <p>1.创建一个新文件夹 vue_ts-server</p> <p>2.用 vscode 打开并执行命令初始化文件</p> <div class="language- extra-class"><pre class="language-text"><code>npm init -y
+</code></pre></div><h4 id="安装-express"><a href="#安装-express" class="header-anchor">#</a> 安装 express</h4> <div class="language- extra-class"><pre class="language-text"><code>npm i express@4.17.1
+</code></pre></div><h4 id="_1-1-在根目录创建项目入口文件-app-js"><a href="#_1-1-在根目录创建项目入口文件-app-js" class="header-anchor">#</a> 1.1 在根目录创建项目入口文件 app.js</h4> <div class="language- extra-class"><pre class="language-text"><code>// 导入 express 模块
+const express = require('express')
+// 创建 express 的服务器实例
+const app = express()
+
+// write your code here...
+
+// 调用 app.listen 方法，指定端口号并启动web服务器
+app.listen(9999, function () {
+  console.log('api server running at http://127.0.0.1:9999')
+})
+</code></pre></div><h5 id="_1-2-配置-cors-跨域"><a href="#_1-2-配置-cors-跨域" class="header-anchor">#</a> 1.2 配置 cors 跨域</h5> <ol><li>运行如下的命令，安装 <code>cors</code> 中间件：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>npm i cors@2.8.5
+</code></pre></div><ol start="2"><li>在 <code>app.js</code> 中导入并配置 <code>cors</code> 中间件（app.listen()之前）：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>// 导入 cors 中间件
+const cors = require('cors')
+// 将 cors 注册为全局中间件
+app.use(cors())
+</code></pre></div><h4 id="_1-3-配置解析表单数据的中间件"><a href="#_1-3-配置解析表单数据的中间件" class="header-anchor">#</a> 1.3 配置解析表单数据的中间件</h4> <ol><li>安装<code>body-parser</code></li></ol> <div class="language- extra-class"><pre class="language-text"><code>npm install body-parser@1.20.1
+</code></pre></div><ol start="2"><li>在 app.js 中添加配置</li></ol> <div class="language- extra-class"><pre class="language-text"><code>const bodyParser = require('body-parser');
+app.use(
+  bodyParser.urlencoded({
+    extended: true
+  })
+);
+
+app.use(bodyParser.json());
+</code></pre></div><h4 id="_1-4-初始化路由相关的文件夹"><a href="#_1-4-初始化路由相关的文件夹" class="header-anchor">#</a> 1.4 初始化路由相关的文件夹</h4> <ol><li><p>在项目根目录中，新建<code>router</code>文件夹，用来存放所有的路由模块</p> <blockquote><p>路由模块中，只存放客户端的请求与处理函数之间的映射关系</p></blockquote></li> <li><p>在项目根目录中，新建<code>router_handler</code>文件夹，用来存放所有的路由处理函数模块</p> <blockquote><p>路由处理函数模块中，专门负责存放每个路由对应的处理函数</p></blockquote></li></ol> <h4 id="_1-5-初始化用户路由模块"><a href="#_1-5-初始化用户路由模块" class="header-anchor">#</a> 1.5 初始化用户路由模块</h4> <ol><li><p>在 <code>router</code> 文件夹中，新建 <code>user.js</code> 文件，作为用户的路由模块，并初始化代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>const express = require('express')
+// 创建路由对象
+const router = express.Router()
+
+// 登录
+router.post('/login', (req, res) =&gt; {
+  res.send('login OK')
+})
+
+// 将路由对象共享出去
+module.exports = router
+</code></pre></div></li> <li><p>在 <code>app.js</code> 中，导入并使用 <code>用户路由模块</code> ：</p> <div class="language- extra-class"><pre class="language-text"><code>// 导入并注册用户路由模块
+const userRouter = require('./router/user')
+app.use('/user', userRouter)
+</code></pre></div></li></ol> <h4 id="_1-6-抽离用户路由模块中的处理函数"><a href="#_1-6-抽离用户路由模块中的处理函数" class="header-anchor">#</a> 1.6 抽离用户路由模块中的处理函数</h4> <blockquote><p>目的：为了保证 <code>路由模块</code> 的纯粹性，所有的 <code>路由处理函数</code>，必须抽离到对应的 <code>路由处理函数模块</code> 中</p></blockquote> <ol><li><p>在 <code>/router_handler/user.js</code> 中，使用 <code>exports</code> 对象，分别向外共享如下两个 <code>路由处理函数</code> ：</p> <div class="language- extra-class"><pre class="language-text"><code>/**
+ * 在这里定义和用户相关的路由处理函数，供 /router/user.js 模块进行调用
+ */
+
+// 登录的处理函数
+exports.login = (req, res) =&gt; {
+  res.send('login OK')
+}
+</code></pre></div></li> <li><p>将 <code>/router/user.js</code> 中的代码修改为如下结构：</p> <div class="language- extra-class"><pre class="language-text"><code>const express = require('express')
+const router = express.Router()
+
+// 导入用户路由处理函数模块
+const userHandler = require('../router_handler/user')
+
+// 登录
+router.post('/login', userHandler.login)
+
+module.exports = router
+</code></pre></div></li></ol> <h4 id="_1-6-在-postman-中测试"><a href="#_1-6-在-postman-中测试" class="header-anchor">#</a> 1.6 在 postman 中测试</h4> <p>1.首先在终端中输入运行命令</p> <div class="language- extra-class"><pre class="language-text"><code>node app.js
+</code></pre></div><p>2.在 postman 中测试成功</p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a6620e4fd6ed420c8555b6ecd1e8813c~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <h2 id="参考"><a href="#参考" class="header-anchor">#</a> 参考</h2> <p><a href="https://juejin.cn/post/7069744005700911140#comment" target="_blank" rel="noopener noreferrer">一个基于 vite 构建的 vue3+pinia+ts+elementUI plus 的初始化开箱即用的项目模版<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blogs/blogs/vue3后台管理系统-数据库构建.html">
+          vue3后台管理系统-数据库构建🔥
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#前言" class="sidebar-link reco-side-前言" data-v-b57cc07c>前言</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#技术栈" class="sidebar-link reco-side-技术栈" data-v-b57cc07c>技术栈</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#前端" class="sidebar-link reco-side-前端" data-v-b57cc07c>前端</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#后端" class="sidebar-link reco-side-后端" data-v-b57cc07c>后端</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#前端项目构建" class="sidebar-link reco-side-前端项目构建" data-v-b57cc07c>前端项目构建</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#前端项目" class="sidebar-link reco-side-前端项目" data-v-b57cc07c>前端项目</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#安装系统所需依赖" class="sidebar-link reco-side-安装系统所需依赖" data-v-b57cc07c>安装系统所需依赖</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#后端项目" class="sidebar-link reco-side-后端项目" data-v-b57cc07c>后端项目</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#初始化" class="sidebar-link reco-side-初始化" data-v-b57cc07c>初始化</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#安装-express" class="sidebar-link reco-side-安装-express" data-v-b57cc07c>安装 express</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#_1-1-在根目录创建项目入口文件-app-js" class="sidebar-link reco-side-_1-1-在根目录创建项目入口文件-app-js" data-v-b57cc07c>1.1 在根目录创建项目入口文件 app.js</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#_1-3-配置解析表单数据的中间件" class="sidebar-link reco-side-_1-3-配置解析表单数据的中间件" data-v-b57cc07c>1.3 配置解析表单数据的中间件</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#_1-4-初始化路由相关的文件夹" class="sidebar-link reco-side-_1-4-初始化路由相关的文件夹" data-v-b57cc07c>1.4 初始化路由相关的文件夹</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#_1-5-初始化用户路由模块" class="sidebar-link reco-side-_1-5-初始化用户路由模块" data-v-b57cc07c>1.5 初始化用户路由模块</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#_1-6-抽离用户路由模块中的处理函数" class="sidebar-link reco-side-_1-6-抽离用户路由模块中的处理函数" data-v-b57cc07c>1.6 抽离用户路由模块中的处理函数</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#_1-6-在-postman-中测试" class="sidebar-link reco-side-_1-6-在-postman-中测试" data-v-b57cc07c>1.6 在 postman 中测试</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA.html#参考" class="sidebar-link reco-side-参考" data-v-b57cc07c>参考</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blogs/assets/js/app.18ea5a3b.js" defer></script><script src="/blogs/assets/js/3.7d50d3e1.js" defer></script><script src="/blogs/assets/js/1.6ae6daff.js" defer></script><script src="/blogs/assets/js/74.a95fc72d.js" defer></script>
+  </body>
+</html>

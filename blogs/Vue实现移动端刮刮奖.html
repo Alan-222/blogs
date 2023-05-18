@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue实现移动端刮刮奖 | 龙二不2的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="不要因为别人都在交卷自己就乱写答案">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.e5d12e82.css" as="style"><link rel="preload" href="/blogs/assets/js/app.18ea5a3b.js" as="script"><link rel="preload" href="/blogs/assets/js/3.7d50d3e1.js" as="script"><link rel="preload" href="/blogs/assets/js/1.6ae6daff.js" as="script"><link rel="preload" href="/blogs/assets/js/46.9ce22631.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.0c3919ea.js"><link rel="prefetch" href="/blogs/assets/js/11.69672944.js"><link rel="prefetch" href="/blogs/assets/js/12.282b391e.js"><link rel="prefetch" href="/blogs/assets/js/13.c8f09181.js"><link rel="prefetch" href="/blogs/assets/js/14.2b6f40c8.js"><link rel="prefetch" href="/blogs/assets/js/15.c3daa56f.js"><link rel="prefetch" href="/blogs/assets/js/16.bee8f531.js"><link rel="prefetch" href="/blogs/assets/js/17.0b7b9d39.js"><link rel="prefetch" href="/blogs/assets/js/18.527b463f.js"><link rel="prefetch" href="/blogs/assets/js/19.3508c473.js"><link rel="prefetch" href="/blogs/assets/js/20.a237ecd5.js"><link rel="prefetch" href="/blogs/assets/js/21.677b4b42.js"><link rel="prefetch" href="/blogs/assets/js/22.d09c4fb0.js"><link rel="prefetch" href="/blogs/assets/js/23.a0354e98.js"><link rel="prefetch" href="/blogs/assets/js/24.7fe498f7.js"><link rel="prefetch" href="/blogs/assets/js/25.736624c0.js"><link rel="prefetch" href="/blogs/assets/js/26.8ca64f53.js"><link rel="prefetch" href="/blogs/assets/js/27.cbfb5a89.js"><link rel="prefetch" href="/blogs/assets/js/28.55e3eeb6.js"><link rel="prefetch" href="/blogs/assets/js/29.cf694242.js"><link rel="prefetch" href="/blogs/assets/js/30.db96836a.js"><link rel="prefetch" href="/blogs/assets/js/31.b10a5c2e.js"><link rel="prefetch" href="/blogs/assets/js/32.adc65a78.js"><link rel="prefetch" href="/blogs/assets/js/33.eead35d2.js"><link rel="prefetch" href="/blogs/assets/js/34.58544962.js"><link rel="prefetch" href="/blogs/assets/js/35.99f45e43.js"><link rel="prefetch" href="/blogs/assets/js/36.0e4a76fd.js"><link rel="prefetch" href="/blogs/assets/js/37.c5d24eed.js"><link rel="prefetch" href="/blogs/assets/js/38.4cafbdd8.js"><link rel="prefetch" href="/blogs/assets/js/39.7bf5261c.js"><link rel="prefetch" href="/blogs/assets/js/4.76e26aa1.js"><link rel="prefetch" href="/blogs/assets/js/40.59c785e3.js"><link rel="prefetch" href="/blogs/assets/js/41.0e6560d2.js"><link rel="prefetch" href="/blogs/assets/js/42.ac0f867e.js"><link rel="prefetch" href="/blogs/assets/js/43.a4fe4c0f.js"><link rel="prefetch" href="/blogs/assets/js/44.c4dd0147.js"><link rel="prefetch" href="/blogs/assets/js/45.985876f4.js"><link rel="prefetch" href="/blogs/assets/js/47.f7bf4421.js"><link rel="prefetch" href="/blogs/assets/js/48.cde6da56.js"><link rel="prefetch" href="/blogs/assets/js/49.97b3b470.js"><link rel="prefetch" href="/blogs/assets/js/5.7576fc30.js"><link rel="prefetch" href="/blogs/assets/js/50.0cc7fad2.js"><link rel="prefetch" href="/blogs/assets/js/51.0b47ddd4.js"><link rel="prefetch" href="/blogs/assets/js/52.bd74072e.js"><link rel="prefetch" href="/blogs/assets/js/53.77a00e1c.js"><link rel="prefetch" href="/blogs/assets/js/54.cb61450d.js"><link rel="prefetch" href="/blogs/assets/js/55.167712fc.js"><link rel="prefetch" href="/blogs/assets/js/56.d15eafc6.js"><link rel="prefetch" href="/blogs/assets/js/57.3132179b.js"><link rel="prefetch" href="/blogs/assets/js/58.87a301ff.js"><link rel="prefetch" href="/blogs/assets/js/59.1fb35315.js"><link rel="prefetch" href="/blogs/assets/js/6.32f1aaf4.js"><link rel="prefetch" href="/blogs/assets/js/60.7ebb4f4e.js"><link rel="prefetch" href="/blogs/assets/js/61.fd9249b1.js"><link rel="prefetch" href="/blogs/assets/js/62.dd2cf210.js"><link rel="prefetch" href="/blogs/assets/js/63.1c2e83da.js"><link rel="prefetch" href="/blogs/assets/js/64.2efb6c79.js"><link rel="prefetch" href="/blogs/assets/js/65.8b8fce18.js"><link rel="prefetch" href="/blogs/assets/js/66.4ec75c2a.js"><link rel="prefetch" href="/blogs/assets/js/67.310e09c3.js"><link rel="prefetch" href="/blogs/assets/js/68.6edb369e.js"><link rel="prefetch" href="/blogs/assets/js/69.1529f340.js"><link rel="prefetch" href="/blogs/assets/js/7.385ed0df.js"><link rel="prefetch" href="/blogs/assets/js/70.9cdc0728.js"><link rel="prefetch" href="/blogs/assets/js/71.f282ac02.js"><link rel="prefetch" href="/blogs/assets/js/72.0a5ab34c.js"><link rel="prefetch" href="/blogs/assets/js/73.818436b6.js"><link rel="prefetch" href="/blogs/assets/js/74.a95fc72d.js"><link rel="prefetch" href="/blogs/assets/js/75.9f6d2b75.js"><link rel="prefetch" href="/blogs/assets/js/8.f0575d67.js"><link rel="prefetch" href="/blogs/assets/js/9.0f833a90.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.e5d12e82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>龙二不2的博客</h3> <p class="description" data-v-59e6cb88>不要因为别人都在交卷自己就乱写答案</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="/blogs/龙二.jpg" alt="龙二不2的博客" class="logo"> <span class="site-name">龙二不2的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <h3 class="name" data-v-1fad0c41>
+    龙二不2
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>65</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>8</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>Vue实现移动端刮刮奖</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">Vue实现移动端刮刮奖</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>龙二不2</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2022/11/3</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>vue</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>由于笔者项目的需要，必须要开发一个刮刮奖抽奖系统，但苦恼于如何实现。首先，在网上查询时看到了 canvas 标签的方法，但比较晦涩难懂。后来，在网上寻找到了一个 vue 的刮刮奖组件，相对比较好用，笔者在此教大家来安装使用。</p> <h2 id="原理"><a href="#原理" class="header-anchor">#</a> 原理</h2> <p>在介绍这个组件之前，先来简单描述一下刮刮奖实现的原理是什么。首先，我们先将其分为遮罩层和奖品层。原理就是像用橡皮擦擦掉遮罩层，把奖品层展示在下面。</p> <h2 id="实现"><a href="#实现" class="header-anchor">#</a> 实现</h2> <p>首先，引入组件</p> <p>1、使用 npm 下载安装插件</p> <div class="language- extra-class"><pre class="language-text"><code>npm install lzy-scratch-card --save
+</code></pre></div><p>2、在需要使用的页面引入组件</p> <div class="language- extra-class"><pre class="language-text"><code>//在需要的组件局部引入
+import scratchCard from 'lzy-scratch-card'
+​
+components: {
+    scratchCard
+},
+</code></pre></div><p>3.组件中使用</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;scratch-card
+            elementId=&quot;scratch&quot;
+            width=&quot;246px&quot;
+            height=&quot;102px&quot;
+            :moveRadius=&quot;15&quot;
+            :ratio=&quot;0.7&quot;
+            :startCallback=&quot;startCallback&quot;
+            :clearCallback=&quot;clearCallbackUp&quot;
+            :coverImg=&quot;require('../assets/overlay.png')&quot;
+            coverColor=&quot;#ff0000&quot;
+            :result=&quot;result&quot;
+            style=&quot;
+              position: absolute;
+              top: 51%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            &quot;
+          &gt;
+          &lt;/scratch-card&gt;
+&lt;/template&gt;
+​
+&lt;script&gt;
+import scratchCard from &quot;lzy-scratch-card&quot;;
+export default {
+   name:&quot;guaguajiang&quot;,
+   components:{
+       scratchCard
+   },
+   data () {
+       return {
+           prize,
+           result:
+        `&lt;div style=&quot; background-color: #FFE2B7;width: 246px;height: 102px; border-radius: 5px;text-align: center;&quot;&gt;&lt;div style=&quot;font-size: 17px;color:#FE3555;font-weight: Bold;padding-top: 24px;&quot;&gt;—— 恭喜获得 ——&lt;/div&gt;&lt;div style=&quot;  font-size: 14px;color: #333333;line-height: 21px;margin-top: 14px;&quot;&gt;${prize}&lt;span style=&quot;color:#FE3555&quot;&gt;扫码领5代金券&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;`,
+           //遮罩层下面的页面（html）注：以html标签字符串的样式写
+       }
+   },
+   methods: {
+     //开始刮时的回调函数
+    startCallback() {},
+     //刮刮乐刮层全部清除后的回调函数
+    clearCallback() {},
+   }
+}
+&lt;/script&gt;
+</code></pre></div><p>4.实现效果（奖品层也可以是图片）</p> <p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fb9378aee220497e9e35ac669a5b7224~tplv-k3u1fbpfcp-watermark.image?" alt="puk28-a28s1.gif"></p> <p>5.参数及其方法说明</p> <table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>默认值</th></tr></thead> <tbody><tr><td>elementId</td> <td>组件最外层 DOM 的 id 属性，区分单个页面多次使用刮刮乐</td> <td>String</td> <td>elementId</td></tr> <tr><td>width</td> <td>组件宽度</td> <td>String</td> <td>254px</td></tr> <tr><td>height</td> <td>组件高度</td> <td>String</td> <td>134px</td></tr> <tr><td>moveRadius</td> <td>刮卡范围</td> <td>Number</td> <td>15</td></tr> <tr><td>ratio</td> <td>要求刮掉的面积占比，达到这个占比后，将会自动把其余区域清除</td> <td>Number</td> <td>0.8</td></tr> <tr><td>coverColor</td> <td>刮刮乐遮罩颜色</td> <td>String</td> <td>#fff</td></tr> <tr><td>coverImg</td> <td>刮刮乐遮罩图片</td> <td>string(网络图片，设置这个后，coverColor 就不起作用了)</td> <td>-</td></tr> <tr><td>result</td> <td>中奖的结果</td> <td>string（最好用 html，用的时候更好控制结果显示</td> <td>-</td></tr></tbody></table> <table><thead><tr><th>方法</th> <th>说明</th> <th>类型</th></tr></thead> <tbody><tr><td>startCallback</td> <td>开始刮时的回调函数</td> <td>function</td></tr> <tr><td>clearCallback</td> <td>刮刮乐刮层全部清除后的回调函数</td> <td>function</td></tr></tbody></table> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>以上就是通过组件实现刮刮奖的方式，但通过组件终究没有理解其实现的原理，下期笔者将尝试用传统方式（canvas）来实现</p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/Vue%E5%AE%9E%E7%8E%B0%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%88%AE%E5%88%AE%E5%A5%96.html#前言" class="sidebar-link reco-side-前言" data-v-b57cc07c>前言</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/Vue%E5%AE%9E%E7%8E%B0%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%88%AE%E5%88%AE%E5%A5%96.html#原理" class="sidebar-link reco-side-原理" data-v-b57cc07c>原理</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/Vue%E5%AE%9E%E7%8E%B0%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%88%AE%E5%88%AE%E5%A5%96.html#实现" class="sidebar-link reco-side-实现" data-v-b57cc07c>实现</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/Vue%E5%AE%9E%E7%8E%B0%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%88%AE%E5%88%AE%E5%A5%96.html#总结" class="sidebar-link reco-side-总结" data-v-b57cc07c>总结</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blogs/assets/js/app.18ea5a3b.js" defer></script><script src="/blogs/assets/js/3.7d50d3e1.js" defer></script><script src="/blogs/assets/js/1.6ae6daff.js" defer></script><script src="/blogs/assets/js/46.9ce22631.js" defer></script>
+  </body>
+</html>

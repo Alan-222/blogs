@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3后台管理系统-登录接口（3）🔥 | 龙二不2的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="不要因为别人都在交卷自己就乱写答案">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.e5d12e82.css" as="style"><link rel="preload" href="/blogs/assets/js/app.18ea5a3b.js" as="script"><link rel="preload" href="/blogs/assets/js/3.7d50d3e1.js" as="script"><link rel="preload" href="/blogs/assets/js/1.6ae6daff.js" as="script"><link rel="preload" href="/blogs/assets/js/65.8b8fce18.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.0c3919ea.js"><link rel="prefetch" href="/blogs/assets/js/11.69672944.js"><link rel="prefetch" href="/blogs/assets/js/12.282b391e.js"><link rel="prefetch" href="/blogs/assets/js/13.c8f09181.js"><link rel="prefetch" href="/blogs/assets/js/14.2b6f40c8.js"><link rel="prefetch" href="/blogs/assets/js/15.c3daa56f.js"><link rel="prefetch" href="/blogs/assets/js/16.bee8f531.js"><link rel="prefetch" href="/blogs/assets/js/17.0b7b9d39.js"><link rel="prefetch" href="/blogs/assets/js/18.527b463f.js"><link rel="prefetch" href="/blogs/assets/js/19.3508c473.js"><link rel="prefetch" href="/blogs/assets/js/20.a237ecd5.js"><link rel="prefetch" href="/blogs/assets/js/21.677b4b42.js"><link rel="prefetch" href="/blogs/assets/js/22.d09c4fb0.js"><link rel="prefetch" href="/blogs/assets/js/23.a0354e98.js"><link rel="prefetch" href="/blogs/assets/js/24.7fe498f7.js"><link rel="prefetch" href="/blogs/assets/js/25.736624c0.js"><link rel="prefetch" href="/blogs/assets/js/26.8ca64f53.js"><link rel="prefetch" href="/blogs/assets/js/27.cbfb5a89.js"><link rel="prefetch" href="/blogs/assets/js/28.55e3eeb6.js"><link rel="prefetch" href="/blogs/assets/js/29.cf694242.js"><link rel="prefetch" href="/blogs/assets/js/30.db96836a.js"><link rel="prefetch" href="/blogs/assets/js/31.b10a5c2e.js"><link rel="prefetch" href="/blogs/assets/js/32.adc65a78.js"><link rel="prefetch" href="/blogs/assets/js/33.eead35d2.js"><link rel="prefetch" href="/blogs/assets/js/34.58544962.js"><link rel="prefetch" href="/blogs/assets/js/35.99f45e43.js"><link rel="prefetch" href="/blogs/assets/js/36.0e4a76fd.js"><link rel="prefetch" href="/blogs/assets/js/37.c5d24eed.js"><link rel="prefetch" href="/blogs/assets/js/38.4cafbdd8.js"><link rel="prefetch" href="/blogs/assets/js/39.7bf5261c.js"><link rel="prefetch" href="/blogs/assets/js/4.76e26aa1.js"><link rel="prefetch" href="/blogs/assets/js/40.59c785e3.js"><link rel="prefetch" href="/blogs/assets/js/41.0e6560d2.js"><link rel="prefetch" href="/blogs/assets/js/42.ac0f867e.js"><link rel="prefetch" href="/blogs/assets/js/43.a4fe4c0f.js"><link rel="prefetch" href="/blogs/assets/js/44.c4dd0147.js"><link rel="prefetch" href="/blogs/assets/js/45.985876f4.js"><link rel="prefetch" href="/blogs/assets/js/46.9ce22631.js"><link rel="prefetch" href="/blogs/assets/js/47.f7bf4421.js"><link rel="prefetch" href="/blogs/assets/js/48.cde6da56.js"><link rel="prefetch" href="/blogs/assets/js/49.97b3b470.js"><link rel="prefetch" href="/blogs/assets/js/5.7576fc30.js"><link rel="prefetch" href="/blogs/assets/js/50.0cc7fad2.js"><link rel="prefetch" href="/blogs/assets/js/51.0b47ddd4.js"><link rel="prefetch" href="/blogs/assets/js/52.bd74072e.js"><link rel="prefetch" href="/blogs/assets/js/53.77a00e1c.js"><link rel="prefetch" href="/blogs/assets/js/54.cb61450d.js"><link rel="prefetch" href="/blogs/assets/js/55.167712fc.js"><link rel="prefetch" href="/blogs/assets/js/56.d15eafc6.js"><link rel="prefetch" href="/blogs/assets/js/57.3132179b.js"><link rel="prefetch" href="/blogs/assets/js/58.87a301ff.js"><link rel="prefetch" href="/blogs/assets/js/59.1fb35315.js"><link rel="prefetch" href="/blogs/assets/js/6.32f1aaf4.js"><link rel="prefetch" href="/blogs/assets/js/60.7ebb4f4e.js"><link rel="prefetch" href="/blogs/assets/js/61.fd9249b1.js"><link rel="prefetch" href="/blogs/assets/js/62.dd2cf210.js"><link rel="prefetch" href="/blogs/assets/js/63.1c2e83da.js"><link rel="prefetch" href="/blogs/assets/js/64.2efb6c79.js"><link rel="prefetch" href="/blogs/assets/js/66.4ec75c2a.js"><link rel="prefetch" href="/blogs/assets/js/67.310e09c3.js"><link rel="prefetch" href="/blogs/assets/js/68.6edb369e.js"><link rel="prefetch" href="/blogs/assets/js/69.1529f340.js"><link rel="prefetch" href="/blogs/assets/js/7.385ed0df.js"><link rel="prefetch" href="/blogs/assets/js/70.9cdc0728.js"><link rel="prefetch" href="/blogs/assets/js/71.f282ac02.js"><link rel="prefetch" href="/blogs/assets/js/72.0a5ab34c.js"><link rel="prefetch" href="/blogs/assets/js/73.818436b6.js"><link rel="prefetch" href="/blogs/assets/js/74.a95fc72d.js"><link rel="prefetch" href="/blogs/assets/js/75.9f6d2b75.js"><link rel="prefetch" href="/blogs/assets/js/8.f0575d67.js"><link rel="prefetch" href="/blogs/assets/js/9.0f833a90.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.e5d12e82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>龙二不2的博客</h3> <p class="description" data-v-59e6cb88>不要因为别人都在交卷自己就乱写答案</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="/blogs/龙二.jpg" alt="龙二不2的博客" class="logo"> <span class="site-name">龙二不2的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <h3 class="name" data-v-1fad0c41>
+    龙二不2
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>65</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>8</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>vue3后台管理系统-登录接口（3）🔥</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">vue3后台管理系统-登录接口（3）🔥</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>龙二不2</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/1/5</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>vue3</span><span class="tag-item" data-v-8a445198>ts</span><span class="tag-item" data-v-8a445198>node.js</span><span class="tag-item" data-v-8a445198>vue3后台管理系统</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>上文我们完成了添加用户的接口，本文我们继续来完成登录接口。要完成登录接口，首先还要三个步骤。</p> <ol><li>前端获取登录验证码接口（新的接口）</li> <li>验证登录用户信息（用户名、帐户、密码、uuid（验证验证码唯一字段））</li> <li>判断用户名是否存在、账号是否停用</li></ol> <blockquote><p>uuid 为前端传来的验证图片验证码的唯一字段。前端获取验证码时用 uuid 获取验证码后端返回验证码并将 uuid 及验证码通过 key，value 的形式存在 redis 数据库，然后再将此 uuid 传给登录接口就可进行验证码的验证</p></blockquote> <h2 id="获取登录验证码"><a href="#获取登录验证码" class="header-anchor">#</a> 获取登录验证码</h2> <h3 id="添加路由"><a href="#添加路由" class="header-anchor">#</a> 添加路由</h3> <p><strong>router/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>// 获取图形验证码
+router.get('/checkCode', userHandler.getCheckCode);
+</code></pre></div><h3 id="添加路由回调函数"><a href="#添加路由回调函数" class="header-anchor">#</a> 添加路由回调函数</h3> <p>我们是采用<code>svg-captcha</code>这个库完成验证码的生成。然后通过<code>redis</code>存下验证码信息。例如<code>{1665656556：axud}</code>。所以我们先引入<code>svg-captcha</code>、<code>redis</code></p> <p><strong>router_handler/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>// 引入生成图形验证码库
+const svgCaptcha=require('svg-captcha')
+// 引入封装好的redis
+const redis = require('../utils/redis.js');
+</code></pre></div><p>然后生成验证码，验证码信息用一定时间缓存入<code>redis</code></p> <div class="language- extra-class"><pre class="language-text"><code>/**
+ * 获取图形验证码
+ */
+exports.getCheckCode = (req, res) =&gt; {
+ // 生成验证码，获取catcha，有{data,text}两个属性，data为svg格式图片、text为验证码
+  const captcha = svgCaptcha.create({
+    size: 4,
+    ignoreChars: '0o1l',
+    color: true,
+    noise: 6,
+    background: '#cc9966',
+    height: 32,
+    width: 100
+  });
+  // 测试
+  console.log(captcha)
+  // 验证码键和缓存时间
+  const uuid = req.query.uuid;
+  const effectTime = 10 * 60;
+  // 存入redis
+  redis
+    .setKey(uuid, captcha.text.toLowerCase(), effectTime)
+    .then((result) =&gt; {
+      if (result) {
+        res.setHeader('Content-Type', 'image/svg+xml;charset=utf-8');
+        res.send({
+          code: 0,
+          message: '获取验证码成功',
+          data: captcha.data
+        });
+      }
+    })
+    .catch((err) =&gt; {
+      console.log(err);
+      return res.send({
+        code: 1,
+        message: '验证码获取失败',
+        data: null
+      });
+    });
+};
+</code></pre></div><h2 id="验证用户信息"><a href="#验证用户信息" class="header-anchor">#</a> 验证用户信息</h2> <p>我们还是跟添加用户接口一样，使用<code>joi</code>添加对应需要验证的字段规则。</p> <p><strong>schema/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>// 用户名的校验规则
+const username = joi.string().alphanum().min(1).max(10).required();
+// 密码的验证规则
+const password = joi
+  .string()
+  .pattern(/^[\S]{6,12}$/)
+  .required();
+const checkCode = joi.string().alphanum().min(4).max(4).required();
+const uuid = joi.number().required();
+​
+// 登录表单的验证规则对象
+exports.user_login_schema = joi.object().keys({
+  username,
+  password,
+  checkCode,
+  uuid
+});
+</code></pre></div><p>然后在路由的回调函数中进行验证</p> <p><strong>router_handler/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>// 登录路由的处理函数
+exports.login = (req, res) =&gt; {
+// 验证入参，错误时抛出以捕获
+const { error, value } = user_login_schema.validate(req.body);
+if (error) {
+  throw error;
+ }
+ // 验证验证码
+  const {username,password,checkCode,uuid}=value
+  const captcha = await redis.getKey(uuid);
+  if (!captcha) {
+    return res.send({
+      code: 1,
+      message: '图形验证码已过期，请点击图片刷新'
+    });
+  }
+  if (checkCode.toLowerCase() !== captcha.toLowerCase()) {
+    return res.send({
+      code: 1,
+      message: '图形验证码不正确，请重新输入'
+    });
+  }
+}）
+</code></pre></div><h2 id="测试"><a href="#测试" class="header-anchor">#</a> 测试</h2> <p>1.获取验证码</p> <p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6587e74ece474e588958ecb33ea624cd~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>如果出现这个就说明成功了（因为我们接口返回的是 svg 格式图片，出现这个可能是 postman 无法识别 svg 格式）</p> <p>我们可以看控制台打印的信息和 redis 数据库，发现是成功的</p> <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/686d2e4d3c994508901dd97b45faac96~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bdd626c9cc53466bbf67c03e69d78b7e~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"> 2.登录接口测试</p> <p>我们用刚才的 uuid 和验证码进行登录</p> <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/83f05b587136466586c1b567977c7c7d~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>出现这个就说明成功了（由于本文篇幅原因，我们还没有验证用户名是否存在、可用，然后用<code>res.send</code>返回信息，没有返回信息的话，它就会一直请求）</p> <p>我们用错误的验证码再来试试</p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/49872e3c964844afa6e1d69446b6d8a8~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>发现验证码验证模块成功。下文我们将会完成登录接口。</p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blogs/blogs/vue3后台管理系统-登录接口（2）.html" class="prev">
+          vue3后台管理系统-登录接口（2）🔥
+        </a></span> <span class="next"><a href="/blogs/blogs/vue3后台管理系统-登录接口（4）.html">
+          vue3后台管理系统-登录接口（4）🔥
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%99%BB%E5%BD%95%E6%8E%A5%E5%8F%A3%EF%BC%883%EF%BC%89.html#前言" class="sidebar-link reco-side-前言" data-v-b57cc07c>前言</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%99%BB%E5%BD%95%E6%8E%A5%E5%8F%A3%EF%BC%883%EF%BC%89.html#获取登录验证码" class="sidebar-link reco-side-获取登录验证码" data-v-b57cc07c>获取登录验证码</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%99%BB%E5%BD%95%E6%8E%A5%E5%8F%A3%EF%BC%883%EF%BC%89.html#添加路由" class="sidebar-link reco-side-添加路由" data-v-b57cc07c>添加路由</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%99%BB%E5%BD%95%E6%8E%A5%E5%8F%A3%EF%BC%883%EF%BC%89.html#添加路由回调函数" class="sidebar-link reco-side-添加路由回调函数" data-v-b57cc07c>添加路由回调函数</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%99%BB%E5%BD%95%E6%8E%A5%E5%8F%A3%EF%BC%883%EF%BC%89.html#验证用户信息" class="sidebar-link reco-side-验证用户信息" data-v-b57cc07c>验证用户信息</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%99%BB%E5%BD%95%E6%8E%A5%E5%8F%A3%EF%BC%883%EF%BC%89.html#测试" class="sidebar-link reco-side-测试" data-v-b57cc07c>测试</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blogs/assets/js/app.18ea5a3b.js" defer></script><script src="/blogs/assets/js/3.7d50d3e1.js" defer></script><script src="/blogs/assets/js/1.6ae6daff.js" defer></script><script src="/blogs/assets/js/65.8b8fce18.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3后台管理系统-用户管理页面🔥 | 龙二不2的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="不要因为别人都在交卷自己就乱写答案">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.e5d12e82.css" as="style"><link rel="preload" href="/blogs/assets/js/app.18ea5a3b.js" as="script"><link rel="preload" href="/blogs/assets/js/3.7d50d3e1.js" as="script"><link rel="preload" href="/blogs/assets/js/1.6ae6daff.js" as="script"><link rel="preload" href="/blogs/assets/js/62.dd2cf210.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.0c3919ea.js"><link rel="prefetch" href="/blogs/assets/js/11.69672944.js"><link rel="prefetch" href="/blogs/assets/js/12.282b391e.js"><link rel="prefetch" href="/blogs/assets/js/13.c8f09181.js"><link rel="prefetch" href="/blogs/assets/js/14.2b6f40c8.js"><link rel="prefetch" href="/blogs/assets/js/15.c3daa56f.js"><link rel="prefetch" href="/blogs/assets/js/16.bee8f531.js"><link rel="prefetch" href="/blogs/assets/js/17.0b7b9d39.js"><link rel="prefetch" href="/blogs/assets/js/18.527b463f.js"><link rel="prefetch" href="/blogs/assets/js/19.3508c473.js"><link rel="prefetch" href="/blogs/assets/js/20.a237ecd5.js"><link rel="prefetch" href="/blogs/assets/js/21.677b4b42.js"><link rel="prefetch" href="/blogs/assets/js/22.d09c4fb0.js"><link rel="prefetch" href="/blogs/assets/js/23.a0354e98.js"><link rel="prefetch" href="/blogs/assets/js/24.7fe498f7.js"><link rel="prefetch" href="/blogs/assets/js/25.736624c0.js"><link rel="prefetch" href="/blogs/assets/js/26.8ca64f53.js"><link rel="prefetch" href="/blogs/assets/js/27.cbfb5a89.js"><link rel="prefetch" href="/blogs/assets/js/28.55e3eeb6.js"><link rel="prefetch" href="/blogs/assets/js/29.cf694242.js"><link rel="prefetch" href="/blogs/assets/js/30.db96836a.js"><link rel="prefetch" href="/blogs/assets/js/31.b10a5c2e.js"><link rel="prefetch" href="/blogs/assets/js/32.adc65a78.js"><link rel="prefetch" href="/blogs/assets/js/33.eead35d2.js"><link rel="prefetch" href="/blogs/assets/js/34.58544962.js"><link rel="prefetch" href="/blogs/assets/js/35.99f45e43.js"><link rel="prefetch" href="/blogs/assets/js/36.0e4a76fd.js"><link rel="prefetch" href="/blogs/assets/js/37.c5d24eed.js"><link rel="prefetch" href="/blogs/assets/js/38.4cafbdd8.js"><link rel="prefetch" href="/blogs/assets/js/39.7bf5261c.js"><link rel="prefetch" href="/blogs/assets/js/4.76e26aa1.js"><link rel="prefetch" href="/blogs/assets/js/40.59c785e3.js"><link rel="prefetch" href="/blogs/assets/js/41.0e6560d2.js"><link rel="prefetch" href="/blogs/assets/js/42.ac0f867e.js"><link rel="prefetch" href="/blogs/assets/js/43.a4fe4c0f.js"><link rel="prefetch" href="/blogs/assets/js/44.c4dd0147.js"><link rel="prefetch" href="/blogs/assets/js/45.985876f4.js"><link rel="prefetch" href="/blogs/assets/js/46.9ce22631.js"><link rel="prefetch" href="/blogs/assets/js/47.f7bf4421.js"><link rel="prefetch" href="/blogs/assets/js/48.cde6da56.js"><link rel="prefetch" href="/blogs/assets/js/49.97b3b470.js"><link rel="prefetch" href="/blogs/assets/js/5.7576fc30.js"><link rel="prefetch" href="/blogs/assets/js/50.0cc7fad2.js"><link rel="prefetch" href="/blogs/assets/js/51.0b47ddd4.js"><link rel="prefetch" href="/blogs/assets/js/52.bd74072e.js"><link rel="prefetch" href="/blogs/assets/js/53.77a00e1c.js"><link rel="prefetch" href="/blogs/assets/js/54.cb61450d.js"><link rel="prefetch" href="/blogs/assets/js/55.167712fc.js"><link rel="prefetch" href="/blogs/assets/js/56.d15eafc6.js"><link rel="prefetch" href="/blogs/assets/js/57.3132179b.js"><link rel="prefetch" href="/blogs/assets/js/58.87a301ff.js"><link rel="prefetch" href="/blogs/assets/js/59.1fb35315.js"><link rel="prefetch" href="/blogs/assets/js/6.32f1aaf4.js"><link rel="prefetch" href="/blogs/assets/js/60.7ebb4f4e.js"><link rel="prefetch" href="/blogs/assets/js/61.fd9249b1.js"><link rel="prefetch" href="/blogs/assets/js/63.1c2e83da.js"><link rel="prefetch" href="/blogs/assets/js/64.2efb6c79.js"><link rel="prefetch" href="/blogs/assets/js/65.8b8fce18.js"><link rel="prefetch" href="/blogs/assets/js/66.4ec75c2a.js"><link rel="prefetch" href="/blogs/assets/js/67.310e09c3.js"><link rel="prefetch" href="/blogs/assets/js/68.6edb369e.js"><link rel="prefetch" href="/blogs/assets/js/69.1529f340.js"><link rel="prefetch" href="/blogs/assets/js/7.385ed0df.js"><link rel="prefetch" href="/blogs/assets/js/70.9cdc0728.js"><link rel="prefetch" href="/blogs/assets/js/71.f282ac02.js"><link rel="prefetch" href="/blogs/assets/js/72.0a5ab34c.js"><link rel="prefetch" href="/blogs/assets/js/73.818436b6.js"><link rel="prefetch" href="/blogs/assets/js/74.a95fc72d.js"><link rel="prefetch" href="/blogs/assets/js/75.9f6d2b75.js"><link rel="prefetch" href="/blogs/assets/js/8.f0575d67.js"><link rel="prefetch" href="/blogs/assets/js/9.0f833a90.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.e5d12e82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>龙二不2的博客</h3> <p class="description" data-v-59e6cb88>不要因为别人都在交卷自己就乱写答案</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="/blogs/龙二.jpg" alt="龙二不2的博客" class="logo"> <span class="site-name">龙二不2的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <h3 class="name" data-v-1fad0c41>
+    龙二不2
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>65</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>8</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>vue3后台管理系统-用户管理页面🔥</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">vue3后台管理系统-用户管理页面🔥</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>龙二不2</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/1/21</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>vue3</span><span class="tag-item" data-v-8a445198>ts</span><span class="tag-item" data-v-8a445198>node.js</span><span class="tag-item" data-v-8a445198>vue3后台管理系统</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>已经实现了登录模块（图形验证码、获取 token...）和 layout 模块，vuex（持久化用户信息）和 router（根据权限获取路由列表）模块也已经封装完毕。接下来就可以开始页面组件的开发，主要有用户管理、角色管理和菜单管理这三个后台管理系统中通用的模块，其余的模块大家感兴趣可以自行扩展。</p> <h2 id="后端获取分页列表的-bug"><a href="#后端获取分页列表的-bug" class="header-anchor">#</a> 后端获取分页列表的 bug</h2> <p>在调试的时候发现，发现后端分页的时候 count 数目错误。大概就是<code>sequelize</code>在<code>findAndCountAll</code>带 include 配置项的时候会加上 include 所带模型的 count，也就是它查了一个表的数量又带上另一个表的数量。解决方法就是在有<code>findAndCountAll</code>方法并且带<code>include</code>配置项中加入<code>distinct:true</code>去重</p> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fcb12a78533644a0bf271443086d9e80~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <h2 id="用户管理"><a href="#用户管理" class="header-anchor">#</a> 用户管理</h2> <p>用户管理页面主要分以下几个功能</p> <ul><li>分页获取用户列表</li> <li>对用户进行增删改查</li> <li>控制不同角色的权限按钮的显隐</li></ul> <h3 id="控制不同角色的权限按钮的显隐"><a href="#控制不同角色的权限按钮的显隐" class="header-anchor">#</a> 控制不同角色的权限按钮的显隐</h3> <p>我们先来完成第三个功能，要完成按钮的显隐我们第一个想到的就是在 button 标签中加入<code>v-show</code>或者<code>v-if</code>，但这两个指令没有办法很容易对用户的角色是否拥有此按钮进行判断，所以我们自己定义一个指令来完成这个工作。</p> <p>我们先在 src 目录下建立一个 directive 目录来存放我们的自定义指令，然后建立文件夹 permission 来存放我们的控制权限按钮显隐的指令，再建立一个主文件导出所有指令方法，目录结构如下。</p> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/714686db9d534971b05b3f3e8f24acdb~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>我们首先思考若有指令我们传的应该是<strong>权限标识</strong>字段（按钮的唯一标识），形如<code>v-hasPerm=&quot;system:user:Add&quot;</code>，这样指令方法接收到<strong>权限标识</strong>到用户的权限按钮列表中遍历查找，若有返回 true 按钮显示，若无则移除按钮，我们来实现此方法。</p> <p><strong>directive/permission/index.ts</strong></p> <div class="language- extra-class"><pre class="language-text"><code>import { store } from '@/store';
+import { Directive, DirectiveBinding } from 'vue';
+​
+/**
+ * 按钮权限校验
+ */
+export const hasPerm: Directive = {
+  mounted(el: HTMLElement, binding: DirectiveBinding) {
+    // 「超级管理员」拥有所有的按钮权限
+    const roles = store.state.user.roles;
+    if (roles.includes('管理员')) {
+      return true;
+    }
+    // 「其他角色」按钮权限校验
+    const { value } = binding;
+    if (value) {
+      const requiredPerms = value; // DOM绑定需要的按钮权限标识，例如system:user:add
+      // 判断vuex的buttons中是否存在传入的权限标识
+      const hasPerm = store.state.user.buttons?.some((button: string) =&gt; {
+        return requiredPerms.includes(button);
+      });
+      // 不存在，从DOM结构中移除这个按钮
+      if (!hasPerm) {
+        el.parentNode &amp;&amp; el.parentNode.removeChild(el);
+      }
+    } else {
+      throw new Error('需要权限!&quot;');
+    }
+  }
+};
+</code></pre></div><p><strong>directive/index.ts</strong></p> <div class="language- extra-class"><pre class="language-text"><code>export { hasPerm } from './permission';
+</code></pre></div><p>然后在<code>main.ts</code>中注册指令</p> <p><strong>main.ts</strong></p> <div class="language- extra-class"><pre class="language-text"><code>import { createApp, Directive } from 'vue';
+...
+// 导入自定义指令
+import * as directive from '@/directive';
+Object.keys(directive).forEach((key) =&gt; {
+  app.directive(key, (directive as { [key: string]: Directive })[key]);
+});
+</code></pre></div><p>但暂时我们还没有添加权限按钮，我们稍后添加后再来实际使用</p> <h3 id="分页获取用户列表"><a href="#分页获取用户列表" class="header-anchor">#</a> 分页获取用户列表</h3> <p>分页列表用的是<code>element-plus</code>的组件<code>el-pagination</code>，给它传递两个值<code>pageSize</code>（每页数量）、<code>currentPage</code>（当前页）。再传递两个方法，一是当每页数量变化的时候的方法，这时我们将上面传递的<code>pageSize</code>传给此方法，然后重新获取列表。而是当前页变化时候的方法，与第一个方法同样做法。</p> <p><strong>views/system/user.vue</strong></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;el-pagination v-model:currentPage=&quot;queryParams.currentPage&quot; v-model:page-size=&quot;queryParams.pageSize&quot;
+  :page-sizes=&quot;[1, 3, 5, 10]&quot; layout=&quot;total, sizes, prev, pager, next, jumper&quot; :total=&quot;userTotal&quot;
+  @size-change=&quot;handleSizeChange&quot; @current-change=&quot;handleCurrentChange&quot; style=&quot;margin-top: 20px;&quot; /&gt;
+ ...
+ &lt;script lang=&quot;ts&quot; setup&gt;
+ // 分页参数
+const queryParams = reactive&lt;userQueryParams&gt;({
+  currentPage: 1,    // 当前页
+  pageSize: 10,       // 每页条数
+  username: undefined,
+  status: undefined
+})
+const queryFormRef = ref&lt;FormInstance&gt;()
+let userTotal = ref(0) // 数据总条数
+// 按照分页显示数据的函数
+const getListUser = () =&gt; {
+  loading.value = true
+  // 发送ajax请求 把分页数据发送给后端
+  listUser(queryParams)
+    .then(res =&gt; {
+      console.log(res);
+      // 接收后端返回的数据总条数 total 和 对应页码的数据 data
+      let { count, rows } = res.data;
+      // 赋值给对应的变量即可
+      userTotal.value = count;
+      tableData.data = rows;
+      // 如果当前页没有数据 且 排除第一页
+      if (!rows.length &amp;&amp; queryParams.currentPage !== 1) {
+        // 页码减去 1
+        queryParams.currentPage -= 1;
+        // 再调用自己
+        getListUser();
+      }
+    })
+    .finally(() =&gt; {
+      loading.value = false
+    })
+}
+// 每页显示条数改变 就会触发这个函数
+const handleSizeChange = (val: number) =&gt; {
+  // 保存每页显示的条数
+  queryParams.pageSize = val;
+  queryParams.currentPage = 1;
+  // 调用分页函数
+  getListUser();
+}
+// 当前页码改变 就会触发这个函数
+const handleCurrentChange = (val: number) =&gt; {
+  // 保存当前页码
+  queryParams.currentPage = val;
+  // 调用分页函数
+  getListUser();
+}
+ &lt;/script&gt;
+</code></pre></div><h4 id="显示效果"><a href="#显示效果" class="header-anchor">#</a> 显示效果</h4> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3e779affeb25478292e674e1f7a7ef19~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <h3 id="对用户进行增删改查"><a href="#对用户进行增删改查" class="header-anchor">#</a> 对用户进行增删改查</h3> <p>增改的功能需要弹窗与表单进行操作。而查只需要传递对应查询参数给分页函数即可，删只需要传递删除 id 或数组去调用接口方法，在此不再多做赘述。</p> <p>增加和修改我们放在同一个弹窗当中，但<strong>点击新增（不带用户 id）</strong> 时我们展示空表单并在点击提交时调用新增用户的方法。而<strong>点击修改或重置密码</strong>我们<strong>传递</strong>一个<strong>用户 id</strong>，然后通过 action 字段来区分操作，然后传 id 时获取该 id 的用户数据传递给表单对象渲染上去，用户就可对其进行修改，并提交调用修改用户方法。有<strong>action 字段</strong>例如为<code>edit-pwd</code>就将表单显示为重置密码表单。</p> <h4 id="新增弹窗"><a href="#新增弹窗" class="header-anchor">#</a> 新增弹窗</h4> <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b65370f9fe0a4095bcbef8f441aab1c8~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="50%"> <h4 id="修改弹窗"><a href="#修改弹窗" class="header-anchor">#</a> 修改弹窗</h4> <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c260d820fa43442db93c105480355700~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="50%"> <h4 id="重置密码弹窗"><a href="#重置密码弹窗" class="header-anchor">#</a> 重置密码弹窗</h4> <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0960843e42b34b8c83ed2171ff76fc3c~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="50%"> <p><strong>views/system/user.vue</strong></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;el-dialog v-model=&quot;dialogFormVisible&quot; :title=&quot;title&quot; width=&quot;25%&quot;&gt;
+  &lt;!-- 新增及编辑弹窗表单 --&gt;
+  &lt;el-form :model=&quot;form&quot; ref=&quot;editFormRef&quot; :rules=&quot;rules&quot; label-width=&quot;6em&quot;&gt;
+    &lt;el-form-item v-if=&quot;form.action !== 'edit-pwd'&quot; label=&quot;用户帐号&quot; prop=&quot;username&quot;&gt;
+      &lt;el-input v-model=&quot;form.username&quot; placeholder=&quot;请输入帐号&quot; /&gt;
+    &lt;/el-form-item&gt;
+    &lt;el-form-item v-if=&quot;form.action === 'edit-pwd'&quot; label=&quot;原密码&quot; prop=&quot;old_password&quot;&gt;
+      &lt;el-input v-model=&quot;form.old_password&quot; type=&quot;password&quot; placeholder=&quot;请输入原用户密码&quot; /&gt;
+    &lt;/el-form-item&gt;
+    &lt;el-form-item v-if=&quot;!form.user_id || form.action === 'edit-pwd'&quot; label=&quot;用户密码&quot; prop=&quot;password&quot;&gt;
+      &lt;el-input v-model=&quot;form.password&quot; type=&quot;password&quot; placeholder=&quot;请输入用户密码&quot; /&gt;
+    &lt;/el-form-item&gt;
+    &lt;el-form-item v-if=&quot;!form.user_id || form.action === 'edit-pwd'&quot; label=&quot;确认密码&quot; prop=&quot;repassword&quot;&gt;
+      &lt;el-input v-model=&quot;form.repassword&quot; type=&quot;password&quot; placeholder=&quot;请再次输入用户密码&quot; /&gt;
+    &lt;/el-form-item&gt;
+    &lt;el-form-item v-if=&quot;form.action !== 'edit-pwd'&quot; label=&quot;角色&quot; prop=&quot;role_ids&quot;&gt;
+      &lt;el-select v-model=&quot;form.role_ids&quot; multiple placeholder=&quot;请选择角色&quot;&gt;
+        &lt;el-option v-for=&quot;item in roles&quot; :key=&quot;item.role_id&quot; :label=&quot;item.role_name&quot; :value=&quot;item.role_id&quot; /&gt;
+      &lt;/el-select&gt;
+    &lt;/el-form-item&gt;
+    &lt;el-form-item v-if=&quot;form.action !== 'edit-pwd'&quot; label=&quot;状态&quot; prop=&quot;status&quot;&gt;
+      &lt;el-radio-group v-model=&quot;form.status&quot;&gt;
+        &lt;el-radio :label=&quot;1&quot;&gt;开启&lt;/el-radio&gt;
+        &lt;el-radio :label=&quot;0&quot;&gt;停用&lt;/el-radio&gt;
+      &lt;/el-radio-group&gt;
+    &lt;/el-form-item&gt;
+  &lt;/el-form&gt;
+  &lt;div slot=&quot;footer&quot; class=&quot;dialog-footer&quot;&gt;
+    &lt;el-button @click=&quot;dialogClose(editFormRef)&quot;&gt;取消&lt;/el-button&gt;
+    &lt;el-button type=&quot;primary&quot; @click=&quot;submitForm(editFormRef)&quot; :loading=&quot;buttonLoading&quot;&gt;保存
+    &lt;/el-button&gt;
+  &lt;/div&gt;
+&lt;/el-dialog&gt;
+​
+&lt;script lang=&quot;ts&quot; setup&gt;
+/**
+ * 新增编辑及修改密码弹窗
+ */
+// 新增编辑及修改密码弹窗变量及方法
+let title = ref('')
+let dialogFormVisible = ref(false)
+const editFormRef = ref&lt;FormInstance&gt;()
+// 表单校验
+// 验证密码
+const validateOldPwd = (rule: any, value: any, callback: any) =&gt; {
+  if (value === '') {
+    callback(new Error('请输入原密码'))
+  } else if (value.length &lt; 6) {
+    callback(new Error('密码长度不能小于6'))
+  } else {
+    callback()
+  }
+}
+// 验证密码
+const validatePwd = (rule: any, value: any, callback: any) =&gt; {
+  if (value === '') {
+    callback(new Error('请输入密码'))
+  } else if (value.length &lt; 6) {
+    callback(new Error('密码长度不能小于6'))
+  } else {
+    callback()
+  }
+}
+// 二次验证密码
+const validateRePwd = (rule: any, value: any, callback: any) =&gt; {
+  if (value === '') {
+    callback(new Error('请再次输入密码'))
+  } else if (value !== form.password) {
+    callback(new Error('两次输入密码不一致!'))
+  } else {
+    callback()
+  }
+}
+const rules = reactive({
+  username: [
+    { required: true, message: '帐号不能为空', trigger: 'blur' },
+    { min: 3, max: 12, message: '帐号长度3-12之内', trigger: 'blur' },
+    { pattern: /^[a-zA-Z0-9]+$/, message: '帐号只能字母数字组成', trigger: 'blur' }
+  ],
+  role_ids: [
+    { required: true, message: '请选择角色', trigger: 'change', type: 'array' }
+  ],
+  old_password: [{ validator: validateOldPwd, trigger: 'blur' }],
+  password: [{ validator: validatePwd, trigger: 'blur' }],
+  repassword: [{ validator: validateRePwd, trigger: 'blur' }]
+})
+// 弹窗表单对象
+const form = reactive&lt;userEditForm&gt;({
+  user_id: 0,
+  action: '',
+  username: '',
+  old_password: '',
+  password: '',
+  repassword: '',
+  status: 0,
+  role_ids: []
+})
+const roles = ref([] as RoleItem[])
+const buttonLoading = ref(false)
+const getRoles = () =&gt; {
+  allRole().then(res =&gt; {
+    roles.value = res.data
+  })
+}
+// 将form对象初始化
+const reset = () =&gt; {
+  form.user_id = 0
+  form.action = ''
+  form.username = ''
+  form.old_password = ''
+  form.password = ''
+  form.repassword = ''
+  form.status = 0
+  form.role_ids = []
+}
+// 重置表单方法
+const resetQuery = (formEl: FormInstance | undefined) =&gt; {
+  queryParams.username = undefined
+  queryParams.status = undefined
+  formEl?.resetFields()
+  getListUser();
+}
+const dialogClose = (formEl: FormInstance | undefined) =&gt; {
+  dialogFormVisible.value = false
+  formEl?.resetFields()
+  reset()
+}
+// 点击新增，重置表单并显示
+const handleAdd = () =&gt; {
+  title.value = &quot;添加用户&quot;
+  reset()
+  dialogFormVisible.value = true
+}
+// 点击重置密码：根据id获取用户数据并传递action字段
+const handleReset = (user_id: number) =&gt; {
+  loading.value = true
+  reset()
+  getUserInfoById(user_id).then(res =&gt; {
+    loading.value = false
+    form.user_id = res.data.user_id
+    form.action = &quot;edit-pwd&quot;
+    dialogFormVisible.value = true
+    title.value = &quot;重置密码&quot;
+  })
+}
+// 点击编辑按钮：清空表单，根据id获取用户数据
+const handleEdit = (user_id: number) =&gt; {
+  loading.value = true
+  reset()
+  getUserInfoById(user_id).then(res =&gt; {
+    loading.value = false
+    form.user_id = res.data.user_id
+    form.username = res.data.username
+    form.status = res.data.status
+    form.role_ids = res.data.roles.map((item: RoleItem) =&gt; {
+      if (item.role_id) {
+        return item.role_id
+      }
+    })
+    dialogFormVisible.value = true
+    title.value = &quot;编辑用户信息&quot;
+  })
+}
+// 当用户修改自己的密码需要重新登录
+const reLogin = () =&gt; {
+  ElMessageBox.confirm('修改成功，请重新登录', '重新登录', {
+    confirmButtonText: '重新登录',
+    cancelButtonText: '取消',
+    type: 'warning'
+  }).finally(() =&gt; {
+    store.dispatch('user/resetToken').then(() =&gt; {
+      location.reload()
+    })
+  })
+}
+// 提交表单，根据action字段和id字段调用对应方法
+const submitForm = (formEl: FormInstance | undefined) =&gt; {
+  if (!formEl) return
+  formEl.validate((valid, fields) =&gt; {
+    if (valid) {
+      buttonLoading.value = true
+      if (form.action === 'edit-pwd') {
+        updatePwd({ user_id: form.user_id, old_password: form.old_password, password: form.password, repassword: form.repassword }).then(res =&gt; {
+          console.log(form.user_id, store.state.user.user_id);
+​
+          if (form.user_id === store.state.user.user_id) {
+            reLogin()
+          }
+          ElMessage.success(&quot;重置密码成功&quot;)
+          dialogClose(editFormRef.value)
+          // 重新获取表格数据
+          getListUser()
+        })
+          .finally(() =&gt; {
+            buttonLoading.value = false
+          })
+        return false;
+      }
+      if (form.user_id) {
+        updateUser(form)
+          .then((res) =&gt; {
+            ElMessage.success('修改用户成功')
+            // 关闭弹窗
+            dialogClose(editFormRef.value)
+            // 重新获取表格数据
+            getListUser()
+          })
+          .finally(() =&gt; {
+            buttonLoading.value = false
+          })
+      } else {
+        addUser(form)
+          .then((res) =&gt; {
+            ElMessage.success('新增用户成功')
+            // 关闭弹窗
+            dialogClose(editFormRef.value)
+            // 重新获取表格数据
+            getListUser()
+          })
+          .finally(() =&gt; {
+            buttonLoading.value = false
+          })
+      }
+    }
+  })
+}
+&lt;/script&gt;
+</code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blogs/blogs/vue3后台管理系统-登录页面.html" class="prev">
+          vue3后台管理系统-登录页面🔥
+        </a></span> <span class="next"><a href="/blogs/blogs/vue3后台管理系统-角色管理页面.html">
+          vue3后台管理系统-角色管理页面🔥
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#前言" class="sidebar-link reco-side-前言" data-v-b57cc07c>前言</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#后端获取分页列表的-bug" class="sidebar-link reco-side-后端获取分页列表的-bug" data-v-b57cc07c>后端获取分页列表的 bug</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#用户管理" class="sidebar-link reco-side-用户管理" data-v-b57cc07c>用户管理</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#控制不同角色的权限按钮的显隐" class="sidebar-link reco-side-控制不同角色的权限按钮的显隐" data-v-b57cc07c>控制不同角色的权限按钮的显隐</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#分页获取用户列表" class="sidebar-link reco-side-分页获取用户列表" data-v-b57cc07c>分页获取用户列表</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#显示效果" class="sidebar-link reco-side-显示效果" data-v-b57cc07c>显示效果</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#对用户进行增删改查" class="sidebar-link reco-side-对用户进行增删改查" data-v-b57cc07c>对用户进行增删改查</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#新增弹窗" class="sidebar-link reco-side-新增弹窗" data-v-b57cc07c>新增弹窗</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#修改弹窗" class="sidebar-link reco-side-修改弹窗" data-v-b57cc07c>修改弹窗</a></li><li class="level-4" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#重置密码弹窗" class="sidebar-link reco-side-重置密码弹窗" data-v-b57cc07c>重置密码弹窗</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blogs/assets/js/app.18ea5a3b.js" defer></script><script src="/blogs/assets/js/3.7d50d3e1.js" defer></script><script src="/blogs/assets/js/1.6ae6daff.js" defer></script><script src="/blogs/assets/js/62.dd2cf210.js" defer></script>
+  </body>
+</html>

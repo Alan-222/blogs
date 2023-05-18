@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3后台管理系统-菜单管理页面🔥 | 龙二不2的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="不要因为别人都在交卷自己就乱写答案">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.e5d12e82.css" as="style"><link rel="preload" href="/blogs/assets/js/app.18ea5a3b.js" as="script"><link rel="preload" href="/blogs/assets/js/3.7d50d3e1.js" as="script"><link rel="preload" href="/blogs/assets/js/1.6ae6daff.js" as="script"><link rel="preload" href="/blogs/assets/js/70.9cdc0728.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.0c3919ea.js"><link rel="prefetch" href="/blogs/assets/js/11.69672944.js"><link rel="prefetch" href="/blogs/assets/js/12.282b391e.js"><link rel="prefetch" href="/blogs/assets/js/13.c8f09181.js"><link rel="prefetch" href="/blogs/assets/js/14.2b6f40c8.js"><link rel="prefetch" href="/blogs/assets/js/15.c3daa56f.js"><link rel="prefetch" href="/blogs/assets/js/16.bee8f531.js"><link rel="prefetch" href="/blogs/assets/js/17.0b7b9d39.js"><link rel="prefetch" href="/blogs/assets/js/18.527b463f.js"><link rel="prefetch" href="/blogs/assets/js/19.3508c473.js"><link rel="prefetch" href="/blogs/assets/js/20.a237ecd5.js"><link rel="prefetch" href="/blogs/assets/js/21.677b4b42.js"><link rel="prefetch" href="/blogs/assets/js/22.d09c4fb0.js"><link rel="prefetch" href="/blogs/assets/js/23.a0354e98.js"><link rel="prefetch" href="/blogs/assets/js/24.7fe498f7.js"><link rel="prefetch" href="/blogs/assets/js/25.736624c0.js"><link rel="prefetch" href="/blogs/assets/js/26.8ca64f53.js"><link rel="prefetch" href="/blogs/assets/js/27.cbfb5a89.js"><link rel="prefetch" href="/blogs/assets/js/28.55e3eeb6.js"><link rel="prefetch" href="/blogs/assets/js/29.cf694242.js"><link rel="prefetch" href="/blogs/assets/js/30.db96836a.js"><link rel="prefetch" href="/blogs/assets/js/31.b10a5c2e.js"><link rel="prefetch" href="/blogs/assets/js/32.adc65a78.js"><link rel="prefetch" href="/blogs/assets/js/33.eead35d2.js"><link rel="prefetch" href="/blogs/assets/js/34.58544962.js"><link rel="prefetch" href="/blogs/assets/js/35.99f45e43.js"><link rel="prefetch" href="/blogs/assets/js/36.0e4a76fd.js"><link rel="prefetch" href="/blogs/assets/js/37.c5d24eed.js"><link rel="prefetch" href="/blogs/assets/js/38.4cafbdd8.js"><link rel="prefetch" href="/blogs/assets/js/39.7bf5261c.js"><link rel="prefetch" href="/blogs/assets/js/4.76e26aa1.js"><link rel="prefetch" href="/blogs/assets/js/40.59c785e3.js"><link rel="prefetch" href="/blogs/assets/js/41.0e6560d2.js"><link rel="prefetch" href="/blogs/assets/js/42.ac0f867e.js"><link rel="prefetch" href="/blogs/assets/js/43.a4fe4c0f.js"><link rel="prefetch" href="/blogs/assets/js/44.c4dd0147.js"><link rel="prefetch" href="/blogs/assets/js/45.985876f4.js"><link rel="prefetch" href="/blogs/assets/js/46.9ce22631.js"><link rel="prefetch" href="/blogs/assets/js/47.f7bf4421.js"><link rel="prefetch" href="/blogs/assets/js/48.cde6da56.js"><link rel="prefetch" href="/blogs/assets/js/49.97b3b470.js"><link rel="prefetch" href="/blogs/assets/js/5.7576fc30.js"><link rel="prefetch" href="/blogs/assets/js/50.0cc7fad2.js"><link rel="prefetch" href="/blogs/assets/js/51.0b47ddd4.js"><link rel="prefetch" href="/blogs/assets/js/52.bd74072e.js"><link rel="prefetch" href="/blogs/assets/js/53.77a00e1c.js"><link rel="prefetch" href="/blogs/assets/js/54.cb61450d.js"><link rel="prefetch" href="/blogs/assets/js/55.167712fc.js"><link rel="prefetch" href="/blogs/assets/js/56.d15eafc6.js"><link rel="prefetch" href="/blogs/assets/js/57.3132179b.js"><link rel="prefetch" href="/blogs/assets/js/58.87a301ff.js"><link rel="prefetch" href="/blogs/assets/js/59.1fb35315.js"><link rel="prefetch" href="/blogs/assets/js/6.32f1aaf4.js"><link rel="prefetch" href="/blogs/assets/js/60.7ebb4f4e.js"><link rel="prefetch" href="/blogs/assets/js/61.fd9249b1.js"><link rel="prefetch" href="/blogs/assets/js/62.dd2cf210.js"><link rel="prefetch" href="/blogs/assets/js/63.1c2e83da.js"><link rel="prefetch" href="/blogs/assets/js/64.2efb6c79.js"><link rel="prefetch" href="/blogs/assets/js/65.8b8fce18.js"><link rel="prefetch" href="/blogs/assets/js/66.4ec75c2a.js"><link rel="prefetch" href="/blogs/assets/js/67.310e09c3.js"><link rel="prefetch" href="/blogs/assets/js/68.6edb369e.js"><link rel="prefetch" href="/blogs/assets/js/69.1529f340.js"><link rel="prefetch" href="/blogs/assets/js/7.385ed0df.js"><link rel="prefetch" href="/blogs/assets/js/71.f282ac02.js"><link rel="prefetch" href="/blogs/assets/js/72.0a5ab34c.js"><link rel="prefetch" href="/blogs/assets/js/73.818436b6.js"><link rel="prefetch" href="/blogs/assets/js/74.a95fc72d.js"><link rel="prefetch" href="/blogs/assets/js/75.9f6d2b75.js"><link rel="prefetch" href="/blogs/assets/js/8.f0575d67.js"><link rel="prefetch" href="/blogs/assets/js/9.0f833a90.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.e5d12e82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>龙二不2的博客</h3> <p class="description" data-v-59e6cb88>不要因为别人都在交卷自己就乱写答案</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="/blogs/龙二.jpg" alt="龙二不2的博客" class="logo"> <span class="site-name">龙二不2的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <h3 class="name" data-v-1fad0c41>
+    龙二不2
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>65</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>8</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>vue3后台管理系统-菜单管理页面🔥</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">vue3后台管理系统-菜单管理页面🔥</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>龙二不2</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/1/23</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>vue3</span><span class="tag-item" data-v-8a445198>ts</span><span class="tag-item" data-v-8a445198>node.js</span><span class="tag-item" data-v-8a445198>vue3后台管理系统</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>我们还有一个菜单管理没有完成，这篇文章我们着手来完成。菜单管理主要点是获取到用户权限的树状结构并展示。这个我们可以通过<code>element-plus</code>的组件 table 的树形数据与懒加载来实现。</p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8bb2666d86064fad8267aac3b4dd8d05~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>我们通过<code>tree-props</code>属性来配置子孩子的字段，再通过<code>row-key</code>指定每层数据的 key（唯一标识字段，我们这里指权限 id）</p> <h2 id="树形表格"><a href="#树形表格" class="header-anchor">#</a> 树形表格</h2> <p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/511ef0ae8fe74747bd92f4d0af095dab~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>上图通过树形表格展示出相互嵌套的目录、菜单与按钮。permission 权限标识字段是按钮的标识字段，目录及菜单无此字段。redirect 跳转路由字段同理是目录的唯一字段。树形表格的 html 结构如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 数据表格 --&gt;
+&lt;el-table v-loading=&quot;loading&quot; :data=&quot;menuList&quot; highlight-current-row
+  :tree-props=&quot;{ children: 'children', hasChildren: 'hasChildren' }&quot; @row-click=&quot;handleRowClick&quot; row-key=&quot;menu_id&quot;
+  border default-expand-all&gt;
+  &lt;el-table-column label=&quot;菜单标题&quot;&gt;
+    &lt;template #default=&quot;scope&quot;&gt;
+      &lt;svg-icon :icon-class=&quot;
+        scope.row.icon
+      &quot; /&gt;
+      {{ scope.row.title }}
+    &lt;/template&gt;
+  &lt;/el-table-column&gt;
+  &lt;el-table-column label=&quot;路由名称&quot; align=&quot;center&quot; prop=&quot;name&quot; /&gt;
+  &lt;el-table-column label=&quot;菜单类型&quot; align=&quot;center&quot; width=&quot;100&quot;&gt;
+    &lt;template #default=&quot;scope&quot;&gt;
+      &lt;el-tag v-if=&quot;scope.row.type === 'C'&quot; type=&quot;warning&quot;&gt;目录&lt;/el-tag&gt;
+      &lt;el-tag v-if=&quot;scope.row.type === 'M'&quot; type=&quot;success&quot;&gt;菜单&lt;/el-tag&gt;
+      &lt;el-tag v-if=&quot;scope.row.type === 'B'&quot; type=&quot;danger&quot;&gt;按钮&lt;/el-tag&gt;
+    &lt;/template&gt;
+  &lt;/el-table-column&gt;
+  &lt;el-table-column label=&quot;权限标识&quot; align=&quot;center&quot; prop=&quot;permission&quot; /&gt;
+​
+  &lt;el-table-column label=&quot;状态&quot; align=&quot;center&quot; width=&quot;100&quot;&gt;
+    &lt;template #default=&quot;scope&quot;&gt;
+      &lt;el-tag v-if=&quot;scope.row.hidden === 0&quot; type=&quot;success&quot;&gt;显示&lt;/el-tag&gt;
+      &lt;el-tag v-else type=&quot;info&quot;&gt;隐藏&lt;/el-tag&gt;
+    &lt;/template&gt;
+  &lt;/el-table-column&gt;
+​
+  &lt;el-table-column label=&quot;排序&quot; align=&quot;center&quot; width=&quot;80&quot; prop=&quot;sort&quot; /&gt;
+​
+  &lt;el-table-column label=&quot;创建时间&quot; align=&quot;center&quot; width=&quot;180&quot; prop=&quot;create_time&quot;&gt;
+  &lt;/el-table-column&gt;
+​
+  &lt;el-table-column label=&quot;修改时间&quot; align=&quot;center&quot; width=&quot;180&quot; prop=&quot;update_time&quot;&gt;
+  &lt;/el-table-column&gt;
+​
+  &lt;el-table-column label=&quot;操作&quot; align=&quot;center&quot; width=&quot;180&quot;&gt;
+    &lt;template #default=&quot;scope&quot;&gt;
+      &lt;el-button link type=&quot;primary&quot; size=&quot;small&quot; v-if=&quot;scope.row.type !== 'B'&quot; v-hasPerm=&quot;['system:menu:add']&quot;
+        @click.stop=&quot;handleAdd(scope.row)&quot;&gt;新增
+      &lt;/el-button&gt;
+      &lt;el-button link type=&quot;primary&quot; size=&quot;small&quot; v-hasPerm=&quot;['system:menu:edit']&quot;
+        @click.stop=&quot;handleUpdate(scope.row)&quot;&gt;
+        修改&lt;/el-button&gt;
+      &lt;el-button link type=&quot;primary&quot; size=&quot;small&quot; v-hasPerm=&quot;['system:menu:del']&quot;
+        @click.stop=&quot;handleDelete(scope.row)&quot;&gt;
+        删除&lt;/el-button&gt;
+    &lt;/template&gt;
+  &lt;/el-table-column&gt;
+&lt;/el-table&gt;
+</code></pre></div><p>接下来是<code>js</code>代码。我们看到<code>el-table</code>标签中有<code>@row-click=&quot;handleRowClick&quot;</code>方法主要是在点击当前行获取当前权限的数据对象，例如</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  menu_id:xx,
+  ...
+  children:xx
+}
+</code></pre></div><p>然后就是<strong>新增、编辑、删除按钮</strong>对应的方法。由于按钮类型无法再有下一级的权限，所以当前行为按钮时隐藏新增按钮，保留修改、删除按钮。除按钮外的所有目录、菜单都能够新增这时候分两种情况。</p> <ul><li>我们点击最上方工具栏的新增按钮，这时上面的<strong>点击当前行的 handleRowClick 方法</strong>就可以获取到当前点击行的对象得到<strong>当前行的权限 id</strong>，我们将他传给新增方法就可以新增当前行的孩子。</li> <li>直接在树形表格中点击。我们直接通过插槽<code>scope.row.menu_id</code>获取即可新增当前行的孩子。</li></ul> <p><strong>编辑</strong>方法我们点击编辑后根据权限 id 请求获取权限的信息渲染到弹窗的表单中</p> <p>但我们首先需要一个弹窗和表单，以满足新增和编辑的需要。<code>html结构</code>代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 新增、编辑弹窗 --&gt;
+&lt;el-dialog :title=&quot;dialog.title&quot; v-model=&quot;dialog.visible&quot; @close=&quot;cancel&quot; width=&quot;750px&quot;&gt;
+  &lt;el-form ref=&quot;dataFormRef&quot; :model=&quot;formData&quot; :rules=&quot;rules&quot; label-width=&quot;100px&quot;&gt;
+    &lt;el-form-item label=&quot;父级菜单&quot; prop=&quot;parent_id&quot;&gt;
+      &lt;el-tree-select v-model=&quot;formData.parent_id&quot; placeholder=&quot;选择上级菜单&quot; :data=&quot;menuOptions&quot; filterable
+        check-strictly :render-after-expand=&quot;false&quot; /&gt;
+    &lt;/el-form-item&gt;
+​
+    &lt;el-form-item label=&quot;菜单标题&quot; prop=&quot;title&quot;&gt;
+      &lt;el-input v-model=&quot;formData.title&quot; placeholder=&quot;请输入菜单或按钮的名称&quot; /&gt;
+    &lt;/el-form-item&gt;
+​
+    &lt;el-form-item label=&quot;菜单类型&quot; prop=&quot;type&quot;&gt;
+      &lt;el-radio-group v-model=&quot;formData.type&quot; @change=&quot;handleMenuTypeChange&quot;&gt;
+        &lt;el-radio label=&quot;C&quot;&gt;目录&lt;/el-radio&gt;
+        &lt;el-radio label=&quot;M&quot;&gt;菜单&lt;/el-radio&gt;
+        &lt;el-radio label=&quot;B&quot;&gt;按钮&lt;/el-radio&gt;
+      &lt;/el-radio-group&gt;
+    &lt;/el-form-item&gt;
+​
+    &lt;el-form-item label=&quot;路由名称&quot; prop=&quot;name&quot; v-if=&quot;formData.type === 'M'&quot;&gt;
+      &lt;el-input v-model=&quot;formData.name&quot; placeholder=&quot;请输入路由名称&quot; /&gt;
+    &lt;/el-form-item&gt;
+​
+    &lt;el-form-item label=&quot;路由路径&quot; prop=&quot;path&quot; v-if=&quot;formData.type !== 'B'&quot;&gt;
+      &lt;el-input v-if=&quot;formData.type == 'C'&quot; v-model=&quot;formData.path&quot; placeholder=&quot;/system  (目录以/开头)&quot; /&gt;
+      &lt;el-input v-else v-model=&quot;formData.path&quot; placeholder=&quot;user&quot; /&gt;
+    &lt;/el-form-item&gt;
+​
+    &lt;!-- 组件页面完整路径 --&gt;
+    &lt;el-form-item v-if=&quot;formData.type == 'M'&quot; label=&quot;页面路径&quot; prop=&quot;component&quot;&gt;
+      &lt;el-input v-model=&quot;formData.component&quot; placeholder=&quot;/system/user/index&quot; style=&quot;width: 95%&quot;&gt;
+        &lt;template v-if=&quot;formData.parent_id != 0&quot; #prepend&gt;src/views/&lt;/template&gt;
+        &lt;template v-if=&quot;formData.parent_id != 0&quot; #append&gt;.vue&lt;/template&gt;
+      &lt;/el-input&gt;
+    &lt;/el-form-item&gt;
+​
+    &lt;!-- 权限标识 --&gt;
+    &lt;el-form-item v-if=&quot;formData.type === 'B'&quot; label=&quot;权限标识&quot; prop=&quot;permisson&quot;&gt;
+      &lt;el-input v-model=&quot;formData.permission&quot; placeholder=&quot;sys:user:add&quot; /&gt;
+    &lt;/el-form-item&gt;
+​
+    &lt;el-form-item label=&quot;图标&quot; prop=&quot;icon&quot; v-if=&quot;formData.type !== 'B'&quot;&gt;
+      &lt;el-popover ref=&quot;popoverRef&quot; placement=&quot;bottom-start&quot; :width=&quot;570&quot; trigger=&quot;click&quot;&gt;
+        &lt;template #reference&gt;
+          &lt;el-input v-model=&quot;formData.icon&quot; placeholder=&quot;点击选择图标&quot; readonly @click=&quot;iconSelectVisible = true&quot;&gt;
+            &lt;template #prefix&gt;
+              &lt;svg-icon :icon-class=&quot;formData.icon&quot; /&gt;
+            &lt;/template&gt;
+          &lt;/el-input&gt;
+        &lt;/template&gt;
+​
+        &lt;icon-select @selected=&quot;selected&quot; /&gt;
+      &lt;/el-popover&gt;
+    &lt;/el-form-item&gt;
+​
+    &lt;el-form-item label=&quot;跳转路由&quot; v-if=&quot;formData.type == 'C'&quot;&gt;
+      &lt;el-input v-model=&quot;formData.redirect&quot; placeholder=&quot;跳转路由&quot; /&gt;
+    &lt;/el-form-item&gt;
+​
+    &lt;el-form-item label=&quot;状态&quot; v-if=&quot;formData.type !== 'B'&quot;&gt;
+      &lt;el-radio-group v-model=&quot;formData.hidden&quot;&gt;
+        &lt;el-radio :label=&quot;0&quot;&gt;显示&lt;/el-radio&gt;
+        &lt;el-radio :label=&quot;1&quot;&gt;隐藏&lt;/el-radio&gt;
+      &lt;/el-radio-group&gt;
+    &lt;/el-form-item&gt;
+​
+    &lt;el-form-item label=&quot;排序&quot; prop=&quot;sort&quot;&gt;
+      &lt;el-input-number v-model=&quot;formData.sort&quot; style=&quot;width: 100px&quot; controls-position=&quot;right&quot; :min=&quot;0&quot; /&gt;
+    &lt;/el-form-item&gt;
+  &lt;/el-form&gt;
+​
+  &lt;template #footer&gt;
+    &lt;div class=&quot;dialog-footer&quot;&gt;
+      &lt;el-button type=&quot;primary&quot; @click=&quot;submitForm&quot;&gt;确 定&lt;/el-button&gt;
+      &lt;el-button @click=&quot;cancel&quot;&gt;取 消&lt;/el-button&gt;
+    &lt;/div&gt;
+  &lt;/template&gt;
+&lt;/el-dialog&gt;
+</code></pre></div><p>然后再写 js 代码基本上我们就是获取权限 id 调用对应接口即可，以下为完整代码</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div class=&quot;content-title&quot;&gt;菜单管理&lt;/div&gt;
+  &lt;div class=&quot;content-container&quot;&gt;
+    &lt;!-- 搜索表单 --&gt;
+    &lt;el-form class=&quot;table-Handler&quot; ref=&quot;queryFormRef&quot; :model=&quot;queryParams&quot; :inline=&quot;true&quot;&gt;
+      &lt;el-form-item&gt;
+        &lt;el-button color=&quot;#3c8dbc&quot; :icon=&quot;CirclePlus&quot; v-hasPerm=&quot;['system:menu:add']&quot; @click=&quot;handleAdd&quot;&gt;新增&lt;/el-button&gt;
+      &lt;/el-form-item&gt;
+​
+      &lt;el-form-item prop=&quot;title&quot; v-hasPerm=&quot;['system:menu:query']&quot; label=&quot;菜单标题&quot;&gt;
+        &lt;el-input v-model=&quot;queryParams.title&quot; placeholder=&quot;菜单标题&quot; clearable @keyup.enter=&quot;handleQuery&quot; /&gt;
+      &lt;/el-form-item&gt;
+      &lt;el-form-item&gt;
+        &lt;el-button color=&quot;#3c8dbc&quot; :icon=&quot;Search&quot; v-hasPerm=&quot;['system:menu:query']&quot; @click=&quot;handleQuery&quot;&gt;搜索&lt;/el-button&gt;
+        &lt;el-button color=&quot;#3c8dbc&quot; :icon=&quot;Refresh&quot; v-hasPerm=&quot;['system:menu:query']&quot; @click=&quot;resetQuery&quot;&gt;重置&lt;/el-button&gt;
+      &lt;/el-form-item&gt;
+    &lt;/el-form&gt;
+​
+    &lt;!-- 数据表格 --&gt;
+    &lt;el-table v-loading=&quot;loading&quot; :data=&quot;menuList&quot; highlight-current-row
+      :tree-props=&quot;{ children: 'children', hasChildren: 'hasChildren' }&quot; @row-click=&quot;handleRowClick&quot; row-key=&quot;menu_id&quot;
+      border default-expand-all&gt;
+      &lt;el-table-column label=&quot;菜单标题&quot;&gt;
+        &lt;template #default=&quot;scope&quot;&gt;
+          &lt;svg-icon :icon-class=&quot;
+            scope.row.icon
+          &quot; /&gt;
+          {{ scope.row.title }}
+        &lt;/template&gt;
+      &lt;/el-table-column&gt;
+      &lt;el-table-column label=&quot;路由名称&quot; align=&quot;center&quot; prop=&quot;name&quot; /&gt;
+      &lt;el-table-column label=&quot;菜单类型&quot; align=&quot;center&quot; width=&quot;100&quot;&gt;
+        &lt;template #default=&quot;scope&quot;&gt;
+          &lt;el-tag v-if=&quot;scope.row.type === 'C'&quot; type=&quot;warning&quot;&gt;目录&lt;/el-tag&gt;
+          &lt;el-tag v-if=&quot;scope.row.type === 'M'&quot; type=&quot;success&quot;&gt;菜单&lt;/el-tag&gt;
+          &lt;el-tag v-if=&quot;scope.row.type === 'B'&quot; type=&quot;danger&quot;&gt;按钮&lt;/el-tag&gt;
+        &lt;/template&gt;
+      &lt;/el-table-column&gt;
+      &lt;el-table-column label=&quot;权限标识&quot; align=&quot;center&quot; prop=&quot;permission&quot; /&gt;
+​
+      &lt;el-table-column label=&quot;状态&quot; align=&quot;center&quot; width=&quot;100&quot;&gt;
+        &lt;template #default=&quot;scope&quot;&gt;
+          &lt;el-tag v-if=&quot;scope.row.hidden === 0&quot; type=&quot;success&quot;&gt;显示&lt;/el-tag&gt;
+          &lt;el-tag v-else type=&quot;info&quot;&gt;隐藏&lt;/el-tag&gt;
+        &lt;/template&gt;
+      &lt;/el-table-column&gt;
+​
+      &lt;el-table-column label=&quot;排序&quot; align=&quot;center&quot; width=&quot;80&quot; prop=&quot;sort&quot; /&gt;
+​
+      &lt;el-table-column label=&quot;创建时间&quot; align=&quot;center&quot; width=&quot;180&quot; prop=&quot;create_time&quot;&gt;
+      &lt;/el-table-column&gt;
+​
+      &lt;el-table-column label=&quot;修改时间&quot; align=&quot;center&quot; width=&quot;180&quot; prop=&quot;update_time&quot;&gt;
+      &lt;/el-table-column&gt;
+​
+      &lt;el-table-column label=&quot;操作&quot; align=&quot;center&quot; width=&quot;180&quot;&gt;
+        &lt;template #default=&quot;scope&quot;&gt;
+          &lt;el-button link type=&quot;primary&quot; size=&quot;small&quot; v-if=&quot;scope.row.type !== 'B'&quot; v-hasPerm=&quot;['system:menu:add']&quot;
+            @click.stop=&quot;handleAdd(scope.row)&quot;&gt;新增
+          &lt;/el-button&gt;
+          &lt;el-button link type=&quot;primary&quot; size=&quot;small&quot; v-hasPerm=&quot;['system:menu:edit']&quot;
+            @click.stop=&quot;handleUpdate(scope.row)&quot;&gt;
+            修改&lt;/el-button&gt;
+          &lt;el-button link type=&quot;primary&quot; size=&quot;small&quot; v-hasPerm=&quot;['system:menu:del']&quot;
+            @click.stop=&quot;handleDelete(scope.row)&quot;&gt;
+            删除&lt;/el-button&gt;
+        &lt;/template&gt;
+      &lt;/el-table-column&gt;
+    &lt;/el-table&gt;
+​
+    &lt;!-- 新增、编辑弹窗 --&gt;
+    &lt;el-dialog :title=&quot;dialog.title&quot; v-model=&quot;dialog.visible&quot; @close=&quot;cancel&quot; width=&quot;750px&quot;&gt;
+      &lt;el-form ref=&quot;dataFormRef&quot; :model=&quot;formData&quot; :rules=&quot;rules&quot; label-width=&quot;100px&quot;&gt;
+        &lt;el-form-item label=&quot;父级菜单&quot; prop=&quot;parent_id&quot;&gt;
+          &lt;el-tree-select v-model=&quot;formData.parent_id&quot; placeholder=&quot;选择上级菜单&quot; :data=&quot;menuOptions&quot; filterable
+            check-strictly :render-after-expand=&quot;false&quot; /&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;el-form-item label=&quot;菜单标题&quot; prop=&quot;title&quot;&gt;
+          &lt;el-input v-model=&quot;formData.title&quot; placeholder=&quot;请输入菜单或按钮的名称&quot; /&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;el-form-item label=&quot;菜单类型&quot; prop=&quot;type&quot;&gt;
+          &lt;el-radio-group v-model=&quot;formData.type&quot; @change=&quot;handleMenuTypeChange&quot;&gt;
+            &lt;el-radio label=&quot;C&quot;&gt;目录&lt;/el-radio&gt;
+            &lt;el-radio label=&quot;M&quot;&gt;菜单&lt;/el-radio&gt;
+            &lt;el-radio label=&quot;B&quot;&gt;按钮&lt;/el-radio&gt;
+          &lt;/el-radio-group&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;el-form-item label=&quot;路由名称&quot; prop=&quot;name&quot; v-if=&quot;formData.type === 'M'&quot;&gt;
+          &lt;el-input v-model=&quot;formData.name&quot; placeholder=&quot;请输入路由名称&quot; /&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;el-form-item label=&quot;路由路径&quot; prop=&quot;path&quot; v-if=&quot;formData.type !== 'B'&quot;&gt;
+          &lt;el-input v-if=&quot;formData.type == 'C'&quot; v-model=&quot;formData.path&quot; placeholder=&quot;/system  (目录以/开头)&quot; /&gt;
+          &lt;el-input v-else v-model=&quot;formData.path&quot; placeholder=&quot;user&quot; /&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;!-- 组件页面完整路径 --&gt;
+        &lt;el-form-item v-if=&quot;formData.type == 'M'&quot; label=&quot;页面路径&quot; prop=&quot;component&quot;&gt;
+          &lt;el-input v-model=&quot;formData.component&quot; placeholder=&quot;/system/user/index&quot; style=&quot;width: 95%&quot;&gt;
+            &lt;template v-if=&quot;formData.parent_id != 0&quot; #prepend&gt;src/views/&lt;/template&gt;
+            &lt;template v-if=&quot;formData.parent_id != 0&quot; #append&gt;.vue&lt;/template&gt;
+          &lt;/el-input&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;!-- 权限标识 --&gt;
+        &lt;el-form-item v-if=&quot;formData.type === 'B'&quot; label=&quot;权限标识&quot; prop=&quot;permisson&quot;&gt;
+          &lt;el-input v-model=&quot;formData.permission&quot; placeholder=&quot;sys:user:add&quot; /&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;el-form-item label=&quot;图标&quot; prop=&quot;icon&quot; v-if=&quot;formData.type !== 'B'&quot;&gt;
+          &lt;el-popover ref=&quot;popoverRef&quot; placement=&quot;bottom-start&quot; :width=&quot;570&quot; trigger=&quot;click&quot;&gt;
+            &lt;template #reference&gt;
+              &lt;el-input v-model=&quot;formData.icon&quot; placeholder=&quot;点击选择图标&quot; readonly @click=&quot;iconSelectVisible = true&quot;&gt;
+                &lt;template #prefix&gt;
+                  &lt;svg-icon :icon-class=&quot;formData.icon&quot; /&gt;
+                &lt;/template&gt;
+              &lt;/el-input&gt;
+            &lt;/template&gt;
+​
+            &lt;icon-select @selected=&quot;selected&quot; /&gt;
+          &lt;/el-popover&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;el-form-item label=&quot;跳转路由&quot; v-if=&quot;formData.type == 'C'&quot;&gt;
+          &lt;el-input v-model=&quot;formData.redirect&quot; placeholder=&quot;跳转路由&quot; /&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;el-form-item label=&quot;状态&quot; v-if=&quot;formData.type !== 'B'&quot;&gt;
+          &lt;el-radio-group v-model=&quot;formData.hidden&quot;&gt;
+            &lt;el-radio :label=&quot;0&quot;&gt;显示&lt;/el-radio&gt;
+            &lt;el-radio :label=&quot;1&quot;&gt;隐藏&lt;/el-radio&gt;
+          &lt;/el-radio-group&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;el-form-item label=&quot;排序&quot; prop=&quot;sort&quot;&gt;
+          &lt;el-input-number v-model=&quot;formData.sort&quot; style=&quot;width: 100px&quot; controls-position=&quot;right&quot; :min=&quot;0&quot; /&gt;
+        &lt;/el-form-item&gt;
+      &lt;/el-form&gt;
+​
+      &lt;template #footer&gt;
+        &lt;div class=&quot;dialog-footer&quot;&gt;
+          &lt;el-button type=&quot;primary&quot; @click=&quot;submitForm&quot;&gt;确 定&lt;/el-button&gt;
+          &lt;el-button @click=&quot;cancel&quot;&gt;取 消&lt;/el-button&gt;
+        &lt;/div&gt;
+      &lt;/template&gt;
+    &lt;/el-dialog&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+​
+&lt;script lang=&quot;ts&quot;&gt;
+export default { name: 'Menu' };
+&lt;/script&gt;
+​
+&lt;script setup lang=&quot;ts&quot;&gt;
+import { reactive, ref, onMounted, toRefs } from 'vue';
+​
+import { Search, CirclePlus, Edit, Refresh, Delete } from '@element-plus/icons-vue';
+import { ElForm, ElMessage, ElMessageBox, ElPopover } from 'element-plus';
+​
+// API 依赖
+import {
+  listMenus,
+  getMenuDetail,
+  listMenuOptions,
+  addMenu,
+  deleteMenus,
+  updateMenu
+} from '@/utils/Api/user/menu';
+​
+import SvgIcon from '@/components/SvgIcon/index.vue';
+import IconSelect from '@/components/IconSelect/index.vue';
+​
+const queryFormRef = ref(ElForm);
+const dataFormRef = ref(ElForm);
+const popoverRef = ref(ElPopover);
+​
+const state = reactive({
+  loading: true,
+  // 非单个禁用
+  single: true,
+  // 非多个禁用
+  multiple: true,
+  queryParams: {} as MenuQueryParam,
+  menuList: [] as MenuItem[],
+  dialog: { visible: false } as Dialog,
+  formData: {
+    parent_id: 0,
+    title: '',
+    name: undefined,
+    hidden: 0,
+    sort: 1,
+    component: undefined,
+    path: undefined,
+    type: 'C',
+    permission: undefined,
+    redirect: undefined
+  } as MenuFormData,
+  rules: {
+    parent_id: [{ required: true, message: '请选择顶级菜单', trigger: 'blur' }],
+    title: [{ required: true, message: '请输入菜单标题', trigger: 'blur' }],
+    name: [{ required: true, message: '请输入路由名称', trigger: 'blur' }],
+    type: [{ required: true, message: '请选择菜单类型', trigger: 'blur' }],
+    path: [{ required: true, message: '请输入路由路径', trigger: 'blur' }],
+    component: [
+      { required: true, message: '请输入组件完整路径', trigger: 'blur' }
+    ]
+  },
+  menuOptions: [] as Option[],
+  currentRow: undefined,
+  // Icon选择器显示状态
+  iconSelectVisible: false,
+  cacheData: {
+    menuType: '',
+    menuPath: ''
+  }
+});
+​
+const {
+  loading,
+  queryParams,
+  menuList,
+  dialog,
+  formData,
+  rules,
+  menuOptions,
+  iconSelectVisible,
+  cacheData
+} = toRefs(state);
+​
+/**
+ * 查询
+ */
+function handleQuery() {
+  // 重置父组件
+  state.loading = true;
+  listMenus(state.queryParams).then(({ data }) =&gt; {
+    state.menuList = data;
+    state.loading = false;
+  });
+}
+​
+/**
+ * 加载菜单下拉树
+ */
+async function loadMenuData() {
+  const menuOptions: any[] = [];
+  await listMenuOptions().then(({ data }) =&gt; {
+    const menuOption = { value: 0, label: '顶级菜单', children: data };
+    menuOptions.push(menuOption);
+    state.menuOptions = menuOptions;
+  });
+}
+​
+/**
+ * 重置查询
+ */
+function resetQuery() {
+  queryFormRef.value.resetFields();
+  handleQuery();
+}
+​
+function handleRowClick(row: any) {
+  // 点击后将获得当前行的对象
+  state.currentRow = JSON.parse(JSON.stringify(row));
+}
+​
+/**
+ * 新增菜单打开
+ */
+async function handleAdd(row: any) {
+  formData.value.menu_id = undefined;
+  await loadMenuData();
+  dialog.value = {
+    title: '添加菜单',
+    visible: true
+  };
+​
+  if (row.menu_id) {
+    // 行点击新增
+​
+    formData.value.parent_id = row.menu_id;
+  } else {
+    // 工具栏新增
+​
+    if (state.currentRow) {
+      // 选择行
+      formData.value.parent_id = (state.currentRow as any).menu_id;
+    } else {
+      // 未选择行
+      formData.value.parent_id = 0;
+    }
+  }
+}
+​
+/**
+ * 编辑菜单
+ */
+async function handleUpdate(row: MenuFormData) {
+  await loadMenuData();
+  state.dialog = {
+    title: '编辑菜单',
+    visible: true
+  };
+  const id = row.menu_id as number;
+  getMenuDetail(id).then(({ data }) =&gt; {
+    state.formData = data;
+    cacheData.value.menuType = data.type;
+    cacheData.value.menuPath = data.path;
+  });
+}
+​
+/**
+ * 菜单类型 change
+ */
+function handleMenuTypeChange(menuType: any) {
+  if (menuType !== cacheData.value.menuType) {
+    formData.value.path = undefined;
+  } else {
+    formData.value.path = cacheData.value.menuPath;
+  }
+}
+​
+/**
+ * 菜单提交
+ */
+function submitForm() {
+  dataFormRef.value.validate((isValid: boolean) =&gt; {
+    if (isValid) {
+      if (state.formData.type !== 'B') {
+        formData.value.permission = undefined
+        if (state.formData.type === 'M') {
+          formData.value.redirect = undefined;
+        }
+      } else {
+        formData.value.name = undefined
+        formData.value.component = undefined
+        formData.value.path = undefined
+        formData.value.redirect = undefined
+      }
+      if (state.formData.menu_id) {
+        updateMenu(state.formData.menu_id, state.formData).then(() =&gt; {
+          ElMessage.success('修改成功');
+          cancel();
+          handleQuery();
+        });
+      } else {
+        addMenu(state.formData).then(() =&gt; {
+          ElMessage.success('新增成功');
+          cancel();
+          handleQuery();
+        });
+      }
+    }
+  });
+}
+​
+/**
+ * 删除菜单
+ *
+ * @param row
+ */
+function handleDelete(row: any) {
+  const id = row.menu_id;
+  ElMessageBox.confirm('确认删除已选中的数据项?', '警告', {
+    confirmButtonText: '确定',
+    cancelButtonText: '取消',
+    type: 'warning'
+  })
+    .then(() =&gt; {
+      deleteMenus({ menu_id: id }).then(() =&gt; {
+        ElMessage.success('删除成功');
+        handleQuery();
+      });
+    })
+    .catch(() =&gt; ElMessage.info('已取消删除'));
+}
+​
+/**
+ * 取消关闭弹窗
+ */
+function cancel() {
+  dataFormRef.value.resetFields();
+  reset()
+  state.dialog.visible = false;
+}
+/**
+ * 重置表单
+ */
+function reset() {
+  formData.value.parent_id = 0
+  formData.value.title = ''
+  formData.value.name = undefined
+  formData.value.hidden = 0
+  formData.value.component = undefined
+  formData.value.path = undefined
+  formData.value.permission = undefined
+  formData.value.redirect = undefined
+}
+/**
+ * 选择图标后事件
+ */
+function selected(name: string) {
+  state.formData.icon = name;
+  state.iconSelectVisible = false;
+}
+​
+onMounted(() =&gt; {
+  handleQuery();
+});
+&lt;/script&gt;
+​
+</code></pre></div><h2 id="写在最后"><a href="#写在最后" class="header-anchor">#</a> 写在最后</h2> <p>那么，我们的<code>vue3+ts+nodeJs通用后台管理系统</code>到这里就完成了，大家可以在此基础上进行改动扩展，希望大家在此系统中有所学习、有所感悟！Respect~</p> <p>下面是系统的 github 地址</p> <p><a href="https://github.com/Alan-222/-Vue3_Ts_NodeJs_management_system_client" target="_blank" rel="noopener noreferrer">vue3+ts 前端<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://github.com/Alan-222/Vue3_Ts_NodeJs_management_system_server" target="_blank" rel="noopener noreferrer">nodeJs 后端<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blogs/blogs/vue3后台管理系统-角色管理页面.html" class="prev">
+          vue3后台管理系统-角色管理页面🔥
+        </a></span> <!----></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#前言" class="sidebar-link reco-side-前言" data-v-b57cc07c>前言</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#树形表格" class="sidebar-link reco-side-树形表格" data-v-b57cc07c>树形表格</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#写在最后" class="sidebar-link reco-side-写在最后" data-v-b57cc07c>写在最后</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blogs/assets/js/app.18ea5a3b.js" defer></script><script src="/blogs/assets/js/3.7d50d3e1.js" defer></script><script src="/blogs/assets/js/1.6ae6daff.js" defer></script><script src="/blogs/assets/js/70.9cdc0728.js" defer></script>
+  </body>
+</html>

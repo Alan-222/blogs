@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3后台管理系统-角色管理页面🔥 | 龙二不2的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="不要因为别人都在交卷自己就乱写答案">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.e5d12e82.css" as="style"><link rel="preload" href="/blogs/assets/js/app.18ea5a3b.js" as="script"><link rel="preload" href="/blogs/assets/js/3.7d50d3e1.js" as="script"><link rel="preload" href="/blogs/assets/js/1.6ae6daff.js" as="script"><link rel="preload" href="/blogs/assets/js/73.818436b6.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.0c3919ea.js"><link rel="prefetch" href="/blogs/assets/js/11.69672944.js"><link rel="prefetch" href="/blogs/assets/js/12.282b391e.js"><link rel="prefetch" href="/blogs/assets/js/13.c8f09181.js"><link rel="prefetch" href="/blogs/assets/js/14.2b6f40c8.js"><link rel="prefetch" href="/blogs/assets/js/15.c3daa56f.js"><link rel="prefetch" href="/blogs/assets/js/16.bee8f531.js"><link rel="prefetch" href="/blogs/assets/js/17.0b7b9d39.js"><link rel="prefetch" href="/blogs/assets/js/18.527b463f.js"><link rel="prefetch" href="/blogs/assets/js/19.3508c473.js"><link rel="prefetch" href="/blogs/assets/js/20.a237ecd5.js"><link rel="prefetch" href="/blogs/assets/js/21.677b4b42.js"><link rel="prefetch" href="/blogs/assets/js/22.d09c4fb0.js"><link rel="prefetch" href="/blogs/assets/js/23.a0354e98.js"><link rel="prefetch" href="/blogs/assets/js/24.7fe498f7.js"><link rel="prefetch" href="/blogs/assets/js/25.736624c0.js"><link rel="prefetch" href="/blogs/assets/js/26.8ca64f53.js"><link rel="prefetch" href="/blogs/assets/js/27.cbfb5a89.js"><link rel="prefetch" href="/blogs/assets/js/28.55e3eeb6.js"><link rel="prefetch" href="/blogs/assets/js/29.cf694242.js"><link rel="prefetch" href="/blogs/assets/js/30.db96836a.js"><link rel="prefetch" href="/blogs/assets/js/31.b10a5c2e.js"><link rel="prefetch" href="/blogs/assets/js/32.adc65a78.js"><link rel="prefetch" href="/blogs/assets/js/33.eead35d2.js"><link rel="prefetch" href="/blogs/assets/js/34.58544962.js"><link rel="prefetch" href="/blogs/assets/js/35.99f45e43.js"><link rel="prefetch" href="/blogs/assets/js/36.0e4a76fd.js"><link rel="prefetch" href="/blogs/assets/js/37.c5d24eed.js"><link rel="prefetch" href="/blogs/assets/js/38.4cafbdd8.js"><link rel="prefetch" href="/blogs/assets/js/39.7bf5261c.js"><link rel="prefetch" href="/blogs/assets/js/4.76e26aa1.js"><link rel="prefetch" href="/blogs/assets/js/40.59c785e3.js"><link rel="prefetch" href="/blogs/assets/js/41.0e6560d2.js"><link rel="prefetch" href="/blogs/assets/js/42.ac0f867e.js"><link rel="prefetch" href="/blogs/assets/js/43.a4fe4c0f.js"><link rel="prefetch" href="/blogs/assets/js/44.c4dd0147.js"><link rel="prefetch" href="/blogs/assets/js/45.985876f4.js"><link rel="prefetch" href="/blogs/assets/js/46.9ce22631.js"><link rel="prefetch" href="/blogs/assets/js/47.f7bf4421.js"><link rel="prefetch" href="/blogs/assets/js/48.cde6da56.js"><link rel="prefetch" href="/blogs/assets/js/49.97b3b470.js"><link rel="prefetch" href="/blogs/assets/js/5.7576fc30.js"><link rel="prefetch" href="/blogs/assets/js/50.0cc7fad2.js"><link rel="prefetch" href="/blogs/assets/js/51.0b47ddd4.js"><link rel="prefetch" href="/blogs/assets/js/52.bd74072e.js"><link rel="prefetch" href="/blogs/assets/js/53.77a00e1c.js"><link rel="prefetch" href="/blogs/assets/js/54.cb61450d.js"><link rel="prefetch" href="/blogs/assets/js/55.167712fc.js"><link rel="prefetch" href="/blogs/assets/js/56.d15eafc6.js"><link rel="prefetch" href="/blogs/assets/js/57.3132179b.js"><link rel="prefetch" href="/blogs/assets/js/58.87a301ff.js"><link rel="prefetch" href="/blogs/assets/js/59.1fb35315.js"><link rel="prefetch" href="/blogs/assets/js/6.32f1aaf4.js"><link rel="prefetch" href="/blogs/assets/js/60.7ebb4f4e.js"><link rel="prefetch" href="/blogs/assets/js/61.fd9249b1.js"><link rel="prefetch" href="/blogs/assets/js/62.dd2cf210.js"><link rel="prefetch" href="/blogs/assets/js/63.1c2e83da.js"><link rel="prefetch" href="/blogs/assets/js/64.2efb6c79.js"><link rel="prefetch" href="/blogs/assets/js/65.8b8fce18.js"><link rel="prefetch" href="/blogs/assets/js/66.4ec75c2a.js"><link rel="prefetch" href="/blogs/assets/js/67.310e09c3.js"><link rel="prefetch" href="/blogs/assets/js/68.6edb369e.js"><link rel="prefetch" href="/blogs/assets/js/69.1529f340.js"><link rel="prefetch" href="/blogs/assets/js/7.385ed0df.js"><link rel="prefetch" href="/blogs/assets/js/70.9cdc0728.js"><link rel="prefetch" href="/blogs/assets/js/71.f282ac02.js"><link rel="prefetch" href="/blogs/assets/js/72.0a5ab34c.js"><link rel="prefetch" href="/blogs/assets/js/74.a95fc72d.js"><link rel="prefetch" href="/blogs/assets/js/75.9f6d2b75.js"><link rel="prefetch" href="/blogs/assets/js/8.f0575d67.js"><link rel="prefetch" href="/blogs/assets/js/9.0f833a90.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.e5d12e82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>龙二不2的博客</h3> <p class="description" data-v-59e6cb88>不要因为别人都在交卷自己就乱写答案</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="/blogs/龙二.jpg" alt="龙二不2的博客" class="logo"> <span class="site-name">龙二不2的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <h3 class="name" data-v-1fad0c41>
+    龙二不2
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>65</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>8</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>vue3后台管理系统-角色管理页面🔥</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">vue3后台管理系统-角色管理页面🔥</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>龙二不2</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/1/22</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>vue3</span><span class="tag-item" data-v-8a445198>ts</span><span class="tag-item" data-v-8a445198>node.js</span><span class="tag-item" data-v-8a445198>vue3后台管理系统</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>完成了用户管理页面，剩下两个页面角色管理以及菜单管理也大同小异。但角色管理还有一个分配资源的功能需要实现，作用为选择角色的权限，我们可以通过<code>el-tree</code>树形控件来完成。当打开分配角色弹窗时给树形控件传递一个树形结构的数组去渲染完整的<strong>权限结构（菜单+对应的按钮）</strong> ，然后获取角色的<strong>权限 id</strong>勾选就可以。然后<strong>更新角色权限</strong>只需要改变权限时记录下<strong>权限 id</strong>再调用更新角色资源的接口即可。</p> <h2 id="角色管理分配资源的实现"><a href="#角色管理分配资源的实现" class="header-anchor">#</a> 角色管理分配资源的实现</h2> <h3 id="接口数据接口"><a href="#接口数据接口" class="header-anchor">#</a> 接口数据接口</h3> <p>首先我们测试一下获取菜单项接口大概得到怎样的菜单结构，如图</p> <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1fb72fbc241c4292a9e051f7830d920e~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>数组结构的话大概就是</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  label:&quot;xxx&quot;,   // 菜单标题
+  value:&quot;xxx&quot;    // 权限id
+  children:[{    // 子孩子数组
+    label:'xx',
+    value:'xx',
+    perms:[{      // 按钮数组
+      label:&quot;xx&quot;
+      value:''
+    }]
+  }]  
+}
+</code></pre></div><p>符合<code>el-tree</code>树形控件的要求，<strong>value</strong>属性作为每个树节点用来作为唯一标识的属性</p> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0aca0b0bf1cd4e18b0eeb8bcfdadca4f~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <h3 id="html-结构"><a href="#html-结构" class="header-anchor">#</a> html 结构</h3> <p>我们首先确定<code>html</code>结构，用<code>el-scrollbar</code>包裹树形控件，超出长度显示滚动条。然后把他们放在弹窗里，点击<strong>分配资源</strong>按钮显示弹窗。树形控件中用到插槽，包括菜单的标题，若有按钮的话则显示复选框（遍历菜单所有的按钮）</p> <p><strong>views/system/role.vue</strong></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!--分配资源弹窗--&gt;
+&lt;el-dialog :title=&quot;'【' + checkedRole.role_name + '】资源分配'&quot; v-model=&quot;resourceDialogVisible&quot; width=&quot;800px&quot;&gt;
+  &lt;el-scrollbar max-height=&quot;600px&quot; v-loading=&quot;loading&quot;&gt;
+    &lt;el-tree ref=&quot;resourceRef&quot; node-key=&quot;value&quot; show-checkbox :data=&quot;resourceOptions&quot; :default-expand-all=&quot;true&quot;
+      @check-change=&quot;handleResourceCheckChange&quot;&gt;
+      &lt;template #default=&quot;{ data }&quot;&gt;
+        &lt;span&gt;{{ data.label }}&lt;/span&gt;
+​
+        &lt;div v-if=&quot;data.perms&quot; class=&quot;resource-tree-node&quot;&gt;
+          &lt;el-divider direction=&quot;vertical&quot; /&gt;
+          &lt;div class=&quot;node-content&quot;&gt;
+            &lt;el-checkbox v-for=&quot;perm in data.perms&quot; :key=&quot;perm.value&quot; :label=&quot;perm.value&quot; border size=&quot;small&quot;
+              v-model=&quot;btnPerms[perm.value]&quot;&gt;{{ perm.label }}&lt;/el-checkbox&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/template&gt;
+    &lt;/el-tree&gt;
+  &lt;/el-scrollbar&gt;
+​
+  &lt;template #footer&gt;
+    &lt;div class=&quot;dialog-footer&quot;&gt;
+      &lt;el-button type=&quot;primary&quot; @click=&quot;handleRoleResourceSubmit&quot;&gt;确 定&lt;/el-button&gt;
+      &lt;el-button @click=&quot;cancelResourceAssign&quot;&gt;取 消&lt;/el-button&gt;
+    &lt;/div&gt;
+  &lt;/template&gt;
+&lt;/el-dialog&gt;
+</code></pre></div><p><strong>js 代码</strong></p> <p>上面的 html 结构的<code>el-tree</code>中有<code>@check-change</code>方法，能获得到勾选菜单的数据和当前勾选的状态，当勾选或者取消菜单选项时触发。我们只要在勾选菜单时将对应<code>按钮checkbox</code>的状态改为跟当前菜单勾选状态一样即可。我用了<code>btnPerms</code>的数组来存储按钮，结构如下</p> <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/787e5f5f095344438f8a62ec808b7239~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>比如当我取消勾选了图中 20、21 的父菜单，就将 20、21 的<code>checkbox</code>也取消勾选。代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>// 树形控件菜单勾/反选方法
+const handleResourceCheckChange = (
+  data: Resource,
+  isCheck: boolean,
+  sonHasCheck: boolean
+) =&gt; {
+  console.log('data', data);
+  console.log('isCheck', isCheck);
+  // 当勾/反选的菜单存在按钮时，按钮的状态改成对应菜单状态
+  if (data.perms) {
+    data.perms.forEach(item =&gt; {
+      btnPerms.value[item.value] = isCheck;
+    });
+  }
+};
+</code></pre></div><p>还有就是当打开角色分配资源弹窗时候的方法，有以下几个步骤。</p> <ul><li>获取全部的菜单结构</li> <li>获取该角色所有的菜单 id 数组和按钮 id 数组，对应进行勾选</li></ul> <p>方法如下所示：</p> <div class="language- extra-class"><pre class="language-text"><code>/**
+ * 资源分配
+ */
+function openRoleResourceDialog(row: RoleItem) {
+  resourceDialogVisible.value = true;
+  loading.value = true;
+​
+  const roleId: number = row.role_id;
+  checkedRole.value = {
+    role_id: roleId,
+    role_name: row.role_name
+  };
+​
+  // 获取所有的资源
+  listMenuOptions().then(response =&gt; {
+    resourceOptions.value = response.data;
+​
+    // 获取角色拥有的资源
+    getRoleResources(roleId).then(({ data }) =&gt; {
+      // 勾选的菜单回显
+      const checkedMenuIds = data.menu_ids;
+      resourceRef.value.setCheckedKeys(checkedMenuIds);
+​
+      nextTick(() =&gt; {
+        // 勾选的权限回显
+        const rolePermIds = data.permIds;
+​
+        state.allPermIds = filterResourcePermIds(response.data, []);
+        if (state.allPermIds) {
+          state.allPermIds.forEach(permId =&gt; {
+            if (rolePermIds.indexOf(permId) &gt; -1) {
+              btnPerms.value[permId] = true;
+            } else {
+              btnPerms.value[permId] = false;
+            }
+          });
+        }
+        loading.value = false;
+      });
+    });
+  });
+}
+​
+const filterResourcePermIds = (resources: Resource[], permIds: string[]) =&gt; {
+  resources.forEach(resource =&gt; {
+    if (resource.perms) {
+      resource.perms.forEach(perm =&gt; {
+        permIds.push(perm.value);
+      });
+    }
+    if (resource.children) {
+      filterResourcePermIds(resource.children, permIds);
+    }
+  });
+  return permIds;
+};
+</code></pre></div><p>然后是提交资源的方法。我们可以通过<code>el-tree</code>控件的<code>getCheckedNodes</code>的方法获得勾选的菜单数组，再通过上面的<code>btnPerms</code>获得勾选的按钮数组。然后凭这两个数组更新角色资源。</p> <div class="language- extra-class"><pre class="language-text"><code>/**
+ * 分配资源提交
+ */
+function handleRoleResourceSubmit() {
+  const checkedMenuIds: any[] = resourceRef.value
+    .getCheckedNodes(false, true)
+    .map((node: any) =&gt; node.value);
+​
+  const checkedPermIds = [] as string[];
+  if (state.allPermIds) {
+    state.allPermIds.forEach(permId =&gt; {
+      if (btnPerms.value[permId]) {
+        checkedPermIds.push(permId);
+      }
+    });
+  }
+​
+  const RoleResource = {
+    menu_ids: checkedMenuIds,
+    permIds: checkedPermIds
+  };
+​
+  updateRoleResource(checkedRole.value.role_id, RoleResource).then(res =&gt; {
+    ElMessage.success('分配权限成功');
+    state.resourceDialogVisible = false;
+    handleQuery();
+  });
+}
+</code></pre></div><p>角色管理总体代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div class=&quot;content-title&quot;&gt;用户管理&lt;/div&gt;
+  &lt;div class=&quot;content-container&quot;&gt;
+    &lt;!-- 搜索表单 --&gt;
+    &lt;el-form ref=&quot;queryFormRef&quot; :model=&quot;queryParams&quot; :inline=&quot;true&quot;&gt;
+      &lt;el-form-item&gt;
+        &lt;el-button color=&quot;#3c8dbc&quot; :icon=&quot;CirclePlus&quot; @click=&quot;handleAdd&quot;&gt;新增&lt;/el-button&gt;
+        &lt;el-button color=&quot;#3c8dbc&quot; :icon=&quot;Remove&quot; :disabled=&quot;multiple&quot; @click=&quot;handleDelete&quot;&gt;批量删除&lt;/el-button&gt;
+      &lt;/el-form-item&gt;
+​
+      &lt;el-form-item prop=&quot;role_name&quot;&gt;
+        &lt;el-input v-model=&quot;queryParams.role_name&quot; placeholder=&quot;角色名称&quot; clearable @keyup.enter=&quot;handleQuery&quot; /&gt;
+      &lt;/el-form-item&gt;
+​
+      &lt;el-form-item&gt;
+        &lt;el-button color=&quot;#3c8dbc&quot; :icon=&quot;Search&quot; @click=&quot;handleQuery&quot;&gt;搜索&lt;/el-button&gt;
+        &lt;el-button color=&quot;#3c8dbc&quot; :icon=&quot;Refresh&quot; @click=&quot;resetQuery&quot;&gt;重置&lt;/el-button&gt;
+      &lt;/el-form-item&gt;
+    &lt;/el-form&gt;
+​
+    &lt;!-- 数据表格 --&gt;
+    &lt;el-table ref=&quot;dataTableRef&quot; v-loading=&quot;loading&quot; :data=&quot;roleList&quot; @selection-change=&quot;handleSelectionChange&quot;
+      highlight-current-row border&gt;
+      &lt;el-table-column type=&quot;selection&quot; width=&quot;55&quot; align=&quot;center&quot; /&gt;
+      &lt;el-table-column label=&quot;角色名称&quot; prop=&quot;role_name&quot; align=&quot;center&quot; /&gt;
+      &lt;el-table-column label=&quot;角色描述&quot; prop=&quot;remark&quot; align=&quot;center&quot; /&gt;
+​
+      &lt;el-table-column label=&quot;状态&quot; align=&quot;center&quot;&gt;
+        &lt;template #default=&quot;scope&quot;&gt;
+          &lt;el-tag v-if=&quot;scope.row.status === 1&quot; type=&quot;success&quot;&gt;正常&lt;/el-tag&gt;
+          &lt;el-tag v-else type=&quot;info&quot;&gt;禁用&lt;/el-tag&gt;
+        &lt;/template&gt;
+      &lt;/el-table-column&gt;
+​
+      &lt;el-table-column prop=&quot;create_time&quot; label=&quot;创建时间&quot; align=&quot;center&quot; /&gt;
+      &lt;el-table-column prop=&quot;update_time&quot; label=&quot;修改时间&quot; align=&quot;center&quot; /&gt;
+​
+      &lt;el-table-column label=&quot;操作&quot; align=&quot;center&quot;&gt;
+        &lt;template #default=&quot;scope&quot;&gt;
+          &lt;el-button link type=&quot;primary&quot; size=&quot;small&quot; @click.stop=&quot;openRoleResourceDialog(scope.row)&quot;&gt;
+            分配资源
+          &lt;/el-button&gt;
+          &lt;el-button link type=&quot;primary&quot; size=&quot;small&quot; circle plain @click.stop=&quot;handleUpdate(scope.row)&quot;&gt;
+            编辑
+          &lt;/el-button&gt;
+          &lt;el-button link type=&quot;primary&quot; size=&quot;small&quot; circle plain @click.stop=&quot;handleDelete(scope.row)&quot;&gt;
+            删除
+          &lt;/el-button&gt;
+        &lt;/template&gt;
+      &lt;/el-table-column&gt;
+    &lt;/el-table&gt;
+​
+    &lt;!-- 分页工具条 --&gt;
+    &lt;el-pagination :total=&quot;total&quot; v-model:currentPage=&quot;queryParams.currentPage&quot; v-model:page-size=&quot;queryParams.pageSize&quot;
+      :page-sizes=&quot;[1, 3, 5, 10]&quot; layout=&quot;total, sizes, prev, pager, next, jumper&quot; @size-change=&quot;handleSizeChange&quot;
+      @current-change=&quot;handleCurrentChange&quot; style=&quot;margin-top: 20px;&quot; /&gt;
+​
+    &lt;!-- 表单弹窗 --&gt;
+    &lt;el-dialog :title=&quot;dialog.title&quot; v-model=&quot;dialog.visible&quot; width=&quot;500px&quot; destroy-on-close&gt;
+      &lt;el-form ref=&quot;dataFormRef&quot; :model=&quot;formData&quot; :rules=&quot;rules&quot; label-width=&quot;100px&quot;&gt;
+        &lt;el-form-item label=&quot;角色名称&quot; prop=&quot;role_name&quot;&gt;
+          &lt;el-input v-model=&quot;formData.role_name&quot; placeholder=&quot;请输入角色名称&quot; /&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;el-form-item label=&quot;角色描述&quot; prop=&quot;remark&quot;&gt;
+          &lt;el-input v-model=&quot;formData.remark&quot; placeholder=&quot;请输入角色描述&quot; /&gt;
+        &lt;/el-form-item&gt;
+​
+        &lt;el-form-item label=&quot;状态&quot;&gt;
+          &lt;el-radio-group v-model=&quot;formData.status&quot;&gt;
+            &lt;el-radio :label=&quot;1&quot;&gt;正常&lt;/el-radio&gt;
+            &lt;el-radio :label=&quot;0&quot;&gt;停用&lt;/el-radio&gt;
+          &lt;/el-radio-group&gt;
+        &lt;/el-form-item&gt;
+      &lt;/el-form&gt;
+      &lt;div slot=&quot;footer&quot; class=&quot;dialog-footer&quot;&gt;
+        &lt;el-button type=&quot;primary&quot; @click=&quot;submitFormData&quot;&gt;确 定&lt;/el-button&gt;
+        &lt;el-button @click=&quot;cancel&quot;&gt;取 消&lt;/el-button&gt;
+      &lt;/div&gt;
+    &lt;/el-dialog&gt;
+​
+    &lt;!--分配资源弹窗--&gt;
+    &lt;el-dialog :title=&quot;'【' + checkedRole.role_name + '】资源分配'&quot; v-model=&quot;resourceDialogVisible&quot; width=&quot;800px&quot;&gt;
+      &lt;el-scrollbar max-height=&quot;600px&quot; v-loading=&quot;loading&quot;&gt;
+        &lt;el-tree ref=&quot;resourceRef&quot; node-key=&quot;value&quot; show-checkbox :data=&quot;resourceOptions&quot; :default-expand-all=&quot;true&quot;
+          @check-change=&quot;handleResourceCheckChange&quot;&gt;
+          &lt;template #default=&quot;{ data }&quot;&gt;
+            &lt;span&gt;{{ data.label }}&lt;/span&gt;
+​
+            &lt;div v-if=&quot;data.perms&quot; class=&quot;resource-tree-node&quot;&gt;
+              &lt;el-divider direction=&quot;vertical&quot; /&gt;
+              &lt;div class=&quot;node-content&quot;&gt;
+                &lt;el-checkbox v-for=&quot;perm in data.perms&quot; :key=&quot;perm.value&quot; :label=&quot;perm.value&quot; border size=&quot;small&quot;
+                  v-model=&quot;btnPerms[perm.value]&quot;&gt;{{ perm.label }}&lt;/el-checkbox&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/template&gt;
+        &lt;/el-tree&gt;
+      &lt;/el-scrollbar&gt;
+​
+      &lt;template #footer&gt;
+        &lt;div class=&quot;dialog-footer&quot;&gt;
+          &lt;el-button type=&quot;primary&quot; @click=&quot;handleRoleResourceSubmit&quot;&gt;确 定&lt;/el-button&gt;
+          &lt;el-button @click=&quot;cancelResourceAssign&quot;&gt;取 消&lt;/el-button&gt;
+        &lt;/div&gt;
+      &lt;/template&gt;
+    &lt;/el-dialog&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+​
+&lt;script lang=&quot;ts&quot;&gt;
+export default {
+  name: 'role'
+};
+&lt;/script&gt;
+​
+&lt;script setup lang=&quot;ts&quot;&gt;
+import { nextTick, onMounted, reactive, ref, toRefs } from 'vue';
+import {
+  listRolePages,
+  updateRole,
+  getRoleFormDetail,
+  addRole,
+  deleteRoles,
+  getRoleResources,
+  updateRoleResource
+} from '@/utils/api/user/role';
+import { listMenuOptions } from '@/utils/api/user/menu';
+​
+import { ElForm, ElMessage, ElMessageBox, ElTree } from 'element-plus';
+import { Search, CirclePlus, Refresh, Remove } from '@element-plus/icons-vue';
+​
+​
+const queryFormRef = ref(ElForm);
+const dataFormRef = ref(ElForm);
+const resourceRef = ref(ElTree);
+​
+const state = reactive({
+  loading: true,
+  // 选中ID数组
+  ids: [],
+  // 非单个禁用
+  single: true,
+  // 非多个禁用
+  multiple: true,
+  queryParams: {
+    currentPage: 1,
+    pageSize: 10,
+    role_name: undefined
+  } as RoleQueryParam,
+  roleList: [] as RoleItem[],
+  total: 0,
+  dialog: {
+    title: '',
+    visible: false
+  },
+  formData: {
+    role_name: '',
+    remark: '',
+    status: 1
+  } as RoleFormData,
+  rules: {
+    role_name: [{ required: true, message: '请输入角色名称', trigger: 'blur' }],
+    remark: [{ required: true, message: '请输入角色描述', trigger: 'blur' }]
+  },
+  resourceDialogVisible: false,
+  resourceOptions: [] as Resource[],
+  btnPerms: {} as any,
+  // 勾选的菜单ID
+  checkedMenuIds: new Set([]),
+  allPermIds: [] as string[],
+  // 选中的角色
+  checkedRole: {
+    role_id: 0,
+    role_name: ''
+  }
+});
+​
+const {
+  loading,
+  multiple,
+  queryParams,
+  roleList,
+  total,
+  dialog,
+  formData,
+  rules,
+  resourceDialogVisible,
+  checkedRole,
+  resourceOptions,
+  btnPerms
+} = toRefs(state);
+​
+function handleQuery() {
+  state.loading = true;
+  listRolePages(state.queryParams).then(({ data }) =&gt; {
+    state.roleList = data.rows;
+    state.total = data.count;
+    state.loading = false;
+  });
+}
+// 每页显示条数改变 就会触发这个函数
+const handleSizeChange = (val: number) =&gt; {
+  // 保存每页显示的条数
+  queryParams.value.pageSize = val;
+  queryParams.value.currentPage = 1;
+  // 调用分页函数
+  handleQuery();
+}
+// 当前页码改变 就会触发这个函数
+const handleCurrentChange = (val: number) =&gt; {
+  // 保存当前页码
+  queryParams.value.currentPage = val;
+  // 调用分页函数
+  handleQuery();
+}
+/**
+ * 查询重置
+ */
+function resetQuery() {
+  queryFormRef.value.resetFields();
+  handleQuery();
+}
+​
+function handleSelectionChange(selection: any) {
+  state.ids = selection.map((item: any) =&gt; item.role_id);
+  state.single = selection.length !== 1;
+  state.multiple = !selection.length;
+}
+​
+function handleAdd() {
+  state.dialog = {
+    title: '添加角色',
+    visible: true
+  };
+}
+​
+function handleUpdate(row: any) {
+  state.dialog = {
+    title: '修改角色',
+    visible: true
+  };
+  const roleId = row.role_id || state.ids;
+  getRoleFormDetail(roleId).then(({ data }) =&gt; {
+    state.formData = data;
+  });
+}
+​
+function submitFormData() {
+  loading.value = true;
+  dataFormRef.value.validate((valid: any) =&gt; {
+    if (valid) {
+      if (state.formData.role_id) {
+        updateRole(state.formData.role_id as any, state.formData).then(() =&gt; {
+          ElMessage.success('修改角色成功');
+          cancel();
+          handleQuery();
+          loading.value = false;
+        });
+      } else {
+        addRole(state.formData).then(() =&gt; {
+          cancel();
+          ElMessage.success('新增角色成功');
+          handleQuery();
+          loading.value = false;
+        });
+      }
+    }
+  });
+}
+​
+/**
+ * 取消
+ */
+function cancel() {
+  dialog.value.visible = false;
+  formData.value.role_id = undefined;
+  dataFormRef.value.resetFields();
+  dataFormRef.value.clearValidate();
+}
+​
+/**
+ *  删除
+ */
+function handleDelete(row: any) {
+  const ids = row.role_id || state.ids;
+  ElMessageBox.confirm('确认删除已选中的数据项?', '警告', {
+    confirmButtonText: '确定',
+    cancelButtonText: '取消',
+    type: 'warning'
+  })
+    .then(() =&gt; {
+      deleteRoles({ role_ids: ids }).then(() =&gt; {
+        ElMessage.success('删除成功');
+        handleQuery();
+      });
+    })
+    .catch(() =&gt; ElMessage.info('已取消删除'));
+}
+// 树形控件菜单勾/反选方法
+const handleResourceCheckChange = (
+  data: Resource,
+  isCheck: boolean,
+  sonHasCheck: boolean
+) =&gt; {
+  console.log('data', data);
+  console.log('isCheck', isCheck);
+  // 当勾/反选的菜单存在按钮时，按钮的状态改成对应菜单状态
+  if (data.perms) {
+    data.perms.forEach(item =&gt; {
+      btnPerms.value[item.value] = isCheck;
+    });
+  }
+};
+​
+/**
+ * 资源分配
+ */
+function openRoleResourceDialog(row: RoleItem) {
+  resourceDialogVisible.value = true;
+  loading.value = true;
+​
+  const roleId: number = row.role_id;
+  checkedRole.value = {
+    role_id: roleId,
+    role_name: row.role_name
+  };
+​
+  // 获取所有的资源
+  listMenuOptions().then(response =&gt; {
+    resourceOptions.value = response.data;
+​
+    // 获取角色拥有的资源
+    getRoleResources(roleId).then(({ data }) =&gt; {
+      // 勾选的菜单回显
+      const checkedMenuIds = data.menu_ids;
+      resourceRef.value.setCheckedKeys(checkedMenuIds);
+​
+      nextTick(() =&gt; {
+        // 勾选的权限回显
+        const rolePermIds = data.permIds;
+​
+        state.allPermIds = filterResourcePermIds(response.data, []);
+        if (state.allPermIds) {
+          state.allPermIds.forEach(permId =&gt; {
+            if (rolePermIds.indexOf(permId) &gt; -1) {
+              btnPerms.value[permId] = true;
+            } else {
+              btnPerms.value[permId] = false;
+            }
+          });
+        }
+        loading.value = false;
+      });
+    });
+  });
+}
+​
+const filterResourcePermIds = (resources: Resource[], permIds: string[]) =&gt; {
+  resources.forEach(resource =&gt; {
+    if (resource.perms) {
+      resource.perms.forEach(perm =&gt; {
+        permIds.push(perm.value);
+      });
+    }
+    if (resource.children) {
+      filterResourcePermIds(resource.children, permIds);
+    }
+  });
+  return permIds;
+};
+/**
+ * 分配资源提交
+ */
+function handleRoleResourceSubmit() {
+  const checkedMenuIds: any[] = resourceRef.value
+    .getCheckedNodes(false, true)
+    .map((node: any) =&gt; node.value);
+​
+  const checkedPermIds = [] as string[];
+  if (state.allPermIds) {
+    state.allPermIds.forEach(permId =&gt; {
+      if (btnPerms.value[permId]) {
+        checkedPermIds.push(permId);
+      }
+    });
+  }
+​
+  const RoleResource = {
+    menu_ids: checkedMenuIds,
+    permIds: checkedPermIds
+  };
+​
+  updateRoleResource(checkedRole.value.role_id, RoleResource).then(res =&gt; {
+    ElMessage.success('分配权限成功');
+    state.resourceDialogVisible = false;
+    handleQuery();
+  });
+}
+​
+/**
+ * 取消资源分配
+ */
+function cancelResourceAssign() {
+  state.resourceDialogVisible = false;
+}
+​
+onMounted(() =&gt; {
+  handleQuery();
+});
+&lt;/script&gt;
+​
+&lt;style lang=&quot;scss&quot;&gt;
+.resource-tree-node {
+  flex-wrap: wrap;
+  display: inline-flex;
+  font-size: 14px;
+  justify-content: flex-end;
+​
+  .node-content {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+​
+  .el-divider--vertical {
+    height: 1.5em !important;
+  }
+}
+​
+​
+.el-tree-node__content {
+  height: auto !important;
+}
+​
+.el-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+​
+  &amp;:hover {
+    background-color: var(--el-tree-node-hover-bg-color);
+  }
+​
+  &amp;:active {
+    background-color: var(--el-tree-node-hover-bg-color);
+  }
+}
+​
+.el-checkbox.el-checkbox--small {
+  margin: 5px;
+  z-index: 999;
+  background: #fff;
+}
+&lt;/style&gt;
+</code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blogs/blogs/vue3后台管理系统-用户管理页面.html" class="prev">
+          vue3后台管理系统-用户管理页面🔥
+        </a></span> <span class="next"><a href="/blogs/blogs/vue3后台管理系统-菜单管理页面.html">
+          vue3后台管理系统-菜单管理页面🔥
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E8%A7%92%E8%89%B2%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#前言" class="sidebar-link reco-side-前言" data-v-b57cc07c>前言</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E8%A7%92%E8%89%B2%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#角色管理分配资源的实现" class="sidebar-link reco-side-角色管理分配资源的实现" data-v-b57cc07c>角色管理分配资源的实现</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E8%A7%92%E8%89%B2%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#接口数据接口" class="sidebar-link reco-side-接口数据接口" data-v-b57cc07c>接口数据接口</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E8%A7%92%E8%89%B2%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html#html-结构" class="sidebar-link reco-side-html-结构" data-v-b57cc07c>html 结构</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blogs/assets/js/app.18ea5a3b.js" defer></script><script src="/blogs/assets/js/3.7d50d3e1.js" defer></script><script src="/blogs/assets/js/1.6ae6daff.js" defer></script><script src="/blogs/assets/js/73.818436b6.js" defer></script>
+  </body>
+</html>

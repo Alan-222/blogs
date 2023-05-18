@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3后台管理系统-前端路由🔥 | 龙二不2的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="不要因为别人都在交卷自己就乱写答案">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.e5d12e82.css" as="style"><link rel="preload" href="/blogs/assets/js/app.18ea5a3b.js" as="script"><link rel="preload" href="/blogs/assets/js/3.7d50d3e1.js" as="script"><link rel="preload" href="/blogs/assets/js/1.6ae6daff.js" as="script"><link rel="preload" href="/blogs/assets/js/55.167712fc.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.0c3919ea.js"><link rel="prefetch" href="/blogs/assets/js/11.69672944.js"><link rel="prefetch" href="/blogs/assets/js/12.282b391e.js"><link rel="prefetch" href="/blogs/assets/js/13.c8f09181.js"><link rel="prefetch" href="/blogs/assets/js/14.2b6f40c8.js"><link rel="prefetch" href="/blogs/assets/js/15.c3daa56f.js"><link rel="prefetch" href="/blogs/assets/js/16.bee8f531.js"><link rel="prefetch" href="/blogs/assets/js/17.0b7b9d39.js"><link rel="prefetch" href="/blogs/assets/js/18.527b463f.js"><link rel="prefetch" href="/blogs/assets/js/19.3508c473.js"><link rel="prefetch" href="/blogs/assets/js/20.a237ecd5.js"><link rel="prefetch" href="/blogs/assets/js/21.677b4b42.js"><link rel="prefetch" href="/blogs/assets/js/22.d09c4fb0.js"><link rel="prefetch" href="/blogs/assets/js/23.a0354e98.js"><link rel="prefetch" href="/blogs/assets/js/24.7fe498f7.js"><link rel="prefetch" href="/blogs/assets/js/25.736624c0.js"><link rel="prefetch" href="/blogs/assets/js/26.8ca64f53.js"><link rel="prefetch" href="/blogs/assets/js/27.cbfb5a89.js"><link rel="prefetch" href="/blogs/assets/js/28.55e3eeb6.js"><link rel="prefetch" href="/blogs/assets/js/29.cf694242.js"><link rel="prefetch" href="/blogs/assets/js/30.db96836a.js"><link rel="prefetch" href="/blogs/assets/js/31.b10a5c2e.js"><link rel="prefetch" href="/blogs/assets/js/32.adc65a78.js"><link rel="prefetch" href="/blogs/assets/js/33.eead35d2.js"><link rel="prefetch" href="/blogs/assets/js/34.58544962.js"><link rel="prefetch" href="/blogs/assets/js/35.99f45e43.js"><link rel="prefetch" href="/blogs/assets/js/36.0e4a76fd.js"><link rel="prefetch" href="/blogs/assets/js/37.c5d24eed.js"><link rel="prefetch" href="/blogs/assets/js/38.4cafbdd8.js"><link rel="prefetch" href="/blogs/assets/js/39.7bf5261c.js"><link rel="prefetch" href="/blogs/assets/js/4.76e26aa1.js"><link rel="prefetch" href="/blogs/assets/js/40.59c785e3.js"><link rel="prefetch" href="/blogs/assets/js/41.0e6560d2.js"><link rel="prefetch" href="/blogs/assets/js/42.ac0f867e.js"><link rel="prefetch" href="/blogs/assets/js/43.a4fe4c0f.js"><link rel="prefetch" href="/blogs/assets/js/44.c4dd0147.js"><link rel="prefetch" href="/blogs/assets/js/45.985876f4.js"><link rel="prefetch" href="/blogs/assets/js/46.9ce22631.js"><link rel="prefetch" href="/blogs/assets/js/47.f7bf4421.js"><link rel="prefetch" href="/blogs/assets/js/48.cde6da56.js"><link rel="prefetch" href="/blogs/assets/js/49.97b3b470.js"><link rel="prefetch" href="/blogs/assets/js/5.7576fc30.js"><link rel="prefetch" href="/blogs/assets/js/50.0cc7fad2.js"><link rel="prefetch" href="/blogs/assets/js/51.0b47ddd4.js"><link rel="prefetch" href="/blogs/assets/js/52.bd74072e.js"><link rel="prefetch" href="/blogs/assets/js/53.77a00e1c.js"><link rel="prefetch" href="/blogs/assets/js/54.cb61450d.js"><link rel="prefetch" href="/blogs/assets/js/56.d15eafc6.js"><link rel="prefetch" href="/blogs/assets/js/57.3132179b.js"><link rel="prefetch" href="/blogs/assets/js/58.87a301ff.js"><link rel="prefetch" href="/blogs/assets/js/59.1fb35315.js"><link rel="prefetch" href="/blogs/assets/js/6.32f1aaf4.js"><link rel="prefetch" href="/blogs/assets/js/60.7ebb4f4e.js"><link rel="prefetch" href="/blogs/assets/js/61.fd9249b1.js"><link rel="prefetch" href="/blogs/assets/js/62.dd2cf210.js"><link rel="prefetch" href="/blogs/assets/js/63.1c2e83da.js"><link rel="prefetch" href="/blogs/assets/js/64.2efb6c79.js"><link rel="prefetch" href="/blogs/assets/js/65.8b8fce18.js"><link rel="prefetch" href="/blogs/assets/js/66.4ec75c2a.js"><link rel="prefetch" href="/blogs/assets/js/67.310e09c3.js"><link rel="prefetch" href="/blogs/assets/js/68.6edb369e.js"><link rel="prefetch" href="/blogs/assets/js/69.1529f340.js"><link rel="prefetch" href="/blogs/assets/js/7.385ed0df.js"><link rel="prefetch" href="/blogs/assets/js/70.9cdc0728.js"><link rel="prefetch" href="/blogs/assets/js/71.f282ac02.js"><link rel="prefetch" href="/blogs/assets/js/72.0a5ab34c.js"><link rel="prefetch" href="/blogs/assets/js/73.818436b6.js"><link rel="prefetch" href="/blogs/assets/js/74.a95fc72d.js"><link rel="prefetch" href="/blogs/assets/js/75.9f6d2b75.js"><link rel="prefetch" href="/blogs/assets/js/8.f0575d67.js"><link rel="prefetch" href="/blogs/assets/js/9.0f833a90.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.e5d12e82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>龙二不2的博客</h3> <p class="description" data-v-59e6cb88>不要因为别人都在交卷自己就乱写答案</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="/blogs/龙二.jpg" alt="龙二不2的博客" class="logo"> <span class="site-name">龙二不2的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <h3 class="name" data-v-1fad0c41>
+    龙二不2
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>65</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>8</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>vue3后台管理系统-前端路由🔥</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">vue3后台管理系统-前端路由🔥</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>龙二不2</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/1/19</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>vue3</span><span class="tag-item" data-v-8a445198>ts</span><span class="tag-item" data-v-8a445198>node.js</span><span class="tag-item" data-v-8a445198>vue3后台管理系统</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>上文用前端写的路由实现了侧边栏的展示，但是除了首页、登录页及错误页面（404 页面等），其它页面在后台管理系统中应该都是要受到<strong>权限的控制</strong>的。所以前端我们只留一些<strong>静态的、不受权限控制的</strong>路由，其它由后端返回给我们来拼接。由于很多组件都可能要用到这些路由信息，所以这些后端返回的路由信息应该存储在<strong>vuex</strong>中。还有<strong>vuex</strong>主要是对全局的状态进行管理，我们所需要全局管理的数据有登录用户的用户信息、权限、按钮等。</p> <h2 id="设置前端静态路由"><a href="#设置前端静态路由" class="header-anchor">#</a> 设置前端静态路由</h2> <p>静态路由除了登录页、首页及错误页面外，还应该设置默认路由<strong>重定向</strong>至首页。除此之外此系统的默认跳转都是到达首页或者用户通过其它有效 url 跳转的页面，我们还应当在路由拦截时判断是否有 token 存在客户端中，有则直接跳转，无则跳转登录页并在 query 参数中带上未跳转的<strong>路由 path</strong>。然后在登录页面中我们要获得 query 信息，然后跳转至重定向的页面。</p> <blockquote><p>不能直接将路由 path 为'/'的路由直接设为首页例如{path:'/',component:'xxx',name:'xxx'}，要设置重定向至首页。原因主要为直接设 component 为首页跳转地址的 url 只会是'xxx:xx/xxxx/'只显示/会有问题。</p></blockquote> <p><strong>router/index.ts</strong></p> <div class="language- extra-class"><pre class="language-text"><code>import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
+import Layout from '@/components/layout/index.vue';
+//静态路由
+export const constantRoutes: Array&lt;RouteRecordRaw&gt; = [
+  {
+    path: '/login',
+    component: () =&gt; import('@/views/login.vue'),
+    meta: { hidden: true }
+  },
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/home',
+    children: [
+      {
+        path: '/home',
+        component: () =&gt; import('@/views/home/index.vue'),
+        name: 'Home',
+        meta: { title: '首页', icon: 'dashboard' }
+      }
+    ]
+  },
+  {
+    path: '/404',
+    component: () =&gt; import('@/views/errorPage/404.vue'),
+    meta: { hidden: true }
+  },
+  {
+    path: '/401',
+    component: () =&gt; import('@/views/errorPage/401.vue'),
+    meta: { hidden: true }
+  }
+];
+​
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes: constantRoutes,
+  // 刷新时，滚动条位置还原
+  scrollBehavior: () =&gt; ({ left: 0, top: 0 })
+});
+​
+// 重置路由
+export function resetRouter() {
+  store.state.permission.routes.forEach((route: any) =&gt; {
+    const name = route.name;
+    if (name) {
+      router.hasRoute(name) &amp;&amp; router.removeRoute(name);
+    }
+  });
+}
+export default router;
+</code></pre></div><p>上面的<code>resetRouter</code>方法中用到了 vuex 的 permission 模块会报错，接下来我们在 vuex 中将这些静态路由拼接上后端路由即为完整的路由。</p> <h2 id="vuex-全局状态管理"><a href="#vuex-全局状态管理" class="header-anchor">#</a> vuex 全局状态管理</h2> <p>首先是登录用户的信息，我们从后端得到已登录用户的信息后，存储下用户名、昵称、邮箱、用户角色、权限菜单、权限按钮等信息，然后在<code>vuex</code>的 mutations 属性设置对应的 set 函数以便修改。同时，登录、退出登录的操作也应该放在<code>vuex</code>的 actions 属性中以便进行全局状态的操作，登录主要是获取 token 等、退出登录清空所有用户信息。</p> <p>由于用的是<code>TypeScript</code>来编写<code>vue</code>组件，所以需要遵循一些步骤提供正确的类型声明。</p> <blockquote><p>参考<code>vuex</code>官方文档<a href="https://vuex.vuejs.org/zh/guide/typescript-support.html#%E7%AE%80%E5%8C%96-usestore-%E7%94%A8%E6%B3%95" target="_blank" rel="noopener noreferrer">TypeScript 支持<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>主要的做法就是 1.提供类型化的 key 2.定义自己的 useStore 组合式函数来检索类型化的 store，这样每次 vue 组件导入 store 时就不用类型化的 key</p></blockquote> <ol><li><p>首先我们先编写各个 store 模块的类型。在 types 目录下创建 store 文件夹，创建 user、permission 模块的和整体 store 的类型文件。并在 store 目录也建立对应的模块文件夹及文件。如下图所示目录结构</p> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5116b5b69a474c46a095b7f3c6c8b0fd~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>然后编写各自 store 模块的类型</p> <p><strong>types/store/user.d.ts</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * 用户类型声明
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">userState</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">token</span><span class="token operator">:</span> string <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+  <span class="token literal-property property">refreshToken</span><span class="token operator">:</span> string <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+  <span class="token literal-property property">roles</span><span class="token operator">:</span> Array<span class="token operator">&lt;</span>string<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+  <span class="token literal-property property">menus</span><span class="token operator">:</span> Array<span class="token operator">&lt;</span>MenuItem<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+  <span class="token literal-property property">buttons</span><span class="token operator">:</span> Array<span class="token operator">&lt;</span>string<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+  <span class="token literal-property property">user_id</span><span class="token operator">:</span> number<span class="token punctuation">;</span>
+  <span class="token literal-property property">username</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+  <span class="token literal-property property">nickname</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+  <span class="token literal-property property">email</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+  <span class="token literal-property property">user_pic</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>types/store/permission.d.ts</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * 权限类型声明
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">permissionState</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">routes</span><span class="token operator">:</span> RouteRecordRaw<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token literal-property property">addRoutes</span><span class="token operator">:</span> RouteRecordRaw<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/**
+ * 菜单meta类型
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">meta</span> <span class="token punctuation">{</span>
+  hidden<span class="token operator">?</span><span class="token operator">:</span> boolean<span class="token punctuation">;</span>
+  <span class="token literal-property property">title</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+  icon<span class="token operator">?</span><span class="token operator">:</span> string <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>types/store/root.d.ts</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 定义state类型，将所有模块的类型导入</span>
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">rootState</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">user</span><span class="token operator">:</span> userState<span class="token punctuation">;</span>
+  <span class="token literal-property property">permission</span><span class="token operator">:</span> permissionState<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>编写 user 模块，主要是在<strong>mutations</strong>中设置各个 state 属性值的 set 函数，在 actions 中编写登录、获取用户信息和退出登录的异步函数，如下述代码 <strong>store/module/user.ts</strong></p> <div class="language- extra-class"><pre class="language-text"><code>import { Module } from 'vuex';
+// 导入api
+import { userLogin } from '@/utils/API/user/user';
+import { getUserInfo } from '@/utils/Api/user/personalCenter';
+// 导入重置路由的函数
+import { resetRouter } from '@/router';
+// 导入操作token的方法
+import { getToken, setToken, removeToken, setRefreshToken, removeRefreshToken, getRefreshToken } from '@/utils/auth';
+import { ElMessage } from 'element-plus';
+// 导入store类型
+import { userState } from '@/types/store/user';
+import { rootState } from '@/types/store/root';
+export const user: Module&lt;userState, rootState&gt; = {
+  // 开启命名空间
+  namespaced: true,
+  state: (): userState =&gt; ({
+    token: getToken() || '',
+    refreshToken: getRefreshToken() || '',
+    roles: [],
+    menus: [],
+    buttons: [],
+    user_id: 0,
+    username: '',
+    nickname: '',
+    email: '',
+    user_pic: ''
+  }),
+  // 同步操作函数
+  mutations: {
+    SET_TOKEN: (state, token) =&gt; {
+      state.token = token;
+    },
+    SET_REFRESHTOKEN: (state, refreshToken) =&gt; {
+      state.refreshToken = refreshToken;
+    },
+    SET_ROLES: (state, roles) =&gt; {
+      state.roles = roles;
+    },
+    SET_MENUS: (state, menus) =&gt; {
+      state.menus = menus;
+    },
+    SET_BUTTONS: (state, buttons) =&gt; {
+      state.buttons = buttons;
+    },
+    SET_USERID: (state, user_id) =&gt; {
+      state.user_id = user_id;
+    },
+    SET_USERNAME: (state, username) =&gt; {
+      state.username = username;
+    },
+    SET_NICKNAME: (state, nickname) =&gt; {
+      state.nickname = nickname;
+    },
+    SET_EMAIL: (state, email) =&gt; {
+      state.email = email;
+    },
+    SET_USER_PIC: (state, user_pic) =&gt; {
+      state.user_pic = user_pic;
+    }
+  },
+  // 异步操作函数
+  actions: {
+    login({ commit }, data) {
+      return new Promise((resolve, reject) =&gt; {
+        userLogin(data)
+          .then((res) =&gt; {
+            commit('SET_TOKEN', res.data.token);
+            commit('SET_REFRESHTOKEN', res.data.refreshToken);
+            setToken(res.data.token);
+            setRefreshToken(res.data.refreshToken);
+            ElMessage.success('登录成功');
+            resolve(null);
+          })
+          .catch((error) =&gt; {
+            reject(error);
+          });
+      });
+    },
+    // 获取用户信息
+    GetInfo({ commit, state }) {
+      return new Promise((resolve, reject) =&gt; {
+        getUserInfo()
+          .then((res) =&gt; {
+            const { data } = res;
+​
+            if (!data || data.length &lt;= 0) {
+              reject('验证失败，请重新登录');
+            }
+            // 解构后端值
+            const { roles, user_id, name, nickname, email, avatar, menus, buttons } = data;
+​
+            // 角色数组必须有值
+            if (!roles || roles.length &lt;= 0) {
+              reject('此用户无分配角色或角色不可用，请重新登录');
+            }
+            commit('SET_ROLES', roles);
+            commit('SET_USERID', user_id);
+            commit('SET_USERNAME', name);
+            commit('SET_NICKNAME', nickname);
+            commit('SET_EMAIL', email);
+            commit(
+              'SET_USER_PIC',
+              avatar ? 'http://127.0.0.1:3007/' + avatar : '/src/assets/avatar/default_avatar.jpg'
+            );
+            commit('SET_MENUS', menus);
+            commit('SET_BUTTONS', buttons);
+            resolve(data);
+          })
+          .catch((error) =&gt; {
+            reject(error);
+          });
+      });
+    },
+    // 退出登录
+    FedLogOut({ commit }) {
+      return new Promise((resolve) =&gt; {
+        commit('SET_TOKEN', '');
+        commit('SET_REFRESHTOKEN', '');
+        commit('SET_ROLES', []);
+        commit('SET_MENUS', []);
+        commit('SET_BUTTONS', []);
+        commit('SET_USERID', -1);
+        commit('SET_USERNAME', '');
+        commit('SET_NICKNAME', '');
+        commit('SET_EMAIL', '');
+        commit('SET_USER_PIC', '');
+        resetRouter();
+        removeToken();
+        removeRefreshToken();
+        resolve(null);
+      });
+    },
+    // 重置token
+    resetToken({ commit }) {
+      return new Promise((resolve) =&gt; {
+        commit('SET_TOKEN', '');
+        commit('SET_REFRESHTOKEN', '');
+        removeToken();
+        removeRefreshToken();
+        resolve(null);
+      });
+    }
+  }
+};
+</code></pre></div></li> <li><p>编写 permission 模块，主要是为了将后端提供的菜单转为前端的 router 结构并拼接静态路由。有一个重点就是 vue2 路由导入文件一般是通过 require，但 vite 不支持 require，所以官网中提供了一个从文件中导入模块的函数 <code>import.meta.glob</code> ，参考<a href="https://cn.vitejs.dev/guide/features.html#glob-import" target="_blank" rel="noopener noreferrer">vite 官方文档 glob 导入<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language- extra-class"><pre class="language-text"><code>import { Module } from 'vuex';
+import { constantRoutes } from '@/router';
+import { RouteRecordRaw } from 'vue-router';
+import Layout from '@/layout/index.vue';
+import { meta, permissionState } from '@/types/store/permission';
+import { rootState } from '@/types/store/root';
+// 懒加载view文件夹下的vue文件
+const modules = import.meta.glob('../../views/**/**.vue');
+// 得到后端路由经转换后的路由结构
+export function filterAsyncRoutes(routes: any) {
+  const res: RouteRecordRaw[] = [];
+  // 遍历得到的路由转换为前端router结构
+  routes.forEach((route: any) =&gt; {
+    const component = route.component;
+    const tmp: any = {
+      path: route.path,
+      // 通过import.meta.glob懒加载获取文件模块，注意文件结构！！！
+      component: route.component === 'Layout' ? Layout : modules[/* @vite-ignore */ `../../views${component}.vue`],
+      redirect: route.redirect || undefined,
+      name: route.name,
+      meta: {} as meta,
+      children: route.children || undefined
+    };
+    tmp.meta.title = route.title;
+    tmp.meta.hidden = !!route.hidden;
+    if (route.icon) {
+      tmp.meta.icon = route.icon;
+    }
+    if (tmp.children &amp;&amp; tmp.children.length) {
+      tmp.children = filterAsyncRoutes(tmp.children);
+    }
+    res.push(tmp);
+  });
+  return res;
+}
+export const permission: Module&lt;permissionState, rootState&gt; = {
+      // 开启命名空间
+  namespaced: true,
+  state: (): permissionState =&gt; ({
+    routes: [],
+    addRoutes: []
+  }),
+​
+  mutations: {
+    // 前端的静态路由拼接转换后的路由
+    SET_ROUTES: (state, routes) =&gt; {
+      state.addRoutes = routes;
+      state.routes = constantRoutes.concat(routes);
+    }
+  },
+​
+  actions: {
+    // 生成路由
+    generateRoutes({ commit }, menus) {
+      return new Promise((resolve) =&gt; {
+        const accessedRoutes = filterAsyncRoutes(menus);
+        commit('SET_ROUTES', accessedRoutes);
+        resolve(accessedRoutes);
+      });
+    }
+  }
+};
+</code></pre></div></li> <li><p>编写整体的 store 文件。要提供正确的类型声明，步骤如上说的是 1.提供类型化的 key 2.定义自己的 useStore 组合式函数来检索类型化的 store，这样每次 vue 组件导入 store 时就不用类型化的 key</p> <div class="language- extra-class"><pre class="language-text"><code>import { createStore, Store, useStore as baseUseStore } from 'vuex';
+// 定义类型化的key
+import { InjectionKey } from 'vue';
+// 导入整体模块store的类型
+import { rootState } from '@/types/store/root';
+// 导入模块
+import { user } from './module/user';
+import { permission } from './module/permission';
+​
+// 提供 injection key
+export const key: InjectionKey&lt;Store&lt;rootState&gt;&gt; = Symbol();
+export const store: Store&lt;rootState&gt; = createStore({
+  // 模块
+  modules: { user, permission }
+});
+// 定义自己的useStore组合式函数
+export function useStore() {
+  return baseUseStore(key);
+}
+</code></pre></div><p>vuex 模块到这里就封装完毕了。</p> <h2 id="测试"><a href="#测试" class="header-anchor">#</a> 测试</h2> <p>通过引入 store 模块下主文件的 useStore 方法，就能够有正确的类型声明，且能够获得全局状态</p> <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e1911f12797547a193ab453d4a2e300c~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p></li></ol> <h2 id="路由拦截"><a href="#路由拦截" class="header-anchor">#</a> 路由拦截</h2> <p>在 src 目录下新建一个 permission 路由模块，主要是进行路由拦截。</p> <p>步骤有</p> <ol><li>看 vuex 中<strong>是否存在 token 及角色</strong>，如果有的话判断是跳转到登录页还是其它页面。如果是登录页让用户跳转到首页，其它页面判断是否有此角色是否存在此路由的权限，无则跳到 404 页面，有则继续跳转。但是若<strong>不存在角色却有 token</strong>的话就是还没获取用户信息，通过 vuex 用户模块的 GetInfo 的异步方法获取信息继续跳转即可。</li> <li><strong>没有 token</strong>的话判断是否是白名单页面（无需 token 也可访问的页面），是可跳转，不是跳转登录页再重定向到要去的页面。</li></ol> <p>代码如下：</p> <p>由于页面有各自的标题存在路由元信息 meta 中所以先封装了一个公共获取标题的方法</p> <p><strong>src/utils/get-title.ts</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const title = 'Vue3后台管理系统';
+​
+export default function getPageTitle(pageTitle: string) {
+  if (pageTitle) {
+    return `${pageTitle} - ${title}`;
+  }
+  return `${title}`;
+}
+</code></pre></div><p><strong>src/permission.ts</strong></p> <div class="language- extra-class"><pre class="language-text"><code>import router from '@/router';
+import { ElMessage } from 'element-plus';
+// 不是vue组件直接引入store即可，不用带key
+import { store } from '@/store';
+// 进度条组件
+import NProgress from 'nprogress';
+import getPageTitle from '@/utils/get-title';
+import 'nprogress/nprogress.css';
+​
+NProgress.configure({ showSpinner: false }); // 进度环显示/隐藏
+​
+// 白名单路由
+const whiteList = ['/login'];
+​
+router.beforeEach(async (to, from, next) =&gt; {
+  NProgress.start();
+  // 设置页面标题
+  document.title = getPageTitle(to.meta?.title);
+  // 判断是否有token
+  const hasToken = store.state.user.token;
+  if (hasToken) {
+    // console.log('有token');
+​
+    // 登录成功，跳转到首页
+    if (to.path === '/login') {
+      next({ path: '/' });
+      NProgress.done();
+    } else {
+      const hasGetUserInfo = store.state.user.roles.length &gt; 0;
+      if (hasGetUserInfo) {
+        if (to.matched.length === 0) {
+          // from.name ? next({ name: from.name as any }) : next('/404');
+          next('/404');
+        } else {
+          next();
+        }
+      } else {
+        try {
+          await store.dispatch('user/GetInfo');
+          const menus = store.state.user.menus;
+          const accessRoutes: any = await store.dispatch('permission/generateRoutes', menus);
+          accessRoutes.forEach((route: any) =&gt; {
+            router.addRoute(route);
+          });
+          next({ ...to, replace: true });
+        } catch (error) {
+          console.log(error);
+​
+          // 移除 token 并跳转登录页
+          await store.dispatch('user/resetToken');
+          ElMessage.error((error as any) || '系统异常');
+          next(`/login?redirect=${to.path}`);
+          NProgress.done();
+        }
+      }
+    }
+  } else {
+    // 未登录可以访问白名单页面(登录页面)
+    if (whiteList.indexOf(to.path) !== -1) {
+      next();
+    } else {
+      next(`/login?redirect=${to.path}`);
+      NProgress.done();
+    }
+  }
+});
+​
+router.afterEach(() =&gt; {
+  NProgress.done();
+});
+</code></pre></div><p>测试一下发现能正常跳到登录页（因为还没有写登录模块），是正常的</p> <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/321df50124624c7abca3cf1e7a69de92~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blogs/blogs/vue3后台管理系统-layout页面.html" class="prev">
+          vue3后台管理系统-layout页面🔥
+        </a></span> <span class="next"><a href="/blogs/blogs/vue3后台管理系统-登录页面.html">
+          vue3后台管理系统-登录页面🔥
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1.html#前言" class="sidebar-link reco-side-前言" data-v-b57cc07c>前言</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1.html#设置前端静态路由" class="sidebar-link reco-side-设置前端静态路由" data-v-b57cc07c>设置前端静态路由</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1.html#vuex-全局状态管理" class="sidebar-link reco-side-vuex-全局状态管理" data-v-b57cc07c>vuex 全局状态管理</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1.html#测试" class="sidebar-link reco-side-测试" data-v-b57cc07c>测试</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1.html#路由拦截" class="sidebar-link reco-side-路由拦截" data-v-b57cc07c>路由拦截</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blogs/assets/js/app.18ea5a3b.js" defer></script><script src="/blogs/assets/js/3.7d50d3e1.js" defer></script><script src="/blogs/assets/js/1.6ae6daff.js" defer></script><script src="/blogs/assets/js/55.167712fc.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3后台管理系统-改造用户接口🔥 | 龙二不2的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="不要因为别人都在交卷自己就乱写答案">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.e5d12e82.css" as="style"><link rel="preload" href="/blogs/assets/js/app.18ea5a3b.js" as="script"><link rel="preload" href="/blogs/assets/js/3.7d50d3e1.js" as="script"><link rel="preload" href="/blogs/assets/js/1.6ae6daff.js" as="script"><link rel="preload" href="/blogs/assets/js/57.3132179b.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.0c3919ea.js"><link rel="prefetch" href="/blogs/assets/js/11.69672944.js"><link rel="prefetch" href="/blogs/assets/js/12.282b391e.js"><link rel="prefetch" href="/blogs/assets/js/13.c8f09181.js"><link rel="prefetch" href="/blogs/assets/js/14.2b6f40c8.js"><link rel="prefetch" href="/blogs/assets/js/15.c3daa56f.js"><link rel="prefetch" href="/blogs/assets/js/16.bee8f531.js"><link rel="prefetch" href="/blogs/assets/js/17.0b7b9d39.js"><link rel="prefetch" href="/blogs/assets/js/18.527b463f.js"><link rel="prefetch" href="/blogs/assets/js/19.3508c473.js"><link rel="prefetch" href="/blogs/assets/js/20.a237ecd5.js"><link rel="prefetch" href="/blogs/assets/js/21.677b4b42.js"><link rel="prefetch" href="/blogs/assets/js/22.d09c4fb0.js"><link rel="prefetch" href="/blogs/assets/js/23.a0354e98.js"><link rel="prefetch" href="/blogs/assets/js/24.7fe498f7.js"><link rel="prefetch" href="/blogs/assets/js/25.736624c0.js"><link rel="prefetch" href="/blogs/assets/js/26.8ca64f53.js"><link rel="prefetch" href="/blogs/assets/js/27.cbfb5a89.js"><link rel="prefetch" href="/blogs/assets/js/28.55e3eeb6.js"><link rel="prefetch" href="/blogs/assets/js/29.cf694242.js"><link rel="prefetch" href="/blogs/assets/js/30.db96836a.js"><link rel="prefetch" href="/blogs/assets/js/31.b10a5c2e.js"><link rel="prefetch" href="/blogs/assets/js/32.adc65a78.js"><link rel="prefetch" href="/blogs/assets/js/33.eead35d2.js"><link rel="prefetch" href="/blogs/assets/js/34.58544962.js"><link rel="prefetch" href="/blogs/assets/js/35.99f45e43.js"><link rel="prefetch" href="/blogs/assets/js/36.0e4a76fd.js"><link rel="prefetch" href="/blogs/assets/js/37.c5d24eed.js"><link rel="prefetch" href="/blogs/assets/js/38.4cafbdd8.js"><link rel="prefetch" href="/blogs/assets/js/39.7bf5261c.js"><link rel="prefetch" href="/blogs/assets/js/4.76e26aa1.js"><link rel="prefetch" href="/blogs/assets/js/40.59c785e3.js"><link rel="prefetch" href="/blogs/assets/js/41.0e6560d2.js"><link rel="prefetch" href="/blogs/assets/js/42.ac0f867e.js"><link rel="prefetch" href="/blogs/assets/js/43.a4fe4c0f.js"><link rel="prefetch" href="/blogs/assets/js/44.c4dd0147.js"><link rel="prefetch" href="/blogs/assets/js/45.985876f4.js"><link rel="prefetch" href="/blogs/assets/js/46.9ce22631.js"><link rel="prefetch" href="/blogs/assets/js/47.f7bf4421.js"><link rel="prefetch" href="/blogs/assets/js/48.cde6da56.js"><link rel="prefetch" href="/blogs/assets/js/49.97b3b470.js"><link rel="prefetch" href="/blogs/assets/js/5.7576fc30.js"><link rel="prefetch" href="/blogs/assets/js/50.0cc7fad2.js"><link rel="prefetch" href="/blogs/assets/js/51.0b47ddd4.js"><link rel="prefetch" href="/blogs/assets/js/52.bd74072e.js"><link rel="prefetch" href="/blogs/assets/js/53.77a00e1c.js"><link rel="prefetch" href="/blogs/assets/js/54.cb61450d.js"><link rel="prefetch" href="/blogs/assets/js/55.167712fc.js"><link rel="prefetch" href="/blogs/assets/js/56.d15eafc6.js"><link rel="prefetch" href="/blogs/assets/js/58.87a301ff.js"><link rel="prefetch" href="/blogs/assets/js/59.1fb35315.js"><link rel="prefetch" href="/blogs/assets/js/6.32f1aaf4.js"><link rel="prefetch" href="/blogs/assets/js/60.7ebb4f4e.js"><link rel="prefetch" href="/blogs/assets/js/61.fd9249b1.js"><link rel="prefetch" href="/blogs/assets/js/62.dd2cf210.js"><link rel="prefetch" href="/blogs/assets/js/63.1c2e83da.js"><link rel="prefetch" href="/blogs/assets/js/64.2efb6c79.js"><link rel="prefetch" href="/blogs/assets/js/65.8b8fce18.js"><link rel="prefetch" href="/blogs/assets/js/66.4ec75c2a.js"><link rel="prefetch" href="/blogs/assets/js/67.310e09c3.js"><link rel="prefetch" href="/blogs/assets/js/68.6edb369e.js"><link rel="prefetch" href="/blogs/assets/js/69.1529f340.js"><link rel="prefetch" href="/blogs/assets/js/7.385ed0df.js"><link rel="prefetch" href="/blogs/assets/js/70.9cdc0728.js"><link rel="prefetch" href="/blogs/assets/js/71.f282ac02.js"><link rel="prefetch" href="/blogs/assets/js/72.0a5ab34c.js"><link rel="prefetch" href="/blogs/assets/js/73.818436b6.js"><link rel="prefetch" href="/blogs/assets/js/74.a95fc72d.js"><link rel="prefetch" href="/blogs/assets/js/75.9f6d2b75.js"><link rel="prefetch" href="/blogs/assets/js/8.f0575d67.js"><link rel="prefetch" href="/blogs/assets/js/9.0f833a90.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.e5d12e82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>龙二不2的博客</h3> <p class="description" data-v-59e6cb88>不要因为别人都在交卷自己就乱写答案</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="/blogs/龙二.jpg" alt="龙二不2的博客" class="logo"> <span class="site-name">龙二不2的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <h3 class="name" data-v-1fad0c41>
+    龙二不2
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>65</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>8</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>vue3后台管理系统-改造用户接口🔥</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">vue3后台管理系统-改造用户接口🔥</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>龙二不2</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/1/9</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>vue3</span><span class="tag-item" data-v-8a445198>ts</span><span class="tag-item" data-v-8a445198>node.js</span><span class="tag-item" data-v-8a445198>vue3后台管理系统</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>前面已经将用户模型与角色模型做了关联。但是用户接口添加及返回的信息还不包含角色，所以接下来我们将对用户接口进行改造。</p> <h2 id="改造接口"><a href="#改造接口" class="header-anchor">#</a> 改造接口</h2> <h3 id="添加用户接口"><a href="#添加用户接口" class="header-anchor">#</a> 添加用户接口</h3> <p>添加用户的时候也要添加用户所选择的角色信息。所以我们在模型定义的文件中为模型添加方法，从而达到添加用户角色的目的。</p> <blockquote><p><strong>添加用户角色的重点：</strong> 添加用户角色方法应当有两个操作： 1.添加用户的信息，2.在用户角色表添加用户的角色信息。但这里有一个问题，万一我们添加用户信息成功了，但添加用户的角色没有成功，添加用户信息是否是错误的、不应该的？所以下面的代码我用到了<a href="https://www.sequelize.cn/other-topics/transactions" target="_blank" rel="noopener noreferrer">sequelize 的事务<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>的概念。这里要是有一个操作没有成功就会回滚（即所有操作都不做），要所有操作都成功才提交。</p></blockquote> <p><strong>model/user.js</strong></p> <p>我们添加角色的第一步为添加用户，然后再读取传来的角色 id 数组，遍历后再添加到用户角色表</p> <div class="language- extra-class"><pre class="language-text"><code>...
+const UserModel=sequelize.define(...)
+// 添加用户的方法
+UsersModel.addUser = async function (data) {
+  // 首先,我们开始一个事务并将其保存到变量中
+  const t = await sequelize.transaction();
+  try {
+    // 然后,我们进行一些调用以将此事务作为参数传递:
+    // 添加用户
+    const user = await UsersModel.create(data);
+    // 遍历前端传来的用户角色id并添加到用户角色表
+    const users_roles = data.role_ids.map(function (role_id) {
+      return {
+        user_id: user.user_id,
+        role_id: role_id
+      };
+    });
+    await UsersRolesModel.bulkCreate(users_roles);
+    // 我们提交事务.
+    t.commit();
+    return true;
+  } catch (e) {
+    // 如果执行到达此行,则抛出错误.
+    // 我们回滚事务.
+    t.rollback();
+    return e.message;
+  }
+};
+...
+</code></pre></div><p>然后我们修改一下校验规则文件（添加 id 数组的校验）和添加用户路由回调函数。</p> <p><strong>schema/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const role_ids = joi.array().items(joi.number()).required();
+// 添加用户接口
+exports.add_user_schema = joi.object().keys({
+  username,
+  password,
+  role_ids
+});
+</code></pre></div><p><strong>router_handler/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code> ...
+ const password = value.password;
+  // 加密
+  value.password = bcrypt.hashSync(password, 10);
+  // 将添加的用户设置为可用
+  value.status = 1;
+  // 添加用户角色，返回true或错误信息
+  const result = UsersModel.addUser(value);
+  result.then(function (ret) {
+    if (ret=== true) {
+      return res.send({
+        code: 0,
+        message: '新增成功',
+        data: ret
+      });
+    }
+  })
+ ...
+</code></pre></div><h3 id="修改角色接口"><a href="#修改角色接口" class="header-anchor">#</a> 修改角色接口</h3> <p>修改角色方法与添加角色方法基本一致，要做到修改用户的角色时能够修改用户角色表的数据。</p> <p>但前端传来了一个角色数组，我们得先从用户角色表中取出用户的角色数据将其转为数组，然后比较两个数组再对应进行修改。例如前端传来的角色数组为[1,2]，表里例如所存字段信息的是</p> <table><thead><tr><th>user_id</th> <th>role_id</th></tr></thead> <tbody><tr><td>1</td> <td>1</td></tr> <tr><td>1</td> <td>3</td></tr></tbody></table> <p>那么数据库所存的角色信息数组就是[1,3]，我们应当将 3 的角色删掉然后添加 2 的角色。</p> <p>那么我们得要获得两个数组的差集。我们用到的是数组的<strong>filter 方法</strong>过滤出交集</p> <div class="language- extra-class"><pre class="language-text"><code>// 测试！！！
+let arr1 = [1,2,3];
+let arr2 = [1,3,4];
+let arr3=arr1.filter(function (v) {
+  return arr2.indexOf(v) === -1;
+});
+let arr4 = arr2.filter(function (v) {
+  return arr1.indexOf(v) === -1;
+});
+console.log(arr3);   //    得到[2]为添加的角色数组
+console.log(arr4);   //    得到[4]为数据库中要删除的角色数组
+</code></pre></div><p>我们在 utils 文件夹下新建一个工具类来定义此数组方法。</p> <p><strong>utils/tools.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>/**
+ * 获取两个数组差集
+ * @param arr1
+ * @param arr2
+ * @returns {*[]}
+ */
+const minustArr = function (arr1 = [], arr2 = []) {
+  return arr1.filter(function (v) {
+    return arr2.indexOf(v) === -1;
+  });
+};
+// 导出工具方法
+module.exports = {
+  minustArr
+};
+</code></pre></div><p>那么我们就可以进行修改角色方法的编写了</p> <p><strong>model/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const tools=require('../utils/tools')
+...
+UsersModel.addUser...
+UsersModel.updateUser = async function (user_id, data) {
+  const t = await sequelize.transaction();
+  try {
+    // 获得修改时间
+    data.update_time = new Date();
+    // 先更新用户
+    await UsersModel.update(data, {
+      where: {
+        user_id: user_id
+      }
+    });
+    // 再得到用户角色表中此用户的角色id
+    const users_roles = await UsersRolesModel.findAll({
+      where: { user_id: user_id }
+    });
+    // 将表中获得的角色id转换为数组
+    const role_ids = users_roles.map(function (item) {
+      return item.role_id;
+    });
+    // 新加的角色加到用户角色表中
+    const add_role_ids = tools.minustArr(data.role_ids, role_ids);
+    const add_users_roles = add_role_ids.map(function (role_id) {
+      return { user_id: user_id, role_id: role_id };
+    });
+    await UsersRolesModel.bulkCreate(add_users_roles);
+    // 删除的角色从用户角色表删除
+    const del_role_ids = tools.minustArr(role_ids, data.role_ids);
+    if (del_role_ids &amp;&amp; del_role_ids.length &gt; 0) {
+      await UsersRolesModel.destroy({
+        where: {
+          user_id: user_id,
+          role_id: del_role_ids
+        }
+      });
+    }
+    t.commit();
+    return true;
+  } catch (e) {
+    t.rollback();
+    return e.message;
+  }
+};
+...
+</code></pre></div><p>然后同样对校验字段和路由回调函数进行修改。</p> <p><strong>schema/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>// 更新用户接口
+exports.update_user_schema = joi.object().keys({
+  username: joi.string().alphanum().min(1).max(10),
+  status,
+  nickname,
+  email,
+  role_ids     // 角色id数组
+});
+</code></pre></div><p><strong>router_handler/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const result = UsersModel.updateUser(user_id, req.body);
+result.then(function (ret) {
+    if (ret === true) {
+      return res.send({
+        code: 0,
+        message: '修改成功',
+        data: ret
+      });
+    }
+})
+</code></pre></div><h3 id="删除用户接口"><a href="#删除用户接口" class="header-anchor">#</a> 删除用户接口</h3> <p>删除用户只需要删除对应用户表的用户和用户角色表该用户 id 对应的表记录即可</p> <p><strong>model/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>...
+UsersModel.delUser = async function (user_ids) {
+  const t = await sequelize.transaction();
+  try {
+    await UsersModel.destroy({
+      where: { user_id: user_ids }
+    });
+    await UsersRolesModel.destroy({
+      where: { user_id: user_ids }
+    });
+    t.commit();
+    return true;
+  } catch (e) {
+    t.rollback();
+    return false;
+  }
+};
+...
+</code></pre></div><p>然后修改回调函数</p> <p><strong>router_handler/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>...
+  const user_ids = req.body.user_id;
+  UsersModel.delUser(user_ids || []).then(function (user) {
+    if (user !== true) {
+      return res.send({
+        code: 1,
+        message: '删除失败',
+        data: null
+      });
+    }
+...
+</code></pre></div><h3 id="获取用户列表和根据-id-获取用户信息接口"><a href="#获取用户列表和根据-id-获取用户信息接口" class="header-anchor">#</a> 获取用户列表和根据 id 获取用户信息接口</h3> <p>都只需要在获取信息的时候添加上角色信息。在<a href="https://www.sequelize.cn/core-concepts/assocs" target="_blank" rel="noopener noreferrer">sequelize 的关联模块<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>中有<code>include</code>参数可以执行预先加载与查询实例一起带回关联的数据。</p> <p>先导入角色用户模型</p> <p><strong>router_handler/user.js</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const RolesModel = require('../model/roles');
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>/**
+ * 获取用户列表
+ */
+ ...
+  UsersModel.findAndCountAll({
+    attributes: { exclude: ['password'] },
+    include:[{model:RolesModel}],    // 预先加载角色模型
+    offset: offset,
+    limit: limit,
+    where: where
+  }).then(...)
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code> /**
+ * 根据id获取用户信息接口
+ */
+ ...
+ UsersModel.findOne({
+    attributes: { exclude: ['password'] },
+    include: [{ model: RolesModel }], // 预先加载角色模型
+    where: {
+      user_id: user_id
+    }
+  }).then(...)
+</code></pre></div><h2 id="测试"><a href="#测试" class="header-anchor">#</a> 测试</h2> <p>因为暂时还没有角色，所以我们先测试获取用户列表</p> <p><strong>获取用户列表</strong></p> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/829bc63571ea498f8a590b55620d169a~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>可以看到带上了 roles 字段，说明成功了。下文我们将添加角色信息，到时候看得更加直观。</p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blogs/blogs/vue3后台管理系统-角色接口.html" class="prev">
+          vue3后台管理系统-角色接口🔥
+        </a></span> <span class="next"><a href="/blogs/blogs/vue3后台管理系统-角色接口（2）.html">
+          vue3后台管理系统-角色接口（2）🔥
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E6%94%B9%E9%80%A0%E7%94%A8%E6%88%B7%E6%8E%A5%E5%8F%A3.html#前言" class="sidebar-link reco-side-前言" data-v-b57cc07c>前言</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E6%94%B9%E9%80%A0%E7%94%A8%E6%88%B7%E6%8E%A5%E5%8F%A3.html#改造接口" class="sidebar-link reco-side-改造接口" data-v-b57cc07c>改造接口</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E6%94%B9%E9%80%A0%E7%94%A8%E6%88%B7%E6%8E%A5%E5%8F%A3.html#添加用户接口" class="sidebar-link reco-side-添加用户接口" data-v-b57cc07c>添加用户接口</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E6%94%B9%E9%80%A0%E7%94%A8%E6%88%B7%E6%8E%A5%E5%8F%A3.html#修改角色接口" class="sidebar-link reco-side-修改角色接口" data-v-b57cc07c>修改角色接口</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E6%94%B9%E9%80%A0%E7%94%A8%E6%88%B7%E6%8E%A5%E5%8F%A3.html#删除用户接口" class="sidebar-link reco-side-删除用户接口" data-v-b57cc07c>删除用户接口</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E6%94%B9%E9%80%A0%E7%94%A8%E6%88%B7%E6%8E%A5%E5%8F%A3.html#获取用户列表和根据-id-获取用户信息接口" class="sidebar-link reco-side-获取用户列表和根据-id-获取用户信息接口" data-v-b57cc07c>获取用户列表和根据 id 获取用户信息接口</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E6%94%B9%E9%80%A0%E7%94%A8%E6%88%B7%E6%8E%A5%E5%8F%A3.html#测试" class="sidebar-link reco-side-测试" data-v-b57cc07c>测试</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blogs/assets/js/app.18ea5a3b.js" defer></script><script src="/blogs/assets/js/3.7d50d3e1.js" defer></script><script src="/blogs/assets/js/1.6ae6daff.js" defer></script><script src="/blogs/assets/js/57.3132179b.js" defer></script>
+  </body>
+</html>

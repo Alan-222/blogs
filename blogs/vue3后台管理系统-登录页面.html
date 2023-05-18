@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3后台管理系统-登录页面🔥 | 龙二不2的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="不要因为别人都在交卷自己就乱写答案">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.e5d12e82.css" as="style"><link rel="preload" href="/blogs/assets/js/app.18ea5a3b.js" as="script"><link rel="preload" href="/blogs/assets/js/3.7d50d3e1.js" as="script"><link rel="preload" href="/blogs/assets/js/1.6ae6daff.js" as="script"><link rel="preload" href="/blogs/assets/js/67.310e09c3.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.0c3919ea.js"><link rel="prefetch" href="/blogs/assets/js/11.69672944.js"><link rel="prefetch" href="/blogs/assets/js/12.282b391e.js"><link rel="prefetch" href="/blogs/assets/js/13.c8f09181.js"><link rel="prefetch" href="/blogs/assets/js/14.2b6f40c8.js"><link rel="prefetch" href="/blogs/assets/js/15.c3daa56f.js"><link rel="prefetch" href="/blogs/assets/js/16.bee8f531.js"><link rel="prefetch" href="/blogs/assets/js/17.0b7b9d39.js"><link rel="prefetch" href="/blogs/assets/js/18.527b463f.js"><link rel="prefetch" href="/blogs/assets/js/19.3508c473.js"><link rel="prefetch" href="/blogs/assets/js/20.a237ecd5.js"><link rel="prefetch" href="/blogs/assets/js/21.677b4b42.js"><link rel="prefetch" href="/blogs/assets/js/22.d09c4fb0.js"><link rel="prefetch" href="/blogs/assets/js/23.a0354e98.js"><link rel="prefetch" href="/blogs/assets/js/24.7fe498f7.js"><link rel="prefetch" href="/blogs/assets/js/25.736624c0.js"><link rel="prefetch" href="/blogs/assets/js/26.8ca64f53.js"><link rel="prefetch" href="/blogs/assets/js/27.cbfb5a89.js"><link rel="prefetch" href="/blogs/assets/js/28.55e3eeb6.js"><link rel="prefetch" href="/blogs/assets/js/29.cf694242.js"><link rel="prefetch" href="/blogs/assets/js/30.db96836a.js"><link rel="prefetch" href="/blogs/assets/js/31.b10a5c2e.js"><link rel="prefetch" href="/blogs/assets/js/32.adc65a78.js"><link rel="prefetch" href="/blogs/assets/js/33.eead35d2.js"><link rel="prefetch" href="/blogs/assets/js/34.58544962.js"><link rel="prefetch" href="/blogs/assets/js/35.99f45e43.js"><link rel="prefetch" href="/blogs/assets/js/36.0e4a76fd.js"><link rel="prefetch" href="/blogs/assets/js/37.c5d24eed.js"><link rel="prefetch" href="/blogs/assets/js/38.4cafbdd8.js"><link rel="prefetch" href="/blogs/assets/js/39.7bf5261c.js"><link rel="prefetch" href="/blogs/assets/js/4.76e26aa1.js"><link rel="prefetch" href="/blogs/assets/js/40.59c785e3.js"><link rel="prefetch" href="/blogs/assets/js/41.0e6560d2.js"><link rel="prefetch" href="/blogs/assets/js/42.ac0f867e.js"><link rel="prefetch" href="/blogs/assets/js/43.a4fe4c0f.js"><link rel="prefetch" href="/blogs/assets/js/44.c4dd0147.js"><link rel="prefetch" href="/blogs/assets/js/45.985876f4.js"><link rel="prefetch" href="/blogs/assets/js/46.9ce22631.js"><link rel="prefetch" href="/blogs/assets/js/47.f7bf4421.js"><link rel="prefetch" href="/blogs/assets/js/48.cde6da56.js"><link rel="prefetch" href="/blogs/assets/js/49.97b3b470.js"><link rel="prefetch" href="/blogs/assets/js/5.7576fc30.js"><link rel="prefetch" href="/blogs/assets/js/50.0cc7fad2.js"><link rel="prefetch" href="/blogs/assets/js/51.0b47ddd4.js"><link rel="prefetch" href="/blogs/assets/js/52.bd74072e.js"><link rel="prefetch" href="/blogs/assets/js/53.77a00e1c.js"><link rel="prefetch" href="/blogs/assets/js/54.cb61450d.js"><link rel="prefetch" href="/blogs/assets/js/55.167712fc.js"><link rel="prefetch" href="/blogs/assets/js/56.d15eafc6.js"><link rel="prefetch" href="/blogs/assets/js/57.3132179b.js"><link rel="prefetch" href="/blogs/assets/js/58.87a301ff.js"><link rel="prefetch" href="/blogs/assets/js/59.1fb35315.js"><link rel="prefetch" href="/blogs/assets/js/6.32f1aaf4.js"><link rel="prefetch" href="/blogs/assets/js/60.7ebb4f4e.js"><link rel="prefetch" href="/blogs/assets/js/61.fd9249b1.js"><link rel="prefetch" href="/blogs/assets/js/62.dd2cf210.js"><link rel="prefetch" href="/blogs/assets/js/63.1c2e83da.js"><link rel="prefetch" href="/blogs/assets/js/64.2efb6c79.js"><link rel="prefetch" href="/blogs/assets/js/65.8b8fce18.js"><link rel="prefetch" href="/blogs/assets/js/66.4ec75c2a.js"><link rel="prefetch" href="/blogs/assets/js/68.6edb369e.js"><link rel="prefetch" href="/blogs/assets/js/69.1529f340.js"><link rel="prefetch" href="/blogs/assets/js/7.385ed0df.js"><link rel="prefetch" href="/blogs/assets/js/70.9cdc0728.js"><link rel="prefetch" href="/blogs/assets/js/71.f282ac02.js"><link rel="prefetch" href="/blogs/assets/js/72.0a5ab34c.js"><link rel="prefetch" href="/blogs/assets/js/73.818436b6.js"><link rel="prefetch" href="/blogs/assets/js/74.a95fc72d.js"><link rel="prefetch" href="/blogs/assets/js/75.9f6d2b75.js"><link rel="prefetch" href="/blogs/assets/js/8.f0575d67.js"><link rel="prefetch" href="/blogs/assets/js/9.0f833a90.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.e5d12e82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>龙二不2的博客</h3> <p class="description" data-v-59e6cb88>不要因为别人都在交卷自己就乱写答案</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="/blogs/龙二.jpg" alt="龙二不2的博客" class="logo"> <span class="site-name">龙二不2的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <h3 class="name" data-v-1fad0c41>
+    龙二不2
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>65</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>8</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/CSS学习笔记/" class="nav-link"><i class="undefined"></i>
+  CSS学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/《ES6入门教程》学习笔记/" class="nav-link"><i class="undefined"></i>
+  《ES6入门教程》学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Vue学习笔记/" class="nav-link"><i class="undefined"></i>
+  Vue学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/vue3+ts+node.js后台管理系统/" class="nav-link"><i class="undefined"></i>
+  vue3+ts+node.js后台管理系统
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/javaScript学习笔记/" class="nav-link"><i class="undefined"></i>
+  javaScript学习笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4385276223300142" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Alan-222" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>vue3后台管理系统-登录页面🔥</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>龙二不2</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">vue3后台管理系统-登录页面🔥</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>龙二不2</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/1/20</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>vue3</span><span class="tag-item" data-v-8a445198>ts</span><span class="tag-item" data-v-8a445198>node.js</span><span class="tag-item" data-v-8a445198>vue3后台管理系统</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>已经实现了 router、vuex 模块，并能够显示对应角色的权限菜单，接下来我们就完成登录模块看看实现的效果。但是之前的 layout 模块我们遍历的路由还是前端静态的路由，应该让他使用 vuex 中拼接后的路由，还有一些地方需要添加和修改（导航栏显示用户数据、重置密码模块、退出登录等）。</p> <h2 id="修改-layout-模块"><a href="#修改-layout-模块" class="header-anchor">#</a> 修改 layout 模块</h2> <p>我们导航栏用户信息操作的区域有一个重置密码的功能，主要步骤为需要<strong>弹窗</strong>弹出表单、校验信息、提交表单，我们按步来实现。为了防止代码过多，我们将重置密码模块与主模块分开，由于重置密码的弹窗是显示在<strong>layout 主页面</strong>（<code>index.vue</code>）上，所以弹窗的开关也得在主页面上，主页面只有弹窗。另外添加一个 form 表单文件（有旧密码、新密码、确认密码字段），主页面引入即可。我们先看看 layout 总体的目录结构</p> <p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fc96c408c3064f328edaaaaf7cb98403~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <h3 id="添加重置密码模块"><a href="#添加重置密码模块" class="header-anchor">#</a> 添加重置密码模块</h3> <p><strong>components/layout/resetPassword.vue</strong></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;el-form ref=&quot;ruleFormRef&quot; :model=&quot;user&quot; :rules=&quot;rules&quot; label-width=&quot;80px&quot;&gt;
+      &lt;el-form-item label=&quot;旧密码&quot; prop=&quot;oldPassword&quot;&gt;
+        &lt;el-input v-model=&quot;user.old_password&quot; placeholder=&quot;请输入旧密码&quot; type=&quot;password&quot; /&gt;
+      &lt;/el-form-item&gt;
+      &lt;el-form-item label=&quot;新密码&quot; prop=&quot;newPassword&quot;&gt;
+        &lt;el-input v-model=&quot;user.password&quot; placeholder=&quot;请输入新密码&quot; type=&quot;password&quot; /&gt;
+      &lt;/el-form-item&gt;
+      &lt;el-form-item label=&quot;确认密码&quot; prop=&quot;confirmPassword&quot;&gt;
+        &lt;el-input v-model=&quot;user.repassword&quot; placeholder=&quot;请确认密码&quot; type=&quot;password&quot; /&gt;
+      &lt;/el-form-item&gt;
+    &lt;/el-form&gt;
+    &lt;div slot=&quot;footer&quot; class=&quot;dialog-footer&quot;&gt;
+      &lt;el-button @click=&quot;close(ruleFormRef)&quot;&gt;取消&lt;/el-button&gt;
+      &lt;el-button type=&quot;primary&quot; @click=&quot;submitForm(ruleFormRef)&quot;&gt;保存&lt;/el-button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+​
+&lt;script setup lang=&quot;ts&quot;&gt;
+import { ref, reactive } from 'vue';
+import { ElMessage, FormInstance } from 'element-plus'
+import { updatePwd } from '@/utils/API/user/user';
+import { store } from '@/store';
+import router from '@/router';
+// 引入弹窗关闭的方法
+const emit = defineEmits(['closeDialog'])
+// 表单实例
+const ruleFormRef = ref&lt;FormInstance&gt;()
+// 表单数据对象
+const user = reactive&lt;resetpass&gt;({
+  old_password: '',
+  password: '',
+  repassword: ''
+})
+// 校验信息对象
+const validatePass = (rule: any, value: any, callback: any) =&gt; {
+  if (value === '') {
+    callback(new Error('请输入新密码'))
+  } else {
+    if (user.repassword !== '') {
+      if (!ruleFormRef.value) return
+      ruleFormRef.value.validateField('confirmPassword', () =&gt; null)
+    }
+    callback()
+  }
+}
+const validatePass2 = (rule: any, value: any, callback: any) =&gt; {
+  if (value === '') {
+    callback(new Error('请再次输入确认密码'))
+  } else if (value !== user.password) {
+    callback(new Error(&quot;两次输入的密码不匹配！&quot;))
+  } else {
+    callback()
+  }
+}
+// 校验规则
+const rules = reactive({
+  old_password: [
+    { required: true, message: &quot;旧密码不能为空&quot;, trigger: &quot;blur&quot; }
+  ],
+  password: [{ validator: validatePass, trigger: 'blur' }],
+  repassword: [{ validator: validatePass2, trigger: 'blur' }],
+})
+// 提交表单的方法
+const submitForm = (formEl: FormInstance | undefined) =&gt; {
+  if (!formEl) return
+  formEl.validate((valid) =&gt; {
+    const form = {
+      user_id: store.state.user.user_id,
+      ...user
+    }
+    if (valid) {
+      updatePwd(form).then(res =&gt; {
+        ElMessage.success('重置密码成功')
+        // 重置密码后重新登录
+        store.dispatch('user/FedLogOut').then(() =&gt; {
+          router.push('/login')
+        });
+        emit('closeDialog')
+      })
+    }
+  })
+}
+// 关闭弹窗的方法
+const close = (formEl: FormInstance | undefined) =&gt; {
+  // 清空弹窗
+  formEl?.resetFields()
+  emit('closeDialog')
+}
+​
+&lt;/script&gt;
+</code></pre></div><p>然后在主文件（<code>index.vue</code>）中添加一个弹窗内置此表单文件，再添加一个关闭弹窗的方法传递给表单组件即可。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div class=&quot;app-container&quot;&gt;
+    ...
+    &lt;el-dialog v-model=&quot;dialogFormVisible&quot; width=&quot;30%&quot; title=&quot;重置密码&quot;&gt;
+      &lt;reset-password @closeDialog=&quot;closeDialog&quot;&gt;&lt;/reset-password&gt;
+    &lt;/el-dialog&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+​
+&lt;script setup lang=&quot;ts&quot;&gt;
+...
+const dialogFormVisible = ref(false)
+...
+const closeDialog = () =&gt; {
+  dialogFormVisible.value = false
+}
+&lt;/script&gt;
+</code></pre></div><p>导航栏显示用户数据及退出登录</p> <p><strong>index.vue html 结构</strong></p> <p>主要就是利用 vuex 的全局状态显示用户信息</p> <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ee027c2cd7d94bb4851ce60f2a6c511e~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p><strong>index.vue js 代码</strong></p> <p>退出登录方法主要是点击后显示确认框，确认后调用 vuex 中的异步函数，清空用户信息、token 等并重置路由然后跳转到登录页重新登录</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script setup lang=&quot;ts&quot;&gt;
+import { ref, computed } from 'vue'
+import {
+  Tools,
+} from '@element-plus/icons-vue'
+import { useStore } from '@/store';
+import { useRouter } from 'vue-router'
+import { ElMessageBox } from 'element-plus';
+import ResetPassword from './resetPassword.vue';
+import SidebarItem from './SidebarItem.vue';
+// 导入vuex模块
+const store = useStore()
+// 导入router模块
+const router = useRouter()
+// 获得用户权限菜单
+const routes = computed(() =&gt; store.state.permission.routes);
+// 表单显示标识
+const dialogFormVisible = ref(false)
+// 高亮的菜单项
+const activeIndex = ref('1')
+// 退出登录的方法
+const logout = () =&gt; {
+  ElMessageBox.confirm(
+    '确定注销并退出系统吗？',
+    '提示',
+    {
+      confirmButtonText: '确定',
+      cancelButtonText: '取消',
+      type: 'warning',
+    }
+  ).then(() =&gt; {
+    store.dispatch('user/FedLogOut').then(() =&gt; {
+      router.replace('/login')
+    })
+  })
+}
+// 关闭弹窗方法
+const closeDialog = () =&gt; {
+  dialogFormVisible.value = false
+}
+&lt;/script&gt;
+</code></pre></div><p>接下来我们来实现登录模块，就可看到主页的权限效果渲染正确与否</p> <h2 id="实现登录模块"><a href="#实现登录模块" class="header-anchor">#</a> 实现登录模块</h2> <p>登录模块也比较简单，就是一个登录表单，涉及到表单校验、提交表单。还有一个记住密码的功能是需要安装额外的模块<code>js-cookie</code>（对 cookie 信息进行操作）、<code>jsencrypt</code>（对密码加密解密）。下面是依赖的版本。</p> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a15a2fba7f434a1e90385429151ed38f~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>记住密码分两种情况</p> <ol><li>选择了记住密码。那么提交表单的方法我们就要存储用户名密码信息（密码需要用<code>jesncrypt</code>加密）到 cookie 中。下次再需要登录的时候直接先将密码解密再从 cookie 中取信息放到表单中</li> <li>未选择记住密码就清空 cookie 中存在的用户名密码信息</li></ol> <p>还有一个登录页面可能是其它页面（例如首页、用户管理等）重定向过来的，这时候会在 query 路由信息中有之前页面的地址还有其它 query 信息，我们监听此信息登录成功后跳转到此页面。接下来用代码看看总体的登录页面</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div class=&quot;loginbody&quot;&gt;
+    &lt;div class=&quot;logindata&quot;&gt;
+      &lt;div class=&quot;logintext&quot;&gt;
+        &lt;h2&gt;Welcome&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;form&quot;&gt;
+        &lt;el-form ref=&quot;ruleFormRef&quot; :model=&quot;form&quot; :rules=&quot;rules&quot;&gt;
+          &lt;el-form-item prop=&quot;username&quot;&gt;
+            &lt;el-input v-model=&quot;form.username&quot; clearable placeholder=&quot;请输入账号&quot;&gt;&lt;/el-input&gt;
+          &lt;/el-form-item&gt;
+          &lt;el-form-item prop=&quot;password&quot;&gt;
+            &lt;el-input v-model=&quot;form.password&quot; clearable placeholder=&quot;请输入密码&quot; show-password&gt;&lt;/el-input&gt;
+          &lt;/el-form-item&gt;
+          &lt;el-form-item prop=&quot;checkCode&quot;&gt;
+            &lt;el-input v-model=&quot;form.checkCode&quot; placeholder=&quot;请输入验证码&quot; class=&quot;login-code-input&quot; maxlength=&quot;4&quot; minlength=&quot;4&quot;
+              clearable&gt;&lt;/el-input&gt;
+            &lt;div class=&quot;login-code&quot; @click=&quot;getCode&quot; v-html=&quot;verifyImg&quot;&gt;
+            &lt;/div&gt;
+          &lt;/el-form-item&gt;
+          &lt;el-form-item prop=&quot;remember&quot;&gt;
+            &lt;el-checkbox v-model=&quot;form.remember&quot; class=&quot;check-box&quot;&gt;记住密码&lt;/el-checkbox&gt;
+          &lt;/el-form-item&gt;
+        &lt;/el-form&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;butt&quot;&gt;
+        &lt;el-button :loading=&quot;loading&quot; type=&quot;primary&quot; @click=&quot;submitForm(ruleFormRef)&quot;&gt;登录&lt;/el-button&gt;
+        &lt;el-button @click=&quot;ruleFormRef?.resetFields()&quot;&gt;重置&lt;/el-button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+​
+&lt;script lang=&quot;ts&quot;&gt;
+export default { name: 'Login' };
+&lt;/script&gt;
+&lt;script lang=&quot;ts&quot; setup&gt;
+import { ref, reactive, toRefs, watch, onMounted } from 'vue'
+import router from '@/router'
+import type { FormInstance, FormRules } from 'element-plus'
+import { useStore } from '@/store'
+import { useRoute } from 'vue-router'
+import Cookies from 'js-cookie'
+import { encrypt, decrypt } from '@/utils/jsencrypt'
+import { getCheckCode } from '@/utils/API/user/user'
+​
+// 获取state、route
+const store = useStore()
+const route = useRoute()
+// 要重定向的地址
+const redirect = ref(undefined as string | undefined)
+// 重定向路由其它query信息
+const otherQuery = ref({})
+// 登录变量、方法
+const loading = ref(false)
+const ruleFormRef = ref&lt;FormInstance&gt;()
+const form = reactive&lt;loginForm&gt;({
+  username: '',
+  password: '',
+  checkCode: '',
+  remember: false,
+  uuid: 0
+})
+// 验证码图片
+let verifyImg = ref('')
+const rules = reactive&lt;FormRules&gt;({
+  username: [{ required: true, message: '请输入账号', trigger: 'blur' }],
+  password: [{ required: true, message: '请输入密码', trigger: 'blur' }],
+  checkCode: [{ required: true, message: '请输入验证码', trigger: 'blur' }, { min: 4, max: 4, message: '长度为4个字符！', trigger: 'blur' }],
+})
+const submitForm = (formEl: FormInstance | undefined) =&gt; {
+  if (!formEl) return
+  formEl.validate((valid, fields) =&gt; {
+    if (valid) {
+      loading.value = true
+      // 记住密码存储用户信息
+      if (form.remember) {
+        Cookies.set('username', form.username, { expires: 7 })
+        Cookies.set('password', encrypt(form.password), { expires: 7 })
+        Cookies.set('remember', form.remember, { expires: 7 })
+      } else {
+        // 移除用户信息
+        Cookies.remove('username')
+        Cookies.remove('password')
+        Cookies.remove('remember')
+      }
+      store.dispatch('user/login', form).then(() =&gt; {
+        router.push({ path: redirect.value || '/', query: otherQuery.value })
+        loading.value = false
+      })
+        .catch(() =&gt; {
+          getCode()
+          loading.value = false
+        })
+    }
+  })
+}
+// 监听重定向信息
+watch(
+  route,
+  () =&gt; {
+    const query = route.query;
+    if (query) {
+      redirect.value = query.redirect as string;
+      otherQuery.value = getOtherQuery(query);
+    }
+  },
+  {
+    immediate: true
+  }
+);
+// 获取重定向query其它信息
+function getOtherQuery(query: any) {
+  return Object.keys(query).reduce((acc: any, cur: any) =&gt; {
+    if (cur !== 'redirect') {
+      acc[cur] = query[cur];
+    }
+    return acc;
+  }, {});
+}
+// 获取cookie中的用户名密码信息
+function getCookie() {
+  const username = Cookies.get('username')
+  const password = Cookies.get('password')
+  const remember = Cookies.get('remember')
+​
+  form.username = username === undefined ? form.username : username
+  form.password = password === undefined ? form.password : decrypt(password)
+  form.remember = remember === undefined ? form.remember : Boolean(remember)
+}
+// 获取验证码
+function getCode() {
+  const uuid = new Date().getTime()
+  form.uuid = uuid
+  getCheckCode(uuid).then(res =&gt; {
+    verifyImg.value = res.data
+  })
+}
+onMounted(() =&gt; {
+  getCode()
+  getCookie()
+})
+&lt;/script&gt;
+​
+&lt;style lang=&quot;scss&quot; scoped&gt;
+.loginbody {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/cool-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+​
+.logintext {
+  margin-bottom: 20px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #fbffc8;
+  text-shadow: 2px 2px 4px #000000;
+}
+​
+.logindata {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 150px;
+}
+​
+.form {
+  width: 100%;
+​
+  .el-input {
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+  }
+​
+  .login-code-input {
+    position: relative;
+  }
+​
+  .login-code {
+    position: absolute;
+    right: 6px;
+    top: 4px;
+    vertical-align: center;
+    width: 100px;
+    height: 32px;
+    cursor: pointer;
+    vertical-align: middle;
+​
+  }
+​
+  .check-box {
+    font-size: 16px;
+    font-weight: 600
+  }
+}
+​
+.tool {
+  display: flex;
+  justify-content: space-between;
+  color: #606266;
+}
+​
+.butt {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+​
+.shou {
+  cursor: pointer;
+  color: #606266;
+}
+&lt;/style&gt;
+</code></pre></div><h2 id="测试"><a href="#测试" class="header-anchor">#</a> 测试</h2> <ol><li>登录成功展示对应权限菜单</li></ol> <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e01c151ee52c44f1bb66b52cb7b71028~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <ol start="2"><li>登录失败</li></ol> <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c9ee8cf0f47d4113b52e7d8bff81ad1a~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blogs/blogs/vue3后台管理系统-前端路由.html" class="prev">
+          vue3后台管理系统-前端路由🔥
+        </a></span> <span class="next"><a href="/blogs/blogs/vue3后台管理系统-用户管理页面.html">
+          vue3后台管理系统-用户管理页面🔥
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.html#前言" class="sidebar-link reco-side-前言" data-v-b57cc07c>前言</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.html#修改-layout-模块" class="sidebar-link reco-side-修改-layout-模块" data-v-b57cc07c>修改 layout 模块</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.html#添加重置密码模块" class="sidebar-link reco-side-添加重置密码模块" data-v-b57cc07c>添加重置密码模块</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.html#实现登录模块" class="sidebar-link reco-side-实现登录模块" data-v-b57cc07c>实现登录模块</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/blogs/vue3%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.html#测试" class="sidebar-link reco-side-测试" data-v-b57cc07c>测试</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blogs/assets/js/app.18ea5a3b.js" defer></script><script src="/blogs/assets/js/3.7d50d3e1.js" defer></script><script src="/blogs/assets/js/1.6ae6daff.js" defer></script><script src="/blogs/assets/js/67.310e09c3.js" defer></script>
+  </body>
+</html>
